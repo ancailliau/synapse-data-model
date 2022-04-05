@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/mat.spec.json",
+  "title": "spec",
+  "description": null,
+  "properties": {
+    "name": {
+      "description": "The human readable name of the material spec.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

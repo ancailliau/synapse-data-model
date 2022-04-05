@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/tel.mob.tac.json",
+  "title": "tac",
+  "description": "A mobile cell site which a phone may connect to.",
+  "properties": {
+    "org": {
+      "description": "The org guid for the manufacturer.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "manu": {
+      "description": "The TAC manufacturer name.",
+      "type": "string"
+    },
+    "model": {
+      "description": "The TAC model name.",
+      "type": "string"
+    },
+    "internal": {
+      "description": "The TAC internal model name.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

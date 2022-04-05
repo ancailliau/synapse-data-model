@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/cidr6.json",
+  "title": "Cidr6",
+  "description": "",
+  "$ref": "str.json"
+}

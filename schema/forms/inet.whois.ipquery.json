@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.whois.ipquery.json",
+  "title": "ipquery",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "time": {
+      "description": "The time the request was made.",
+      "type": "string"
+    },
+    "url": {
+      "description": "The query URL when using the HTTP RDAP Protocol.",
+      "type": "string"
+    },
+    "fqdn": {
+      "description": "The FQDN of the host server when using the legacy WHOIS Protocol.",
+      "type": "string"
+    },
+    "ipv4": {
+      "description": "The IPv4 address queried.",
+      "type": "string"
+    },
+    "ipv6": {
+      "description": "The IPv6 address queried.",
+      "type": "string"
+    },
+    "success": {
+      "description": "Whether the host returned a valid response for the query.",
+      "type": "boolean"
+    },
+    "rec": {
+      "description": "The resulting record from the query.",
+      "$ref": "../forms/inet.whois.iprec.json"
+    }
+  },
+  "type": "object"
+}

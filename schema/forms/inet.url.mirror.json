@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.url.mirror.json",
+  "title": "mirror",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "of": {
+      "description": "The URL being mirrored.",
+      "type": "string"
+    },
+    "at": {
+      "description": "The URL of the mirror.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

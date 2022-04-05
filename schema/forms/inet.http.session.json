@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.http.session.json",
+  "title": "session",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "contact": {
+      "description": "The ps:contact which owns the session.",
+      "$ref": "../forms/ps.contact.json"
+    }
+  },
+  "type": "object"
+}

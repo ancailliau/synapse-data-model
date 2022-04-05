@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.dev.regval.json",
+  "title": "regval",
+  "description": "A function from an imported library.",
+  "properties": {
+    "key": {
+      "description": "The Windows registry key.",
+      "$ref": "../forms/it.dev.regkey.json"
+    },
+    "str": {
+      "description": "The value of the registry key, if the value is a string.",
+      "$ref": "../forms/it.dev.str.json"
+    },
+    "int": {
+      "description": "The value of the registry key, if the value is an integer.",
+      "$ref": "../forms/it.dev.int.json"
+    },
+    "bytes": {
+      "description": "The file representing the value of the registry key, if the value is binary data.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

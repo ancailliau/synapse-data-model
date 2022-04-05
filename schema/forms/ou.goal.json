@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.goal.json",
+  "title": "goal",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "name": {
+      "description": "A terse name for the goal.",
+      "type": "string"
+    },
+    "type": {
+      "description": "A user specified goal type.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A description of the goal.",
+      "type": "string"
+    },
+    "prev": {
+      "description": "The previous/parent goal in a list or hierarchy.",
+      "$ref": "../forms/ou.goal.json"
+    }
+  },
+  "type": "object"
+}

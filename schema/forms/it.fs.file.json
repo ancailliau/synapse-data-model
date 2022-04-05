@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.fs.file.json",
+  "title": "file",
+  "description": "A function from an imported library.",
+  "properties": {
+    "host": {
+      "description": "The host containing the file.",
+      "$ref": "../forms/it.host.json"
+    },
+    "path": {
+      "description": "The path for the file.",
+      "type": "string"
+    },
+    "path:dir": {
+      "description": "The parent directory of the file path (parsed from :path).",
+      "type": "string"
+    },
+    "path:ext": {
+      "description": "The file extension of the file name (parsed from :path).",
+      "type": "string"
+    },
+    "path:base": {
+      "description": "The final component of the file path (parsed from :path).",
+      "type": "string"
+    },
+    "file": {
+      "description": "The file on the host.",
+      "type": "string"
+    },
+    "ctime": {
+      "description": "The file creation time.",
+      "type": "string"
+    },
+    "mtime": {
+      "description": "The file modification time.",
+      "type": "string"
+    },
+    "atime": {
+      "description": "The file access time.",
+      "type": "string"
+    },
+    "user": {
+      "description": "The owner of the file.",
+      "$ref": "../forms/inet.user.json"
+    },
+    "group": {
+      "description": "The group owner of the file.",
+      "$ref": "../forms/inet.user.json"
+    }
+  },
+  "type": "object"
+}

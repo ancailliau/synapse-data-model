@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.exec.mutex.json",
+  "title": "mutex",
+  "description": "A function from an imported library.",
+  "properties": {
+    "proc": {
+      "description": "The main process executing code that created the mutex.",
+      "$ref": "../forms/it.exec.proc.json"
+    },
+    "host": {
+      "description": "The host running the process that created the mutex. Typically the same host referenced in :proc, if present.",
+      "$ref": "../forms/it.host.json"
+    },
+    "exe": {
+      "description": "The specific file containing code that created the mutex. May or may not be the same :exe specified in :proc, if present.",
+      "type": "string"
+    },
+    "time": {
+      "description": "The time the mutex was created.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The mutex string.",
+      "$ref": "../forms/it.dev.mutex.json"
+    }
+  },
+  "type": "object"
+}

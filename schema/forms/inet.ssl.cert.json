@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.ssl.cert.json",
+  "title": "cert",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "file": {
+      "description": "The file bytes for the SSL certificate.",
+      "type": "string"
+    },
+    "server": {
+      "description": "The server that presented the SSL certificate.",
+      "$ref": "../forms/inet.server.json"
+    },
+    "server:ipv4": {
+      "description": "The SSL server IPv4 address.",
+      "type": "string"
+    },
+    "server:ipv6": {
+      "description": "The SSL server IPv6 address.",
+      "type": "string"
+    },
+    "server:port": {
+      "description": "The SSL server listening port.",
+      "$ref": "../forms/inet.port.json"
+    }
+  },
+  "type": "object"
+}

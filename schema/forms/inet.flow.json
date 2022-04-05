@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.flow.json",
+  "title": "flow",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "time": {
+      "description": "The time the network connection was initiated.",
+      "type": "string"
+    },
+    "duration": {
+      "description": "The duration of the flow in seconds.",
+      "type": "integer"
+    },
+    "from": {
+      "description": "The ingest source file/iden. Used for reparsing.",
+      "type": "string"
+    },
+    "dst": {
+      "description": "The destination address / port for a connection.",
+      "$ref": "../forms/inet.server.json"
+    },
+    "dst:ipv4": {
+      "description": "The destination IPv4 address.",
+      "type": "string"
+    },
+    "dst:ipv6": {
+      "description": "The destination IPv6 address.",
+      "type": "string"
+    },
+    "dst:port": {
+      "description": "The destination port.",
+      "$ref": "../forms/inet.port.json"
+    },
+    "dst:proto": {
+      "description": "The destination protocol.",
+      "type": "string"
+    },
+    "dst:host": {
+      "description": "The guid of the destination host.",
+      "$ref": "../forms/it.host.json"
+    },
+    "dst:proc": {
+      "description": "The guid of the destination process.",
+      "$ref": "../forms/it.exec.proc.json"
+    },
+    "dst:exe": {
+      "description": "The file (executable) that received the connection.",
+      "type": "string"
+    },
+    "dst:txcount": {
+      "description": "The number of packets sent by the destination host.",
+      "type": "integer"
+    },
+    "dst:txbytes": {
+      "description": "The number of bytes sent by the destination host.",
+      "type": "integer"
+    },
+    "dst:handshake": {
+      "description": "A text representation of the initial handshake sent by the server.",
+      "type": "string"
+    },
+    "src": {
+      "description": "The source address / port for a connection.",
+      "$ref": "../forms/inet.client.json"
+    },
+    "src:ipv4": {
+      "description": "The source IPv4 address.",
+      "type": "string"
+    },
+    "src:ipv6": {
+      "description": "The source IPv6 address.",
+      "type": "string"
+    },
+    "src:port": {
+      "description": "The source port.",
+      "$ref": "../forms/inet.port.json"
+    },
+    "src:proto": {
+      "description": "The source protocol.",
+      "type": "string"
+    },
+    "src:host": {
+      "description": "The guid of the source host.",
+      "$ref": "../forms/it.host.json"
+    },
+    "src:proc": {
+      "description": "The guid of the source process.",
+      "$ref": "../forms/it.exec.proc.json"
+    },
+    "src:exe": {
+      "description": "The file (executable) that created the connection.",
+      "type": "string"
+    },
+    "src:txcount": {
+      "description": "The number of packets sent by the source host.",
+      "type": "integer"
+    },
+    "src:txbytes": {
+      "description": "The number of bytes sent by the source host.",
+      "type": "integer"
+    },
+    "tot:txcount": {
+      "description": "The number of packets sent in both directions.",
+      "type": "integer"
+    },
+    "tot:txbytes": {
+      "description": "The number of bytes sent in both directions.",
+      "type": "integer"
+    },
+    "src:handshake": {
+      "description": "A text representation of the initial handshake sent by the client.",
+      "type": "string"
+    },
+    "dst:cpes": {
+      "description": "An array of NIST CPEs identified on the destination host.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.sec.cpe.json"
+      },
+      "uniqueItems": true
+    },
+    "dst:softnames": {
+      "description": "An array of software names identified on the destination host.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.dev.str.json"
+      },
+      "uniqueItems": true
+    },
+    "src:cpes": {
+      "description": "An array of NIST CPEs identified on the source host.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.sec.cpe.json"
+      },
+      "uniqueItems": true
+    },
+    "src:softnames": {
+      "description": "An array of software names identified on the source host.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.dev.str.json"
+      },
+      "uniqueItems": true
+    },
+    "ip:proto": {
+      "description": "The IP protocol number of the flow.",
+      "type": "integer"
+    },
+    "ip:tcp:flags": {
+      "description": "An aggregation of observed TCP flags commonly provided by flow APIs.",
+      "type": "integer"
+    }
+  },
+  "type": "object"
+}

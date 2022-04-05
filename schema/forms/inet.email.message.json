@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.email.message.json",
+  "title": "message",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "to": {
+      "description": "The email address of the recipient.",
+      "type": "string"
+    },
+    "from": {
+      "description": "The email address of the sender.",
+      "type": "string"
+    },
+    "replyto": {
+      "description": "The email address from the reply-to header.",
+      "type": "string"
+    },
+    "subject": {
+      "description": "The email message subject line.",
+      "type": "string"
+    },
+    "body": {
+      "description": "The body of the email message.",
+      "type": "string"
+    },
+    "date": {
+      "description": "The time the email message was received.",
+      "type": "string"
+    },
+    "bytes": {
+      "description": "The file bytes which contain the email message.",
+      "type": "string"
+    },
+    "headers": {
+      "description": "An array of email headers from the message.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/inet.email.header.json"
+      }
+    }
+  },
+  "type": "object"
+}

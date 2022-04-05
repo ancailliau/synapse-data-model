@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.whois.email.json",
+  "title": "email",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "fqdn": {
+      "description": "The domain with a whois record containing the email address.",
+      "type": "string"
+    },
+    "email": {
+      "description": "The email address associated with the domain whois record.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

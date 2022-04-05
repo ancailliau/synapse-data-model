@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.urlfile.json",
+  "title": "urlfile",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "url": {
+      "description": "The URL where the file was hosted.",
+      "type": "string"
+    },
+    "file": {
+      "description": "The file that was hosted at the URL.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/file.subfile.json",
+  "title": "subfile",
+  "description": "A section inside a Mach-O binary denoting a named region of bytes inside a segment.",
+  "properties": {
+    "parent": {
+      "description": "The parent file containing the child file.",
+      "type": "string"
+    },
+    "child": {
+      "description": "The child file contained in the parent file.",
+      "type": "string"
+    },
+    "name": {
+      "description": "Deprecated, please use the :path property.",
+      "type": "string"
+    },
+    "path": {
+      "description": "The path that the parent uses to refer to the child file.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

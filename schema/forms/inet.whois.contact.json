@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.whois.contact.json",
+  "title": "contact",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "rec": {
+      "description": "The whois record containing the contact data.",
+      "$ref": "../forms/inet.whois.rec.json"
+    },
+    "rec:fqdn": {
+      "description": "The domain associated with the whois record.",
+      "type": "string"
+    },
+    "rec:asof": {
+      "description": "The date of the whois record.",
+      "type": "string"
+    },
+    "type": {
+      "description": "The contact type (e.g., registrar, registrant, admin, billing, tech, etc.).",
+      "type": "string"
+    },
+    "id": {
+      "description": "The ID associated with the contact.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the contact.",
+      "type": "string"
+    },
+    "email": {
+      "description": "The email address of the contact.",
+      "type": "string"
+    },
+    "orgname": {
+      "description": "The name of the contact organization.",
+      "$ref": "../forms/ou.name.json"
+    },
+    "address": {
+      "description": "The content of the street address field(s) of the contact.",
+      "type": "string"
+    },
+    "city": {
+      "description": "The content of the city field of the contact.",
+      "type": "string"
+    },
+    "state": {
+      "description": "The content of the state field of the contact.",
+      "type": "string"
+    },
+    "country": {
+      "description": "The two-letter country code of the contact.",
+      "type": "string"
+    },
+    "phone": {
+      "description": "The content of the phone field of the contact.",
+      "type": "string"
+    },
+    "fax": {
+      "description": "The content of the fax field of the contact.",
+      "type": "string"
+    },
+    "url": {
+      "description": "The URL specified for the contact.",
+      "type": "string"
+    },
+    "whois:fqdn": {
+      "description": "The whois server FQDN for the given contact (most likely a registrar).",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

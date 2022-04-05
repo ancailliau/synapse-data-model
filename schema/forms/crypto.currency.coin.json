@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/crypto.currency.coin.json",
+  "title": "coin",
+  "description": "A digital signature relationship between an X.509 certificate and a file.",
+  "properties": {
+    "name": {
+      "description": "The full name of the crypto coin.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.dns.ns.json",
+  "title": "ns",
+  "description": "A DNS AAAA wild card record and the IPv6 it resolves to.",
+  "properties": {
+    "zone": {
+      "description": "The domain queried for its DNS NS record.",
+      "type": "string"
+    },
+    "ns": {
+      "description": "The domain returned in the NS record.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

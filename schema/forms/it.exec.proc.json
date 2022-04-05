@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.exec.proc.json",
+  "title": "proc",
+  "description": "A function from an imported library.",
+  "properties": {
+    "host": {
+      "description": "The host that executed the process. May be an actual or a virtual / notional host.",
+      "$ref": "../forms/it.host.json"
+    },
+    "exe": {
+      "description": "The file considered the \"main\" executable for the process. For example, rundll32.exe may be considered the \"main\" executable for DLLs loaded by that program.",
+      "type": "string"
+    },
+    "cmd": {
+      "description": "The command string used to launch the process, including any command line parameters.",
+      "$ref": "../forms/it.cmd.json"
+    },
+    "pid": {
+      "description": "The process ID.",
+      "type": "integer"
+    },
+    "time": {
+      "description": "The start time for the process.",
+      "type": "string"
+    },
+    "exited": {
+      "description": "The time the process exited.",
+      "type": "string"
+    },
+    "exitcode": {
+      "description": "The exit code for the process.",
+      "type": "integer"
+    },
+    "user": {
+      "description": "The user name of the process owner.",
+      "$ref": "../forms/inet.user.json"
+    },
+    "account": {
+      "description": "The account of the process owner.",
+      "$ref": "../forms/it.account.json"
+    },
+    "path": {
+      "description": "The path to the executable of the process.",
+      "type": "string"
+    },
+    "src:exe": {
+      "description": "The path to the executable which started the process.",
+      "type": "string"
+    },
+    "src:proc": {
+      "description": "The process which created the process.",
+      "$ref": "../forms/it.exec.proc.json"
+    },
+    "killedby": {
+      "description": "The process which killed this process.",
+      "$ref": "../forms/it.exec.proc.json"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.exec.bind.json",
+  "title": "bind",
+  "description": "A function from an imported library.",
+  "properties": {
+    "proc": {
+      "description": "The main process executing code that bound the listening port.",
+      "$ref": "../forms/it.exec.proc.json"
+    },
+    "host": {
+      "description": "The host running the process that bound the listening port. Typically the same host referenced in :proc, if present.",
+      "$ref": "../forms/it.host.json"
+    },
+    "exe": {
+      "description": "The specific file containing code that bound the listening port. May or may not be the same :exe specified in :proc, if present.",
+      "type": "string"
+    },
+    "time": {
+      "description": "The time the port was bound.",
+      "type": "string"
+    },
+    "server": {
+      "description": "The inet:addr of the server when binding the port.",
+      "$ref": "../forms/inet.server.json"
+    },
+    "server:ipv4": {
+      "description": "The IPv4 address specified to bind().",
+      "type": "string"
+    },
+    "server:ipv6": {
+      "description": "The IPv6 address specified to bind().",
+      "type": "string"
+    },
+    "server:port": {
+      "description": "The bound (listening) TCP port.",
+      "$ref": "../forms/inet.port.json"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.dns.answer.json",
+  "title": "answer",
+  "description": "A DNS AAAA wild card record and the IPv6 it resolves to.",
+  "properties": {
+    "ttl": {
+      "description": null,
+      "type": "integer"
+    },
+    "request": {
+      "description": null,
+      "$ref": "../forms/inet.dns.request.json"
+    },
+    "a": {
+      "description": "The DNS A record returned by the lookup.",
+      "$ref": "../forms/inet.dns.a.json"
+    },
+    "ns": {
+      "description": "The DNS NS record returned by the lookup.",
+      "$ref": "../forms/inet.dns.ns.json"
+    },
+    "rev": {
+      "description": "The DNS PTR record returned by the lookup.",
+      "$ref": "../forms/inet.dns.rev.json"
+    },
+    "aaaa": {
+      "description": "The DNS AAAA record returned by the lookup.",
+      "$ref": "../forms/inet.dns.aaaa.json"
+    },
+    "rev6": {
+      "description": "The DNS PTR record returned by the lookup of an IPv6 address.",
+      "$ref": "../forms/inet.dns.rev6.json"
+    },
+    "cname": {
+      "description": "The DNS CNAME record returned by the lookup.",
+      "$ref": "../forms/inet.dns.cname.json"
+    },
+    "mx": {
+      "description": "The DNS MX record returned by the lookup.",
+      "$ref": "../forms/inet.dns.mx.json"
+    },
+    "soa": {
+      "description": "The domain queried for its SOA record.",
+      "$ref": "../forms/inet.dns.soa.json"
+    },
+    "txt": {
+      "description": "The DNS TXT record returned by the lookup.",
+      "$ref": "../forms/inet.dns.txt.json"
+    }
+  },
+  "type": "object"
+}

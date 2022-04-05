@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/file.mime.rtf.json",
+  "title": "rtf",
+  "description": "A section inside a Mach-O binary denoting a named region of bytes inside a segment.",
+  "properties": {
+    "guid": {
+      "description": "The parsed GUID embedded in the .rtf file.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/biz.bundle.json",
+  "title": "bundle",
+  "description": "A product type taxonomy.",
+  "properties": {
+    "count": {
+      "description": "The number of instances of the product included in the bundle.",
+      "type": "integer"
+    },
+    "price": {
+      "description": "The price of the bundle.",
+      "$ref": "../forms/econ.price.json"
+    },
+    "product": {
+      "description": "The product included in the bundle.",
+      "$ref": "../forms/biz.product.json"
+    },
+    "deal": {
+      "description": "The deal which includes this bundle.",
+      "$ref": "../forms/biz.deal.json"
+    },
+    "purchase": {
+      "description": "The purchase which includes this bundle.",
+      "$ref": "../forms/econ.purchase.json"
+    }
+  },
+  "type": "object"
+}

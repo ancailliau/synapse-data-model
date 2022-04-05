@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/geo.place.json",
+  "title": "place",
+  "description": "A negative or positive offset from Mean Sea Level (6,371.0088km from Earths core).",
+  "properties": {
+    "name": {
+      "description": "The name of the place.",
+      "$ref": "../forms/geo.name.json"
+    },
+    "names": {
+      "description": "An array of alternative place names.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/geo.name.json"
+      },
+      "uniqueItems": true
+    },
+    "parent": {
+      "description": "A parent place, possibly from reverse geocoding.",
+      "$ref": "../forms/geo.place.json"
+    },
+    "desc": {
+      "description": "A long form description of the place.",
+      "type": "string"
+    },
+    "loc": {
+      "description": "The geo-political location string for the node.",
+      "type": "string"
+    },
+    "address": {
+      "description": "The street/mailing address for the place.",
+      "$ref": "../forms/geo.address.json"
+    },
+    "geojson": {
+      "description": "A GeoJSON representation of the place.",
+      "$ref": "../forms/geo.json.json"
+    },
+    "latlong": {
+      "description": "The lat/long position for the place.",
+      "type": "string"
+    },
+    "bbox": {
+      "description": "A bounding box which encompases the place.",
+      "$ref": "../forms/geo.bbox.json"
+    },
+    "radius": {
+      "description": "An approximate radius to use for bounding box calculation.",
+      "type": "number"
+    },
+    "photo": {
+      "description": "The image file to use as the primary image of the place.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

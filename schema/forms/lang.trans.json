@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/lang.trans.json",
+  "title": "trans",
+  "description": "A translation of text from one language to another.",
+  "properties": {
+    "text:en": {
+      "description": "English translation.",
+      "type": "string"
+    },
+    "desc:en": {
+      "description": "English description.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

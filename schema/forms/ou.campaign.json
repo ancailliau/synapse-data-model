@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.campaign.json",
+  "title": "campaign",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "org": {
+      "description": "The org carrying out the campaign.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "goal": {
+      "description": "The assessed primary goal of the campaign.",
+      "$ref": "../forms/ou.goal.json"
+    },
+    "actors": {
+      "description": "Actors who participated in the campaign.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ps.contact.json"
+      },
+      "uniqueItems": true
+    },
+    "goals": {
+      "description": "Additional assessed goals of the campaign.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ou.goal.json"
+      },
+      "uniqueItems": true
+    },
+    "success": {
+      "description": "Records the success/failure status of the campaign if known.",
+      "type": "boolean"
+    },
+    "name": {
+      "description": "A terse name of the campaign.",
+      "type": "string"
+    },
+    "type": {
+      "description": "Deprecated. Use the :camptype taxonomy.",
+      "type": "string"
+    },
+    "camptype": {
+      "description": "The campaign type taxonomy.",
+      "$ref": "../forms/ou.camptype.json"
+    },
+    "desc": {
+      "description": "A description of the campaign.",
+      "type": "string"
+    },
+    "period": {
+      "description": null,
+      "type": "string"
+    },
+    "currency": {
+      "description": null,
+      "$ref": "../forms/econ.currency.json"
+    },
+    "cost": {
+      "description": null,
+      "$ref": "../forms/econ.price.json"
+    },
+    "budget": {
+      "description": null,
+      "$ref": "../forms/econ.price.json"
+    },
+    "goal:revenue": {
+      "description": null,
+      "$ref": "../forms/econ.price.json"
+    },
+    "result:revenue": {
+      "description": null,
+      "$ref": "../forms/econ.price.json"
+    },
+    "goal:pop": {
+      "description": null,
+      "type": "integer"
+    },
+    "result:pop": {
+      "description": null,
+      "type": "integer"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/syn.prop.json",
+  "title": "prop",
+  "description": "A Synapse role GUID.",
+  "properties": {
+    "doc": {
+      "description": "Description of the property definition.",
+      "type": "string"
+    },
+    "form": {
+      "description": "The form of the property.",
+      "$ref": "../forms/syn.form.json"
+    },
+    "type": {
+      "description": "The synapse type for this property.",
+      "$ref": "../forms/syn.type.json"
+    },
+    "relname": {
+      "description": "Relative property name.",
+      "type": "string"
+    },
+    "univ": {
+      "description": "Specifies if a prop is universal.",
+      "type": "boolean"
+    },
+    "base": {
+      "description": "Base name of the property.",
+      "type": "string"
+    },
+    "ro": {
+      "description": "If the property is read-only after being set.",
+      "type": "boolean"
+    },
+    "extmodel": {
+      "description": "If the property is an extended model property or not.",
+      "type": "boolean"
+    }
+  },
+  "type": "object"
+}

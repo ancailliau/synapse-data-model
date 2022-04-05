@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.web.memb.json",
+  "title": "memb",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "acct": {
+      "description": "The account that is a member of the group.",
+      "$ref": "../forms/inet.web.acct.json"
+    },
+    "group": {
+      "description": "The group that the account is a member of.",
+      "$ref": "../forms/inet.web.group.json"
+    },
+    "title": {
+      "description": "The title or status of the member (e.g., admin, new member, etc.).",
+      "type": "string"
+    },
+    "joined": {
+      "description": "The date / time the account joined the group.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

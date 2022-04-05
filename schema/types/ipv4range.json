@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ipv4range.json",
+  "title": "IPv4Range",
+  "description": "",
+  "$ref": "range.json"
+}

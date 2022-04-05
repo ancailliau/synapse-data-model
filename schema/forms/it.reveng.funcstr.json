@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.reveng.funcstr.json",
+  "title": "funcstr",
+  "description": "A function from an imported library.",
+  "properties": {
+    "function": {
+      "description": "The guid matching the function.",
+      "$ref": "../forms/it.reveng.function.json"
+    },
+    "string": {
+      "description": "The string that the function references.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

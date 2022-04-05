@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/cpe22str.json",
+  "title": "Cpe22Str",
+  "description": "",
+  "$ref": "str.json"
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.download.json",
+  "title": "download",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "time": {
+      "description": "The time the file was downloaded.",
+      "type": "string"
+    },
+    "fqdn": {
+      "description": "The FQDN used to resolve the server.",
+      "type": "string"
+    },
+    "file": {
+      "description": "The file that was downloaded.",
+      "type": "string"
+    },
+    "server": {
+      "description": "The inet:addr of the server.",
+      "$ref": "../forms/inet.server.json"
+    },
+    "server:host": {
+      "description": "The it:host node for the server.",
+      "$ref": "../forms/it.host.json"
+    },
+    "server:ipv4": {
+      "description": "The IPv4 of the server.",
+      "type": "string"
+    },
+    "server:ipv6": {
+      "description": "The IPv6 of the server.",
+      "type": "string"
+    },
+    "server:port": {
+      "description": "The server tcp/udp port.",
+      "$ref": "../forms/inet.port.json"
+    },
+    "server:proto": {
+      "description": "The server network layer protocol.",
+      "type": "string"
+    },
+    "client": {
+      "description": "The inet:addr of the client.",
+      "$ref": "../forms/inet.client.json"
+    },
+    "client:host": {
+      "description": "The it:host node for the client.",
+      "$ref": "../forms/it.host.json"
+    },
+    "client:ipv4": {
+      "description": "The IPv4 of the client.",
+      "type": "string"
+    },
+    "client:ipv6": {
+      "description": "The IPv6 of the client.",
+      "type": "string"
+    },
+    "client:port": {
+      "description": "The client tcp/udp port.",
+      "$ref": "../forms/inet.port.json"
+    },
+    "client:proto": {
+      "description": "The client network layer protocol.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

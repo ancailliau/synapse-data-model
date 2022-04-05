@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.dns.query.json",
+  "title": "query",
+  "description": "A DNS AAAA wild card record and the IPv6 it resolves to.",
+  "properties": {
+    "client": {
+      "description": null,
+      "$ref": "../forms/inet.client.json"
+    },
+    "name": {
+      "description": null,
+      "type": "string"
+    },
+    "name:ipv4": {
+      "description": null,
+      "type": "string"
+    },
+    "name:ipv6": {
+      "description": null,
+      "type": "string"
+    },
+    "name:fqdn": {
+      "description": null,
+      "type": "string"
+    },
+    "type": {
+      "description": null,
+      "type": "integer"
+    }
+  },
+  "type": "object"
+}

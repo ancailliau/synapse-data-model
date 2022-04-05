@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/biz.rfp.json",
+  "title": "rfp",
+  "description": "A product type taxonomy.",
+  "properties": {
+    "ext:id": {
+      "description": "An externally specified identifier for the RFP.",
+      "type": "string"
+    },
+    "title": {
+      "description": "The title of the RFP.",
+      "type": "string"
+    },
+    "summary": {
+      "description": "A brief summary of the RFP.",
+      "type": "string"
+    },
+    "status": {
+      "description": "The status of the RFP.",
+      "$ref": "../forms/biz.dealstatus.json"
+    },
+    "url": {
+      "description": "The official URL for the RFP.",
+      "type": "string"
+    },
+    "file": {
+      "description": "The RFP document.",
+      "type": "string"
+    },
+    "posted": {
+      "description": "The date/time that the RFP was posted.",
+      "type": "string"
+    },
+    "quesdue": {
+      "description": "The date/time that questions are due.",
+      "type": "string"
+    },
+    "propdue": {
+      "description": "The date/time that proposals are due.",
+      "type": "string"
+    },
+    "contact": {
+      "description": "The contact information given for the org requesting offers.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "purchases": {
+      "description": "Any known purchases that resulted from the RFP.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/econ.purchase.json"
+      },
+      "uniqueItems": true
+    },
+    "requirements": {
+      "description": null,
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ou.goal.json"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

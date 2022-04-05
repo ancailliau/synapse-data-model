@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.award.json",
+  "title": "award",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "name": {
+      "description": "The name of the award.",
+      "type": "string"
+    },
+    "type": {
+      "description": "The type of award.",
+      "type": "string"
+    },
+    "org": {
+      "description": "The organization which issues the award.",
+      "$ref": "../forms/ou.org.json"
+    }
+  },
+  "type": "object"
+}

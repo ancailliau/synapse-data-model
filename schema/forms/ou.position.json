@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.position.json",
+  "title": "position",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "org": {
+      "description": "The org which has the position.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "contact": {
+      "description": "The contact info for the person who holds the position.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "title": {
+      "description": "The title of the position.",
+      "type": "string"
+    },
+    "reports": {
+      "description": "An array of positions which report to this position.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ou.position.json"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

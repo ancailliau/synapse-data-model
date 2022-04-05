@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.av.prochit.json",
+  "title": "prochit",
+  "description": "A function from an imported library.",
+  "properties": {
+    "proc": {
+      "description": "The file that triggered the signature hit.",
+      "$ref": "../forms/it.exec.proc.json"
+    },
+    "sig": {
+      "description": "The signature that the file triggered on.",
+      "$ref": "../forms/it.av.sig.json"
+    },
+    "time": {
+      "description": "The time that the AV engine detected the signature.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

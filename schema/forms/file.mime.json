@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/file.mime.json",
+  "title": "mime",
+  "description": "A section inside a Mach-O binary denoting a named region of bytes inside a segment.",
+  "properties": {},
+  "type": "object"
+}

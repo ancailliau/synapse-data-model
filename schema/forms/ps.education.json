@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ps.education.json",
+  "title": "education",
+  "description": "A GUID representing entry in a contact's work history.",
+  "properties": {
+    "student": {
+      "description": "The contact of the person being educated.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "institution": {
+      "description": "The contact info for the org providing educational services.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "attended:first": {
+      "description": "The first date the student attended a class.",
+      "type": "string"
+    },
+    "attended:last": {
+      "description": "The last date the student attended a class.",
+      "type": "string"
+    },
+    "classes": {
+      "description": "The classes attended by the student",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/edu.class.json"
+      },
+      "uniqueItems": true
+    },
+    "achievement": {
+      "description": "The achievement awarded to the individual.",
+      "$ref": "../forms/ps.achievement.json"
+    }
+  },
+  "type": "object"
+}

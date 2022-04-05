@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/crypto.x509.crl.json",
+  "title": "crl",
+  "description": "A digital signature relationship between an X.509 certificate and a file.",
+  "properties": {
+    "file": {
+      "description": "The file containing the CRL.",
+      "type": "string"
+    },
+    "url": {
+      "description": "The URL where the CRL was published.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

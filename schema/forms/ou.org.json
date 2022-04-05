@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.org.json",
+  "title": "org",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "loc": {
+      "description": "Location for an organization.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The localized name of an organization.",
+      "$ref": "../forms/ou.name.json"
+    },
+    "type": {
+      "description": "The type of organization.",
+      "type": "string"
+    },
+    "orgtype": {
+      "description": "The type of organization.",
+      "$ref": "../forms/ou.orgtype.json"
+    },
+    "vitals": {
+      "description": "The most recent/accurate ou:vitals for the org.",
+      "$ref": "../forms/ou.vitals.json"
+    },
+    "desc": {
+      "description": "A description of the org.",
+      "type": "string"
+    },
+    "logo": {
+      "description": "An image file representing the logo for the organization.",
+      "type": "string"
+    },
+    "names": {
+      "description": "A list of alternate names for the organization.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ou.name.json"
+      },
+      "uniqueItems": true
+    },
+    "alias": {
+      "description": "The default alias for an organization.",
+      "$ref": "../forms/ou.alias.json"
+    },
+    "phone": {
+      "description": "The primary phone number for the organization.",
+      "type": "string"
+    },
+    "sic": {
+      "description": "The Standard Industrial Classification code for the organization.",
+      "$ref": "../forms/ou.sic.json"
+    },
+    "naics": {
+      "description": "The North American Industry Classification System code for the organization.",
+      "$ref": "../forms/ou.naics.json"
+    },
+    "industries": {
+      "description": "The industries associated with the org.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ou.industry.json"
+      },
+      "uniqueItems": true
+    },
+    "us:cage": {
+      "description": "The Commercial and Government Entity (CAGE) code for the organization.",
+      "$ref": "../forms/gov.us.cage.json"
+    },
+    "founded": {
+      "description": "The date on which the org was founded.",
+      "type": "string"
+    },
+    "dissolved": {
+      "description": "The date on which the org was dissolved.",
+      "type": "string"
+    },
+    "url": {
+      "description": "The primary url for the organization.",
+      "type": "string"
+    },
+    "subs": {
+      "description": "An set of sub-organizations.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ou.org.json"
+      },
+      "uniqueItems": true
+    },
+    "orgchart": {
+      "description": "The root node for an orgchart made up ou:position nodes.",
+      "$ref": "../forms/ou.position.json"
+    },
+    "hq": {
+      "description": "A collection of contact information for the \"main office\" of an org.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "locations": {
+      "description": "An array of contacts for facilities operated by the org.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ps.contact.json"
+      },
+      "uniqueItems": true
+    },
+    "dns:mx": {
+      "description": "An array of MX domains used by email addresses issued by the org.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

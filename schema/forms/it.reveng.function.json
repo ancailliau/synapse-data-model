@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.reveng.function.json",
+  "title": "function",
+  "description": "A function from an imported library.",
+  "properties": {
+    "name": {
+      "description": "The name of the function.",
+      "type": "string"
+    },
+    "description": {
+      "description": "Notes concerning the function.",
+      "type": "string"
+    },
+    "impcalls": {
+      "description": "Calls to imported library functions within the scope of the function.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.reveng.impfunc.json"
+      },
+      "uniqueItems": true
+    },
+    "strings": {
+      "description": "An array of strings referenced within the function.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.dev.str.json"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

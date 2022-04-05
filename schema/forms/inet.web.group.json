@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.web.group.json",
+  "title": "group",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "site": {
+      "description": "The site or service associated with the group.",
+      "type": "string"
+    },
+    "id": {
+      "description": "The site-specific unique identifier for the group (may be different from the common name or display name).",
+      "$ref": "../forms/inet.group.json"
+    },
+    "name": {
+      "description": "The localized name associated with the group (may be different from the account identifier, e.g., a display name).",
+      "$ref": "../forms/inet.group.json"
+    },
+    "aliases": {
+      "description": "An array of alternate names for the group.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/inet.group.json"
+      },
+      "uniqueItems": true
+    },
+    "name:en": {
+      "description": "The English version of the name associated with the group (may be different from the localized name).",
+      "$ref": "../forms/inet.group.json"
+    },
+    "url": {
+      "description": "The service provider URL where the group is hosted.",
+      "type": "string"
+    },
+    "avatar": {
+      "description": "The file representing the avatar (e.g., profile picture) for the group.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "The text of the description of the group.",
+      "type": "string"
+    },
+    "webpage": {
+      "description": "A related URL specified by the group (e.g., primary web site, etc.).",
+      "type": "string"
+    },
+    "loc": {
+      "description": "A self-declared location for the group.",
+      "type": "string"
+    },
+    "latlong": {
+      "description": "The last known latitude/longitude for the node.",
+      "type": "string"
+    },
+    "place": {
+      "description": "The geo:place associated with the latlong property.",
+      "$ref": "../forms/geo.place.json"
+    },
+    "signup": {
+      "description": "The date and time the group was created on the site.",
+      "type": "string"
+    },
+    "signup:client": {
+      "description": "The client address used to create the group.",
+      "$ref": "../forms/inet.client.json"
+    },
+    "signup:client:ipv4": {
+      "description": "The IPv4 address used to create the group.",
+      "type": "string"
+    },
+    "signup:client:ipv6": {
+      "description": "The IPv6 address used to create the group.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

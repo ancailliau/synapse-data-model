@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/transport.air.flightnum.json",
+  "title": "flightnum",
+  "description": "A telemetry sample from a vessel in transit.",
+  "properties": {
+    "carrier": {
+      "description": "The org which operates the given flight number.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "to:port": {
+      "description": "The most recently registered destination for the flight number.",
+      "$ref": "../forms/transport.air.port.json"
+    },
+    "from:port": {
+      "description": "The most recently registered origin for the flight number.",
+      "$ref": "../forms/transport.air.port.json"
+    },
+    "stops": {
+      "description": "An ordered list of aiport codes for the flight segments.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/transport.air.port.json"
+      }
+    }
+  },
+  "type": "object"
+}

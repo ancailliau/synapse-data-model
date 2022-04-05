@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.id.number.json",
+  "title": "number",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "type": {
+      "description": "The type of org id",
+      "$ref": "../forms/ou.id.type.json"
+    },
+    "value": {
+      "description": "The type of org id",
+      "$ref": "../forms/ou.id.value.json"
+    },
+    "status": {
+      "description": "A freeform status such as valid, suspended, expired.",
+      "type": "string"
+    },
+    "issued": {
+      "description": "The time at which the org issued the ID number.",
+      "type": "string"
+    },
+    "expires": {
+      "description": "The time at which the ID number expires.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

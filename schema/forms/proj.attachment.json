@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/proj.attachment.json",
+  "title": "attachment",
+  "description": null,
+  "properties": {
+    "name": {
+      "description": null,
+      "type": "string"
+    },
+    "file": {
+      "description": null,
+      "type": "string"
+    },
+    "creator": {
+      "description": null,
+      "$ref": "../forms/syn.user.json"
+    },
+    "created": {
+      "description": null,
+      "type": "string"
+    },
+    "ticket": {
+      "description": null,
+      "$ref": "../forms/proj.ticket.json"
+    },
+    "comment": {
+      "description": null,
+      "$ref": "../forms/proj.comment.json"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.app.yara.rule.json",
+  "title": "rule",
+  "description": "A function from an imported library.",
+  "properties": {
+    "text": {
+      "description": "The YARA rule text.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the YARA rule.",
+      "type": "string"
+    },
+    "author": {
+      "description": "Contact info for the author of the YARA rule.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "version": {
+      "description": "The current version of the rule.",
+      "type": "string"
+    },
+    "created": {
+      "description": "The time the YARA rule was initially created.",
+      "type": "string"
+    },
+    "updated": {
+      "description": "The time the YARA rule was most recently modified.",
+      "type": "string"
+    },
+    "enabled": {
+      "description": "The rule enabled status to be used for YARA evaluation engines.",
+      "type": "boolean"
+    }
+  },
+  "type": "object"
+}

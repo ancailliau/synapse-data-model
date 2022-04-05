@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.attendee.json",
+  "title": "attendee",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "person": {
+      "description": "The contact information for the person who attended the event.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "arrived": {
+      "description": "The time when the person arrived.",
+      "type": "string"
+    },
+    "departed": {
+      "description": "The time when the person departed.",
+      "type": "string"
+    },
+    "roles": {
+      "description": "List of the roles the person had at the event.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ou.role.json"
+      },
+      "uniqueItems": true
+    },
+    "meet": {
+      "description": "The meeting that the person attended.",
+      "$ref": "../forms/ou.meet.json"
+    },
+    "conference": {
+      "description": "The conference that the person attended.",
+      "$ref": "../forms/ou.conference.json"
+    },
+    "conference:event": {
+      "description": "The conference event that the person attended.",
+      "$ref": "../forms/ou.conference.event.json"
+    },
+    "contest": {
+      "description": "The contest that the person attended.",
+      "$ref": "../forms/ou.contest.json"
+    },
+    "preso": {
+      "description": "The presentation that the person attended.",
+      "$ref": "../forms/ou.preso.json"
+    }
+  },
+  "type": "object"
+}

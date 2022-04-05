@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.mac.json",
+  "title": "mac",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "vendor": {
+      "description": "The vendor associated with the 24-bit prefix of a MAC address.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

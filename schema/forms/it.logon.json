@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.logon.json",
+  "title": "logon",
+  "description": "A function from an imported library.",
+  "properties": {
+    "time": {
+      "description": "The time the logon occured.",
+      "type": "string"
+    },
+    "success": {
+      "description": "Set to false to indicate an unsuccessful logon attempt.",
+      "type": "boolean"
+    },
+    "logoff:time": {
+      "description": "The time the logon session ended.",
+      "type": "string"
+    },
+    "host": {
+      "description": "The host that the account logged in to.",
+      "$ref": "../forms/it.host.json"
+    },
+    "account": {
+      "description": "The account that logged in.",
+      "$ref": "../forms/it.account.json"
+    },
+    "creds": {
+      "description": "The credentials that were used for the logon.",
+      "$ref": "../forms/auth.creds.json"
+    },
+    "duration": {
+      "description": "The duration of the logon session.",
+      "type": "string"
+    },
+    "client:host": {
+      "description": "The host where the logon originated.",
+      "$ref": "../forms/it.host.json"
+    },
+    "client:ipv4": {
+      "description": "The IPv4 where the logon originated.",
+      "type": "string"
+    },
+    "client:ipv6": {
+      "description": "The IPv6 where the logon originated.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.urlredir.json",
+  "title": "urlredir",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "src": {
+      "description": "The original/source URL before redirect.",
+      "type": "string"
+    },
+    "src:fqdn": {
+      "description": "The FQDN within the src URL (if present).",
+      "type": "string"
+    },
+    "dst": {
+      "description": "The redirected/destination URL.",
+      "type": "string"
+    },
+    "dst:fqdn": {
+      "description": "The FQDN within the dst URL (if present).",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

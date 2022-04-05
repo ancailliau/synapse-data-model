@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.av.filehit.json",
+  "title": "filehit",
+  "description": "A function from an imported library.",
+  "properties": {
+    "file": {
+      "description": "The file that triggered the signature hit.",
+      "type": "string"
+    },
+    "sig": {
+      "description": "The signature that the file triggered on.",
+      "$ref": "../forms/it.av.sig.json"
+    },
+    "sig:name": {
+      "description": "The signature name.",
+      "type": "string"
+    },
+    "sig:soft": {
+      "description": "The anti-virus product which contains the signature.",
+      "$ref": "../forms/it.prod.soft.json"
+    }
+  },
+  "type": "object"
+}

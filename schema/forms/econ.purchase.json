@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/econ.purchase.json",
+  "title": "purchase",
+  "description": "A sample of the price of a security at a single moment in time",
+  "properties": {
+    "by:contact": {
+      "description": "The contact information used to make the purchase.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "from:contact": {
+      "description": "The contact information used to sell the item.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "time": {
+      "description": "The time of the purchase.",
+      "type": "string"
+    },
+    "place": {
+      "description": "The place where the purchase took place.",
+      "$ref": "../forms/geo.place.json"
+    },
+    "paid": {
+      "description": "Set to True if the purchase has been paid in full.",
+      "type": "boolean"
+    },
+    "paid:time": {
+      "description": "The point in time where the purchase was paid in full.",
+      "type": "string"
+    },
+    "settled": {
+      "description": "The point in time where the purchase was settled.",
+      "type": "string"
+    },
+    "campaign": {
+      "description": "The campaign that the purchase was in support of.",
+      "$ref": "../forms/ou.campaign.json"
+    },
+    "price": {
+      "description": "The econ:price of the purchase",
+      "$ref": "../forms/econ.price.json"
+    },
+    "currency": {
+      "description": "The econ:price of the purchase",
+      "$ref": "../forms/econ.currency.json"
+    }
+  },
+  "type": "object"
+}

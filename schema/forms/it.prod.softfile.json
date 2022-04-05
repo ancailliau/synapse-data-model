@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.prod.softfile.json",
+  "title": "softfile",
+  "description": "A function from an imported library.",
+  "properties": {
+    "soft": {
+      "description": "The software which distributes the file.",
+      "$ref": "../forms/it.prod.softver.json"
+    },
+    "file": {
+      "description": "The file distributed by the software.",
+      "type": "string"
+    },
+    "path": {
+      "description": "The default installation path of the file.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

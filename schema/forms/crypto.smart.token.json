@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/crypto.smart.token.json",
+  "title": "token",
+  "description": "A digital signature relationship between an X.509 certificate and a file.",
+  "properties": {
+    "contract": {
+      "description": "The smart contract which defines and manages the token.",
+      "$ref": "../forms/crypto.smart.contract.json"
+    },
+    "tokenid": {
+      "description": "The token ID.",
+      "type": "string"
+    },
+    "owner": {
+      "description": "The address which currently owns the token.",
+      "$ref": "../forms/crypto.currency.address.json"
+    },
+    "nft:url": {
+      "description": "The URL which hosts the NFT metadata.",
+      "type": "string"
+    },
+    "nft:meta": {
+      "description": "The raw NFT metadata.",
+      "type": "string"
+    },
+    "nft:meta:name": {
+      "description": "The name field from the NFT metadata.",
+      "type": "string"
+    },
+    "nft:meta:description": {
+      "description": "The description field from the NFT metadata.",
+      "type": "string"
+    },
+    "nft:meta:image": {
+      "description": "The image URL from the NFT metadata.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

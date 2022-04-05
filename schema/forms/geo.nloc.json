@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/geo.nloc.json",
+  "title": "nloc",
+  "description": "A negative or positive offset from Mean Sea Level (6,371.0088km from Earths core).",
+  "properties": {
+    "ndef": {
+      "description": "The node with location in geospace and time.",
+      "type": "string"
+    },
+    "ndef:form": {
+      "description": "The form of node referenced by the ndef.",
+      "type": "string"
+    },
+    "latlong": {
+      "description": "The latitude/longitude the node was observed.",
+      "type": "string"
+    },
+    "time": {
+      "description": "The time the node was observed at location.",
+      "type": "string"
+    },
+    "place": {
+      "description": "The place corresponding to the latlong property.",
+      "$ref": "../forms/geo.place.json"
+    },
+    "loc": {
+      "description": "The geo-political location string for the node.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

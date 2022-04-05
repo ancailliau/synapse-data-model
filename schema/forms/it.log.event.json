@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.log.event.json",
+  "title": "event",
+  "description": "A function from an imported library.",
+  "properties": {
+    "mesg": {
+      "description": "The log messsage text.",
+      "type": "string"
+    },
+    "severity": {
+      "description": "A log level integer that increases with severity.",
+      "type": "integer"
+    },
+    "data": {
+      "description": "A raw JSON record of the log event.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

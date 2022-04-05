@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/graph.event.json",
+  "title": "event",
+  "description": "A generic digraph time edge to show relationships outside the model.",
+  "properties": {
+    "time": {
+      "description": "The time of the event.",
+      "type": "string"
+    },
+    "type": {
+      "description": "A arbitrary type string for the event.",
+      "type": "string"
+    },
+    "name": {
+      "description": "A name for the event.",
+      "type": "string"
+    },
+    "data": {
+      "description": "Aribtrary non-indexed msgpack data attached to the event.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

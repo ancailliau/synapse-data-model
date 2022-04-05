@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/file.filepath.json",
+  "title": "filepath",
+  "description": "A section inside a Mach-O binary denoting a named region of bytes inside a segment.",
+  "properties": {
+    "file": {
+      "description": "The file seen at a path.",
+      "type": "string"
+    },
+    "path": {
+      "description": "The path a file was seen at.",
+      "type": "string"
+    },
+    "path:dir": {
+      "description": "The parent directory.",
+      "type": "string"
+    },
+    "path:base": {
+      "description": "The name of the file.",
+      "type": "string"
+    },
+    "path:base:ext": {
+      "description": "The extension of the file name.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

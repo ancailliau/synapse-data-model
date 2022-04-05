@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.domain.json",
+  "title": "domain",
+  "description": "A function from an imported library.",
+  "properties": {
+    "name": {
+      "description": "The name of the domain.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A brief description of the domain.",
+      "type": "string"
+    },
+    "org": {
+      "description": "The org that operates the given domain.",
+      "$ref": "../forms/ou.org.json"
+    }
+  },
+  "type": "object"
+}

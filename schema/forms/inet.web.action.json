@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.web.action.json",
+  "title": "action",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "act": {
+      "description": "The action performed by the account.",
+      "type": "string"
+    },
+    "acct": {
+      "description": "The web account associated with the action.",
+      "$ref": "../forms/inet.web.acct.json"
+    },
+    "acct:site": {
+      "description": "The site or service associated with the account.",
+      "type": "string"
+    },
+    "acct:user": {
+      "description": "The unique identifier for the account.",
+      "$ref": "../forms/inet.user.json"
+    },
+    "time": {
+      "description": "The date and time the account performed the action.",
+      "type": "string"
+    },
+    "client": {
+      "description": "The source client address of the action.",
+      "$ref": "../forms/inet.client.json"
+    },
+    "client:ipv4": {
+      "description": "The source IPv4 address of the action.",
+      "type": "string"
+    },
+    "client:ipv6": {
+      "description": "The source IPv6 address of the action.",
+      "type": "string"
+    },
+    "loc": {
+      "description": "The location of the user executing the web action.",
+      "type": "string"
+    },
+    "latlong": {
+      "description": "The latlong of the user when executing the web action.",
+      "type": "string"
+    },
+    "place": {
+      "description": "The geo:place of the user when executing the web action.",
+      "$ref": "../forms/geo.place.json"
+    }
+  },
+  "type": "object"
+}

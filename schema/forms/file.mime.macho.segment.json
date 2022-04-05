@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/file.mime.macho.segment.json",
+  "title": "segment",
+  "description": "A section inside a Mach-O binary denoting a named region of bytes inside a segment.",
+  "properties": {
+    "name": {
+      "description": "The name of the Mach-O segment.",
+      "type": "string"
+    },
+    "memsize": {
+      "description": "The size of the segment in bytes, when resident in memory, according to the load command structure.",
+      "type": "integer"
+    },
+    "disksize": {
+      "description": "The size of the segment in bytes, when on disk, according to the load command structure.",
+      "type": "integer"
+    },
+    "sha256": {
+      "description": "The sha256 hash of the bytes of the segment.",
+      "$ref": "../forms/hash.sha256.json"
+    },
+    "offset": {
+      "description": "The file offset to the begining of the segment.",
+      "type": "integer"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.mitre.attack.technique.json",
+  "title": "technique",
+  "description": "A function from an imported library.",
+  "properties": {
+    "name": {
+      "description": "The primary name for the ATT&CK technique.",
+      "type": "string"
+    },
+    "status": {
+      "description": "The status of this ATT&CK technique.",
+      "$ref": "../forms/it.mitre.attack.status.json"
+    },
+    "isnow": {
+      "description": "If deprecated, this field may contain the current value for the technique.",
+      "$ref": "../forms/it.mitre.attack.technique.json"
+    },
+    "desc": {
+      "description": "A description of the ATT&CK technique.",
+      "type": "string"
+    },
+    "url": {
+      "description": "The URL that documents the ATT&CK technique.",
+      "type": "string"
+    },
+    "tag": {
+      "description": "The synapse tag used to annotate nodes included in this ATT&CK technique.",
+      "type": "string"
+    },
+    "references": {
+      "description": "An array of URLs that document the ATT&CK technique.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "parent": {
+      "description": "The parent ATT&CK technique on this sub-technique.",
+      "$ref": "../forms/it.mitre.attack.technique.json"
+    },
+    "tactics": {
+      "description": "An array of ATT&CK tactics that include this technique.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.mitre.attack.tactic.json"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

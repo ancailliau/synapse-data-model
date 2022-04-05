@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.meet.json",
+  "title": "meet",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "name": {
+      "description": "A human friendly name for the meeting.",
+      "type": "string"
+    },
+    "start": {
+      "description": "The date / time the meet starts.",
+      "type": "string"
+    },
+    "end": {
+      "description": "The date / time the meet ends.",
+      "type": "string"
+    },
+    "place": {
+      "description": "The geo:place node where the meet was held.",
+      "$ref": "../forms/geo.place.json"
+    }
+  },
+  "type": "object"
+}

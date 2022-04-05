@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.ipv6.json",
+  "title": "ipv6",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "asn": {
+      "description": "The ASN to which the IPv6 address is currently assigned.",
+      "$ref": "../forms/inet.asn.json"
+    },
+    "ipv4": {
+      "description": "The mapped ipv4.",
+      "type": "string"
+    },
+    "latlong": {
+      "description": "The last known latitude/longitude for the node.",
+      "type": "string"
+    },
+    "place": {
+      "description": "The geo:place associated with the latlong property.",
+      "$ref": "../forms/geo.place.json"
+    },
+    "dns:rev": {
+      "description": "The most current DNS reverse lookup for the IPv6.",
+      "type": "string"
+    },
+    "loc": {
+      "description": "The geo-political location string for the IPv6.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

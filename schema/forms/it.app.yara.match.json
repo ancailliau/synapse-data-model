@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.app.yara.match.json",
+  "title": "match",
+  "description": "A function from an imported library.",
+  "properties": {
+    "rule": {
+      "description": "The YARA rule that matched the file.",
+      "$ref": "../forms/it.app.yara.rule.json"
+    },
+    "file": {
+      "description": "The file that matched the YARA rule.",
+      "type": "string"
+    },
+    "version": {
+      "description": "The most recent version of the rule evaluated as a match.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.sec.cve.json",
+  "title": "cve",
+  "description": "A function from an imported library.",
+  "properties": {
+    "desc": {
+      "description": "A free-form description of the CVE vulnerability.",
+      "type": "string"
+    },
+    "url": {
+      "description": "A URL linking this CVE to a full description.",
+      "type": "string"
+    },
+    "references": {
+      "description": "An array of URLs that document the CVE ID.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

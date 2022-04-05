@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ps.contactlist.json",
+  "title": "contactlist",
+  "description": "A GUID representing entry in a contact's work history.",
+  "properties": {
+    "contacts": {
+      "description": "The array of contacts contained in the list.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ps.contact.json"
+      },
+      "uniqueItems": true
+    },
+    "source:host": {
+      "description": "The host from which the contact list was extracted.",
+      "$ref": "../forms/it.host.json"
+    },
+    "source:file": {
+      "description": "The file from which the contact list was extracted.",
+      "type": "string"
+    },
+    "source:acct": {
+      "description": "The web account from which the contact list was extracted.",
+      "$ref": "../forms/inet.web.acct.json"
+    }
+  },
+  "type": "object"
+}

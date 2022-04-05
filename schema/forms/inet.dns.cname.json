@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.dns.cname.json",
+  "title": "cname",
+  "description": "A DNS AAAA wild card record and the IPv6 it resolves to.",
+  "properties": {
+    "fqdn": {
+      "description": "The domain queried for its CNAME record.",
+      "type": "string"
+    },
+    "cname": {
+      "description": "The domain returned in the CNAME record.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

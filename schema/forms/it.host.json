@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.host.json",
+  "title": "host",
+  "description": "A function from an imported library.",
+  "properties": {
+    "name": {
+      "description": "The name of the host or system.",
+      "$ref": "../forms/it.hostname.json"
+    },
+    "desc": {
+      "description": "A free-form description of the host.",
+      "type": "string"
+    },
+    "domain": {
+      "description": "The authentication domain that the host is a member of.",
+      "$ref": "../forms/it.domain.json"
+    },
+    "ipv4": {
+      "description": "The last known ipv4 address for the host.",
+      "type": "string"
+    },
+    "latlong": {
+      "description": "The last known location for the host.",
+      "type": "string"
+    },
+    "place": {
+      "description": "The place where the host resides.",
+      "$ref": "../forms/geo.place.json"
+    },
+    "loc": {
+      "description": "The geo-political location string for the node.",
+      "type": "string"
+    },
+    "os": {
+      "description": "The operating system of the host.",
+      "$ref": "../forms/it.prod.softver.json"
+    },
+    "hardware": {
+      "description": "The hardware specification for this host.",
+      "$ref": "../forms/it.prod.hardware.json"
+    },
+    "manu": {
+      "description": "Please use :hardware:make.",
+      "type": "string"
+    },
+    "model": {
+      "description": "Please use :hardware:model.",
+      "type": "string"
+    },
+    "serial": {
+      "description": "The serial number of the host.",
+      "type": "string"
+    },
+    "operator": {
+      "description": "The operator of the host.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "org": {
+      "description": "The org that operates the given host.",
+      "$ref": "../forms/ou.org.json"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/transport.air.flight.json",
+  "title": "flight",
+  "description": "A telemetry sample from a vessel in transit.",
+  "properties": {
+    "num": {
+      "description": "The flight number of this flight.",
+      "$ref": "../forms/transport.air.flightnum.json"
+    },
+    "scheduled:departure": {
+      "description": "The time this flight was originally scheduled to depart",
+      "type": "string"
+    },
+    "scheduled:arrival": {
+      "description": "The time this flight was originally scheduled to arrive",
+      "type": "string"
+    },
+    "departed": {
+      "description": "The time this flight departed",
+      "type": "string"
+    },
+    "arrived": {
+      "description": "The time this flight arrived",
+      "type": "string"
+    },
+    "carrier": {
+      "description": "The org which operates the given flight number.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "craft": {
+      "description": "The aircraft that flew this flight.",
+      "$ref": "../forms/transport.air.craft.json"
+    },
+    "tailnum": {
+      "description": "The tail/registration number at the time the aircraft flew this flight.",
+      "$ref": "../forms/transport.air.tailnum.json"
+    },
+    "to:port": {
+      "description": "The destination airport of this flight.",
+      "$ref": "../forms/transport.air.port.json"
+    },
+    "from:port": {
+      "description": "The origin airport of this flight.",
+      "$ref": "../forms/transport.air.port.json"
+    },
+    "stops": {
+      "description": "An ordered list of aiport codes for stops which occured during this flight.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/transport.air.port.json"
+      }
+    },
+    "cancelled": {
+      "description": "Set to true for cancelled flights.",
+      "type": "boolean"
+    }
+  },
+  "type": "object"
+}

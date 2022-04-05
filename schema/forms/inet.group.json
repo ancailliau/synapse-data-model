@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.group.json",
+  "title": "group",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {},
+  "type": "object"
+}

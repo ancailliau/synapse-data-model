@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/proj.comment.json",
+  "title": "comment",
+  "description": null,
+  "properties": {
+    "creator": {
+      "description": null,
+      "$ref": "../forms/syn.user.json"
+    },
+    "created": {
+      "description": null,
+      "type": "string"
+    },
+    "updated": {
+      "description": null,
+      "type": "string"
+    },
+    "ticket": {
+      "description": null,
+      "$ref": "../forms/proj.ticket.json"
+    },
+    "text": {
+      "description": null,
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

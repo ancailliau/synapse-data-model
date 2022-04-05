@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.web.post.json",
+  "title": "post",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "acct": {
+      "description": "The web account that made the post.",
+      "$ref": "../forms/inet.web.acct.json"
+    },
+    "acct:site": {
+      "description": "The site or service associated with the account.",
+      "type": "string"
+    },
+    "client": {
+      "description": "The source address of the post.",
+      "$ref": "../forms/inet.client.json"
+    },
+    "client:ipv4": {
+      "description": "The source IPv4 address of the post.",
+      "type": "string"
+    },
+    "client:ipv6": {
+      "description": "The source IPv6 address of the post.",
+      "type": "string"
+    },
+    "acct:user": {
+      "description": "The unique identifier for the account.",
+      "$ref": "../forms/inet.user.json"
+    },
+    "text": {
+      "description": "The text of the post.",
+      "type": "string"
+    },
+    "time": {
+      "description": "The date and time that the post was made.",
+      "type": "string"
+    },
+    "deleted": {
+      "description": "The message was deleted by the poster.",
+      "type": "boolean"
+    },
+    "url": {
+      "description": "The URL where the post is published / visible.",
+      "type": "string"
+    },
+    "file": {
+      "description": "The file that was attached to the post.",
+      "type": "string"
+    },
+    "replyto": {
+      "description": "The post that this post is in reply to.",
+      "$ref": "../forms/inet.web.post.json"
+    },
+    "repost": {
+      "description": "The original post that this is a repost of.",
+      "$ref": "../forms/inet.web.post.json"
+    },
+    "hashtags": {
+      "description": "Hashtags mentioned within the post.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/inet.web.hashtag.json"
+      },
+      "uniqueItems": true
+    },
+    "mentions:users": {
+      "description": "Accounts mentioned within the post.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/inet.web.acct.json"
+      },
+      "uniqueItems": true
+    },
+    "mentions:groups": {
+      "description": "Groups mentioned within the post.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/inet.web.group.json"
+      },
+      "uniqueItems": true
+    },
+    "loc": {
+      "description": "The location that the post was reportedly sent from.",
+      "type": "string"
+    },
+    "place": {
+      "description": "The place that the post was reportedly sent from.",
+      "$ref": "../forms/geo.place.json"
+    },
+    "place:name": {
+      "description": "The name of the place that the post was reportedly sent from. Used for entity resolution.",
+      "$ref": "../forms/geo.name.json"
+    },
+    "latlong": {
+      "description": "The place that the post was reportedly sent from.",
+      "type": "string"
+    },
+    "channel": {
+      "description": "The channel where the post was made.",
+      "$ref": "../forms/inet.web.channel.json"
+    }
+  },
+  "type": "object"
+}

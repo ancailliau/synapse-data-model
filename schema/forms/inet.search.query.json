@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.search.query.json",
+  "title": "query",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "text": {
+      "description": "The search query text.",
+      "type": "string"
+    },
+    "time": {
+      "description": "The time the web search was issued.",
+      "type": "string"
+    },
+    "acct": {
+      "description": "The account that the query was issued as.",
+      "$ref": "../forms/inet.web.acct.json"
+    },
+    "host": {
+      "description": "The host that issued the query.",
+      "$ref": "../forms/it.host.json"
+    },
+    "engine": {
+      "description": "A simple name for the search engine used.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

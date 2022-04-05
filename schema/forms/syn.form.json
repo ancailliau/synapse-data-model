@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/syn.form.json",
+  "title": "form",
+  "description": "A Synapse role GUID.",
+  "properties": {
+    "doc": {
+      "description": "The docstring for the form.",
+      "type": "string"
+    },
+    "type": {
+      "description": "Synapse type for this form.",
+      "$ref": "../forms/syn.type.json"
+    },
+    "runt": {
+      "description": "Whether or not the form is runtime only.",
+      "type": "boolean"
+    }
+  },
+  "type": "object"
+}

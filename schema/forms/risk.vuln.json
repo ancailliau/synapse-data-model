@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/risk.vuln.json",
+  "title": "vuln",
+  "description": "A compromise type taxonomy.",
+  "properties": {
+    "name": {
+      "description": "A user specified name for the vulnerability.",
+      "type": "string"
+    },
+    "type": {
+      "description": "A user specified type for the vulnerability.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A description of the vulnerability.",
+      "type": "string"
+    },
+    "cve": {
+      "description": "The CVE ID of the vulnerability.",
+      "$ref": "../forms/it.sec.cve.json"
+    },
+    "cvss:av": {
+      "description": "The CVSS Attack Vector (AV) value.",
+      "type": "string"
+    },
+    "cvss:ac": {
+      "description": "The CVSS Attack Complexity (AC) value.",
+      "type": "string"
+    },
+    "cvss:pr": {
+      "description": "The CVSS Privileges Required (PR) value.",
+      "type": "string"
+    },
+    "cvss:ui": {
+      "description": "The CVSS User Interaction (UI) value.",
+      "type": "string"
+    },
+    "cvss:s": {
+      "description": "The CVSS Scope (S) value.",
+      "type": "string"
+    },
+    "cvss:c": {
+      "description": "The CVSS Confidentiality Impact (C) value.",
+      "type": "string"
+    },
+    "cvss:i": {
+      "description": "The CVSS Integrity Impact (I) value.",
+      "type": "string"
+    },
+    "cvss:a": {
+      "description": "The CVSS Availability Impact (A) value.",
+      "type": "string"
+    },
+    "cvss:e": {
+      "description": "The CVSS Exploit Code Maturity (E) value.",
+      "type": "string"
+    },
+    "cvss:rl": {
+      "description": "The CVSS Remediation Level (RL) value.",
+      "type": "string"
+    },
+    "cvss:rc": {
+      "description": "The CVSS Report Confidence (AV) value.",
+      "type": "string"
+    },
+    "cvss:mav": {
+      "description": "The CVSS Environmental Attack Vector (MAV) value.",
+      "type": "string"
+    },
+    "cvss:mac": {
+      "description": "The CVSS Environmental Attack Complexity (MAC) value.",
+      "type": "string"
+    },
+    "cvss:mpr": {
+      "description": "The CVSS Environmental Privileges Required (MPR) value.",
+      "type": "string"
+    },
+    "cvss:mui": {
+      "description": "The CVSS Environmental User Interaction (MUI) value.",
+      "type": "string"
+    },
+    "cvss:ms": {
+      "description": "The CVSS Environmental Scope (MS) value.",
+      "type": "string"
+    },
+    "cvss:mc": {
+      "description": "The CVSS Environmental Confidentiality Impact (MC) value.",
+      "type": "string"
+    },
+    "cvss:mi": {
+      "description": "The CVSS Environmental Integrity Impact (MI) value.",
+      "type": "string"
+    },
+    "cvss:ma": {
+      "description": "The CVSS Environmental Accessibility Impact (MA) value.",
+      "type": "string"
+    },
+    "cvss:cr": {
+      "description": "The CVSS Environmental Confidentiality Requirement (CR) value.",
+      "type": "string"
+    },
+    "cvss:ir": {
+      "description": "The CVSS Environmental Integrity Requirement (IR) value.",
+      "type": "string"
+    },
+    "cvss:ar": {
+      "description": "The CVSS Environmental Availability Requirement (AR) value.",
+      "type": "string"
+    },
+    "cvss:score": {
+      "description": "The Overall CVSS Score value.",
+      "type": "number"
+    },
+    "cvss:score:base": {
+      "description": "The CVSS Base Score value.",
+      "type": "number"
+    },
+    "cvss:score:temporal": {
+      "description": "The CVSS Temporal Score value.",
+      "type": "number"
+    },
+    "cvss:score:environmental": {
+      "description": "The CVSS Environmental Score value.",
+      "type": "number"
+    },
+    "cwes": {
+      "description": "An array of MITRE CWE values that apply to the vulnerability.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.sec.cwe.json"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

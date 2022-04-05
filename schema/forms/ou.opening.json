@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.opening.json",
+  "title": "opening",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "org": {
+      "description": "The org which has the opening.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "orgname": {
+      "description": "The name of the organization as listed in the opening.",
+      "$ref": "../forms/ou.name.json"
+    },
+    "orgfqdn": {
+      "description": "The FQDN of the organization as listed in the opening.",
+      "type": "string"
+    },
+    "posted": {
+      "description": "The date/time that the job opening was posted.",
+      "type": "string"
+    },
+    "removed": {
+      "description": "The date/time that the job opening was removed.",
+      "type": "string"
+    },
+    "postings": {
+      "description": "URLs where the opening is listed.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "contact": {
+      "description": "The contact details to inquire about the opening.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "loc": {
+      "description": "The geopolitical boundary of the opening.",
+      "type": "string"
+    },
+    "jobtype": {
+      "description": "The job type taxonomy.",
+      "$ref": "../forms/ou.jobtype.json"
+    },
+    "employment": {
+      "description": "The type of employment.",
+      "$ref": "../forms/ou.employment.json"
+    },
+    "jobtitle": {
+      "description": "The title of the opening.",
+      "$ref": "../forms/ou.jobtitle.json"
+    },
+    "remote": {
+      "description": "Set to true if the opening will allow a fully remote worker.",
+      "type": "boolean"
+    },
+    "yearlypay": {
+      "description": "The yearly income associated with the opening.",
+      "$ref": "../forms/econ.price.json"
+    },
+    "paycurrency": {
+      "description": "The currency that the yearly pay was delivered in.",
+      "$ref": "../forms/econ.currency.json"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/auth.access.json",
+  "title": "access",
+  "description": "An instance of using creds to access a resource.",
+  "properties": {
+    "creds": {
+      "description": "The credentials used to attempt access.",
+      "$ref": "../forms/auth.creds.json"
+    },
+    "time": {
+      "description": "The time of the access attempt.",
+      "type": "string"
+    },
+    "success": {
+      "description": "Set to true if the access was successful.",
+      "type": "boolean"
+    },
+    "person": {
+      "description": "The person who attempted access.",
+      "$ref": "../forms/ps.person.json"
+    }
+  },
+  "type": "object"
+}

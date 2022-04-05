@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/risk.compromise.json",
+  "title": "compromise",
+  "description": "A compromise type taxonomy.",
+  "properties": {
+    "name": {
+      "description": "A brief name for the compromise event.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A prose description of the compromise event.",
+      "type": "string"
+    },
+    "type": {
+      "description": "The compromise type.",
+      "$ref": "../forms/risk.compromisetype.json"
+    },
+    "target": {
+      "description": "Contact information of the target.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "attacker": {
+      "description": "Contact information of the attacker.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "campaign": {
+      "description": "The campaign that this compromise is part of.",
+      "$ref": "../forms/ou.campaign.json"
+    },
+    "time": {
+      "description": "Earliest known evidence of compromise.",
+      "type": "string"
+    },
+    "lasttime": {
+      "description": "Last known evidence of compromise.",
+      "type": "string"
+    },
+    "duration": {
+      "description": "The duration of the compromise.",
+      "type": "string"
+    },
+    "loss:pii": {
+      "description": "The number of records compromised which contain PII.",
+      "type": "integer"
+    },
+    "loss:econ": {
+      "description": "The total economic cost of the compromise.",
+      "$ref": "../forms/econ.price.json"
+    },
+    "loss:life": {
+      "description": "The total loss of life due to the compromise.",
+      "type": "integer"
+    },
+    "loss:bytes": {
+      "description": "An estimate of the volume of data compromised.",
+      "type": "integer"
+    },
+    "ransom:paid": {
+      "description": "The value of the ransom paid by the target.",
+      "$ref": "../forms/econ.price.json"
+    },
+    "ransom:price": {
+      "description": "The value of the ransom demanded by the attacker.",
+      "$ref": "../forms/econ.price.json"
+    },
+    "response:cost": {
+      "description": "The economic cost of the response and mitigation efforts.",
+      "$ref": "../forms/econ.price.json"
+    },
+    "theft:price": {
+      "description": "The total value of the theft of assets.",
+      "$ref": "../forms/econ.price.json"
+    },
+    "econ:currency": {
+      "description": "The currency type for the econ:price fields.",
+      "$ref": "../forms/econ.currency.json"
+    }
+  },
+  "type": "object"
+}

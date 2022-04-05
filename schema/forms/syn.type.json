@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/syn.type.json",
+  "title": "type",
+  "description": "A Synapse role GUID.",
+  "properties": {
+    "doc": {
+      "description": "The docstring for the type.",
+      "type": "string"
+    },
+    "ctor": {
+      "description": "The python ctor path for the type object.",
+      "type": "string"
+    },
+    "subof": {
+      "description": "Type which this inherits from.",
+      "$ref": "../forms/syn.type.json"
+    },
+    "opts": {
+      "description": "Arbitrary type options.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

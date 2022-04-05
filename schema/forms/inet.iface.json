@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.iface.json",
+  "title": "iface",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "host": {
+      "description": "The guid of the host the interface is associated with.",
+      "$ref": "../forms/it.host.json"
+    },
+    "network": {
+      "description": "The guid of the it:network the interface connected to.",
+      "$ref": "../forms/it.network.json"
+    },
+    "type": {
+      "description": "The free-form interface type.",
+      "type": "string"
+    },
+    "mac": {
+      "description": "The ethernet (MAC) address of the interface.",
+      "$ref": "../forms/inet.mac.json"
+    },
+    "ipv4": {
+      "description": "The IPv4 address of the interface.",
+      "type": "string"
+    },
+    "ipv6": {
+      "description": "The IPv6 address of the interface.",
+      "type": "string"
+    },
+    "phone": {
+      "description": "The telephone number of the interface.",
+      "type": "string"
+    },
+    "wifi:ssid": {
+      "description": "The wifi SSID of the interface.",
+      "$ref": "../forms/inet.wifi.ssid.json"
+    },
+    "wifi:bssid": {
+      "description": "The wifi BSSID of the interface.",
+      "$ref": "../forms/inet.mac.json"
+    },
+    "adid": {
+      "description": "An advertising ID associated with the interface.",
+      "$ref": "../forms/it.adid.json"
+    },
+    "mob:imei": {
+      "description": "The IMEI of the interface.",
+      "type": "string"
+    },
+    "mob:imsi": {
+      "description": "The IMSI of the interface.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/tel.call.json",
+  "title": "call",
+  "description": "A mobile cell site which a phone may connect to.",
+  "properties": {
+    "src": {
+      "description": "The source phone number for a call.",
+      "type": "string"
+    },
+    "dst": {
+      "description": "The destination phone number for a call.",
+      "type": "string"
+    },
+    "time": {
+      "description": "The time the call was initiated.",
+      "type": "string"
+    },
+    "duration": {
+      "description": "The duration of the call in seconds.",
+      "type": "integer"
+    },
+    "connected": {
+      "description": "Indicator of whether the call was connected.",
+      "type": "boolean"
+    },
+    "text": {
+      "description": "The text transcription of the call.",
+      "type": "string"
+    },
+    "file": {
+      "description": "A file containing related media.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

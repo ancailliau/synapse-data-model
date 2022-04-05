@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.url.json",
+  "title": "url",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "fqdn": {
+      "description": "The fqdn used in the URL (e.g., http://www.woot.com/page.html).",
+      "type": "string"
+    },
+    "ipv4": {
+      "description": "The IPv4 address used in the URL (e.g., http://1.2.3.4/page.html).",
+      "type": "string"
+    },
+    "ipv6": {
+      "description": "The IPv6 address used in the URL.",
+      "type": "string"
+    },
+    "passwd": {
+      "description": "The optional password used to access the URL.",
+      "$ref": "../forms/inet.passwd.json"
+    },
+    "base": {
+      "description": "The base scheme, user/pass, fqdn, port and path w/o parameters.",
+      "type": "string"
+    },
+    "path": {
+      "description": "The path in the URL w/o parameters.",
+      "type": "string"
+    },
+    "params": {
+      "description": "The URL parameter string.",
+      "type": "string"
+    },
+    "port": {
+      "description": "The port of the URL. URLs prefixed with http will be set to port 80 and URLs prefixed with https will be set to port 443 unless otherwise specified.",
+      "$ref": "../forms/inet.port.json"
+    },
+    "proto": {
+      "description": "The protocol in the URL.",
+      "type": "string"
+    },
+    "user": {
+      "description": "The optional username used to access the URL.",
+      "$ref": "../forms/inet.user.json"
+    }
+  },
+  "type": "object"
+}

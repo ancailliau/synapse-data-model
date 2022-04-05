@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/meta.source.json",
+  "title": "source",
+  "description": "A generic digraph time edge to show relationships outside the model.",
+  "properties": {
+    "name": {
+      "description": "A human friendly name for the source.",
+      "type": "string"
+    },
+    "type": {
+      "description": "An optional type field used to group sources.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

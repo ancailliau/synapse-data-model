@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.contract.json",
+  "title": "contract",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "title": {
+      "description": "A terse title for the contract.",
+      "type": "string"
+    },
+    "type": {
+      "description": "The type of contract.",
+      "$ref": "../forms/ou.conttype.json"
+    },
+    "sponsor": {
+      "description": "The contract sponsor.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "parties": {
+      "description": "The non-sponsor entities bound by the contract.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ps.contact.json"
+      },
+      "uniqueItems": true
+    },
+    "document": {
+      "description": "The best/current contract document.",
+      "type": "string"
+    },
+    "signed": {
+      "description": "The date that the contract signing was complete.",
+      "type": "string"
+    },
+    "begins": {
+      "description": "The date that the contract goes into effect.",
+      "type": "string"
+    },
+    "expires": {
+      "description": "The date that the contract expires.",
+      "type": "string"
+    },
+    "completed": {
+      "description": "The date that the contract was completed.",
+      "type": "string"
+    },
+    "terminated": {
+      "description": "The date that the contract was terminated.",
+      "type": "string"
+    },
+    "award:price": {
+      "description": "The value of the contract at time of award.",
+      "$ref": "../forms/econ.currency.json"
+    },
+    "budget:price": {
+      "description": "The amount of money budgeted for the contract.",
+      "$ref": "../forms/econ.currency.json"
+    },
+    "purchase": {
+      "description": "Purchase details of the contract.",
+      "$ref": "../forms/econ.purchase.json"
+    },
+    "requirements": {
+      "description": "The requirements levied upon the parties.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ou.goal.json"
+      },
+      "uniqueItems": true
+    },
+    "types": {
+      "description": "A list of types that apply to the contract.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ou.contract.type.json"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

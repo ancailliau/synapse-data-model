@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.sec.cwe.json",
+  "title": "cwe",
+  "description": "A function from an imported library.",
+  "properties": {
+    "name": {
+      "description": "The CWE description field.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "The CWE description field.",
+      "type": "string"
+    },
+    "url": {
+      "description": "A URL linking this CWE to a full description.",
+      "type": "string"
+    },
+    "parents": {
+      "description": "An array of ChildOf CWE Relationships.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.sec.cwe.json"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

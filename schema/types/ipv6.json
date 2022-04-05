@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ipv6.json",
+  "title": "IPv6",
+  "description": "",
+  "$ref": "ipv6.json"
+}

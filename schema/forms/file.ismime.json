@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/file.ismime.json",
+  "title": "ismime",
+  "description": "A section inside a Mach-O binary denoting a named region of bytes inside a segment.",
+  "properties": {
+    "file": {
+      "description": "The file node that is an instance of the named mime type.",
+      "type": "string"
+    },
+    "mime": {
+      "description": "The mime type of the file.",
+      "$ref": "../forms/file.mime.json"
+    }
+  },
+  "type": "object"
+}

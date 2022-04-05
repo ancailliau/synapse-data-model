@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/crypto.smart.contract.json",
+  "title": "contract",
+  "description": "A digital signature relationship between an X.509 certificate and a file.",
+  "properties": {
+    "transaction": {
+      "description": "The transaction which created the contract.",
+      "$ref": "../forms/crypto.currency.transaction.json"
+    },
+    "address": {
+      "description": "The address of the contract.",
+      "$ref": "../forms/crypto.currency.address.json"
+    },
+    "bytecode": {
+      "description": "The bytecode which implements the contract.",
+      "type": "string"
+    },
+    "token:name": {
+      "description": "The ERC-20 token name.",
+      "type": "string"
+    },
+    "token:symbol": {
+      "description": "The ERC-20 token symbol.",
+      "type": "string"
+    },
+    "token:totalsupply": {
+      "description": "The ERC-20 totalSupply value.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

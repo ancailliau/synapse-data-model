@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/auth.creds.json",
+  "title": "creds",
+  "description": "An instance of using creds to access a resource.",
+  "properties": {
+    "email": {
+      "description": "The email address used to identify the user.",
+      "type": "string"
+    },
+    "user": {
+      "description": "The user name used to identify the user.",
+      "$ref": "../forms/inet.user.json"
+    },
+    "phone": {
+      "description": "The phone number used to identify the user.",
+      "type": "string"
+    },
+    "passwd": {
+      "description": "The password used to authenticate.",
+      "$ref": "../forms/inet.passwd.json"
+    },
+    "passwdhash": {
+      "description": "The password hash used to authenticate.",
+      "$ref": "../forms/it.auth.passwdhash.json"
+    },
+    "account": {
+      "description": "The account that the creds allow access to.",
+      "$ref": "../forms/it.account.json"
+    },
+    "website": {
+      "description": "The base URL of the website that the credentials allow access to.",
+      "type": "string"
+    },
+    "host": {
+      "description": "The host that the credentials allow access to.",
+      "$ref": "../forms/it.host.json"
+    },
+    "wifi:ssid": {
+      "description": "The WiFi SSID that the credentials allow access to.",
+      "$ref": "../forms/inet.wifi.ssid.json"
+    },
+    "web:acct": {
+      "description": "The web account that the credentials allow access to.",
+      "$ref": "../forms/inet.web.acct.json"
+    }
+  },
+  "type": "object"
+}

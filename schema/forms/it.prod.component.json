@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.prod.component.json",
+  "title": "component",
+  "description": "A function from an imported library.",
+  "properties": {
+    "hardware": {
+      "description": "The hardware specification of this component.",
+      "$ref": "../forms/it.prod.hardware.json"
+    },
+    "serial": {
+      "description": "The serial number of this componenent.",
+      "type": "string"
+    },
+    "host": {
+      "description": "The it:host which has this component installed.",
+      "$ref": "../forms/it.host.json"
+    }
+  },
+  "type": "object"
+}

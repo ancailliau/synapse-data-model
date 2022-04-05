@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.mitre.attack.software.json",
+  "title": "software",
+  "description": "A function from an imported library.",
+  "properties": {
+    "software": {
+      "description": "Used to map an ATT&CK software to a synapse it:prod:soft.",
+      "$ref": "../forms/it.prod.soft.json"
+    },
+    "name": {
+      "description": "The primary name for the ATT&CK software.",
+      "type": "string"
+    },
+    "names": {
+      "description": "Associated names for the ATT&CK software.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "desc": {
+      "description": "A description of the ATT&CK software.",
+      "type": "string"
+    },
+    "url": {
+      "description": "The URL that documents the ATT&CK software.",
+      "type": "string"
+    },
+    "tag": {
+      "description": "The synapse tag used to annotate nodes included in this ATT&CK software.",
+      "type": "string"
+    },
+    "references": {
+      "description": "An array of URLs that document the ATT&CK software.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "techniques": {
+      "description": "An array of techniques used by the software.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.mitre.attack.technique.json"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

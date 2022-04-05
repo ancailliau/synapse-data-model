@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/file.mime.macho.uuid.json",
+  "title": "uuid",
+  "description": "A section inside a Mach-O binary denoting a named region of bytes inside a segment.",
+  "properties": {
+    "uuid": {
+      "description": "The UUID of the Mach-O application (as defined in an LC_UUID load command).",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/econ.acquired.json",
+  "title": "acquired",
+  "description": "A sample of the price of a security at a single moment in time",
+  "properties": {
+    "purchase": {
+      "description": "The purchase event which acquired an item.",
+      "$ref": "../forms/econ.purchase.json"
+    },
+    "item": {
+      "description": "A reference to the item that was acquired.",
+      "type": "string"
+    },
+    "item:form": {
+      "description": "The form of item purchased.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

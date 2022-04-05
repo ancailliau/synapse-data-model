@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.auth.passwdhash.json",
+  "title": "passwdhash",
+  "description": "A function from an imported library.",
+  "properties": {
+    "salt": {
+      "description": "The (optional) hex encoded salt value used to calculate the password hash.",
+      "type": "string"
+    },
+    "hash:md5": {
+      "description": "The MD5 password hash value.",
+      "$ref": "../forms/hash.md5.json"
+    },
+    "hash:sha1": {
+      "description": "The SHA1 password hash value.",
+      "$ref": "../forms/hash.sha1.json"
+    },
+    "hash:sha256": {
+      "description": "The SHA256 password hash value.",
+      "$ref": "../forms/hash.sha256.json"
+    },
+    "hash:sha512": {
+      "description": "The SHA512 password hash value.",
+      "$ref": "../forms/hash.sha512.json"
+    },
+    "hash:lm": {
+      "description": "The LM password hash value.",
+      "$ref": "../forms/hash.lm.json"
+    },
+    "hash:ntlm": {
+      "description": "The NTLM password hash value.",
+      "$ref": "../forms/hash.ntlm.json"
+    },
+    "passwd": {
+      "description": "The (optional) clear text password for this password hash.",
+      "$ref": "../forms/inet.passwd.json"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.asn.json",
+  "title": "asn",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "name": {
+      "description": "The name of the organization currently responsible for the ASN.",
+      "type": "string"
+    },
+    "owner": {
+      "description": "The guid of the organization currently responsible for the ASN.",
+      "$ref": "../forms/ou.org.json"
+    }
+  },
+  "type": "object"
+}

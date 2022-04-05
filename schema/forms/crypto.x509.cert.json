@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/crypto.x509.cert.json",
+  "title": "cert",
+  "description": "A digital signature relationship between an X.509 certificate and a file.",
+  "properties": {
+    "file": {
+      "description": "The file that the certificate metadata was parsed from.",
+      "type": "string"
+    },
+    "subject": {
+      "description": "The subject identifier, commonly in X.500/LDAP format, to which the certificate was issued.",
+      "type": "string"
+    },
+    "issuer": {
+      "description": "The Distinguished Name (DN) of the Certificate Authority (CA) which issued the certificate.",
+      "type": "string"
+    },
+    "issuer:cert": {
+      "description": "The certificate used by the issuer to sign this certificate.",
+      "$ref": "../forms/crypto.x509.cert.json"
+    },
+    "serial": {
+      "description": "The serial number string in the certificate.",
+      "type": "string"
+    },
+    "version": {
+      "description": "The version integer in the certificate. (ex. 2 == v3 ).",
+      "type": "integer"
+    },
+    "validity:notbefore": {
+      "description": "The timestamp for the beginning of the certificate validity period.",
+      "type": "string"
+    },
+    "validity:notafter": {
+      "description": "The timestamp for the end of the certificate validity period.",
+      "type": "string"
+    },
+    "md5": {
+      "description": "The MD5 fingerprint for the certificate.",
+      "$ref": "../forms/hash.md5.json"
+    },
+    "sha1": {
+      "description": "The SHA1 fingerprint for the certificate.",
+      "$ref": "../forms/hash.sha1.json"
+    },
+    "sha256": {
+      "description": "The SHA256 fingerprint for the certificate.",
+      "$ref": "../forms/hash.sha256.json"
+    },
+    "rsa:key": {
+      "description": "The optional RSA public key associated with the certificate.",
+      "$ref": "../forms/rsa.key.json"
+    },
+    "algo": {
+      "description": "The X.509 signature algorithm OID.",
+      "$ref": "../forms/iso.oid.json"
+    },
+    "signature": {
+      "description": "The hexadecimal representation of the digital signature.",
+      "type": "string"
+    },
+    "ext:sans": {
+      "description": "The Subject Alternate Names (SANs) listed in the certficate.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/crypto.x509.san.json"
+      },
+      "uniqueItems": true
+    },
+    "ext:crls": {
+      "description": "A list of Subject Alternate Names (SANs) for Distribution Points.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/crypto.x509.san.json"
+      },
+      "uniqueItems": true
+    },
+    "identities:fqdns": {
+      "description": "The fused list of FQDNs identified by the cert CN and SANs.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "identities:emails": {
+      "description": "The fused list of e-mail addresses identified by the cert CN and SANs.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "identities:ipv4s": {
+      "description": "The fused list of IPv4 addresses identified by the cert CN and SANs.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "identities:ipv6s": {
+      "description": "The fused list of IPv6 addresses identified by the cert CN and SANs.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "identities:urls": {
+      "description": "The fused list of URLs identified by the cert CN and SANs.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "crl:urls": {
+      "description": "The extracted URL values from the CRLs extension.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "selfsigned": {
+      "description": "Whether this is a self-signed certificate.",
+      "type": "boolean"
+    }
+  },
+  "type": "object"
+}

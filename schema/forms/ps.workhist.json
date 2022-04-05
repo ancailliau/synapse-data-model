@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ps.workhist.json",
+  "title": "workhist",
+  "description": "A GUID representing entry in a contact's work history.",
+  "properties": {
+    "contact": {
+      "description": "The contact which has the work history.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "org": {
+      "description": "The org that this work history orgname refers to.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "orgname": {
+      "description": "The reported name of the org the contact worked for.",
+      "$ref": "../forms/ou.name.json"
+    },
+    "orgfqdn": {
+      "description": "The reported fqdn of the org the contact worked for.",
+      "type": "string"
+    },
+    "jobtype": {
+      "description": "The type of job.",
+      "$ref": "../forms/ou.jobtype.json"
+    },
+    "employment": {
+      "description": "The type of employment.",
+      "$ref": "../forms/ou.employment.json"
+    },
+    "jobtitle": {
+      "description": "The job title.",
+      "$ref": "../forms/ou.jobtitle.json"
+    },
+    "started": {
+      "description": "The date that the contact began working.",
+      "type": "string"
+    },
+    "ended": {
+      "description": "The date that the contact stopped working.",
+      "type": "string"
+    },
+    "duration": {
+      "description": "The duration of the period of work.",
+      "type": "string"
+    },
+    "pay": {
+      "description": "The estimated/average yearly pay for the work.",
+      "$ref": "../forms/econ.price.json"
+    },
+    "currency": {
+      "description": "The currency that the yearly pay was delivered in.",
+      "$ref": "../forms/econ.currency.json"
+    }
+  },
+  "type": "object"
+}

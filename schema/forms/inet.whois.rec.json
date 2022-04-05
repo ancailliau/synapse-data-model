@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.whois.rec.json",
+  "title": "rec",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "fqdn": {
+      "description": "The domain associated with the whois record.",
+      "type": "string"
+    },
+    "asof": {
+      "description": "The date of the whois record.",
+      "type": "string"
+    },
+    "text": {
+      "description": "The full text of the whois record.",
+      "type": "string"
+    },
+    "created": {
+      "description": "The \"created\" time from the whois record.",
+      "type": "string"
+    },
+    "updated": {
+      "description": "The \"last updated\" time from the whois record.",
+      "type": "string"
+    },
+    "expires": {
+      "description": "The \"expires\" time from the whois record.",
+      "type": "string"
+    },
+    "registrar": {
+      "description": "The registrar name from the whois record.",
+      "$ref": "../forms/inet.whois.rar.json"
+    },
+    "registrant": {
+      "description": "The registrant name from the whois record.",
+      "$ref": "../forms/inet.whois.reg.json"
+    }
+  },
+  "type": "object"
+}

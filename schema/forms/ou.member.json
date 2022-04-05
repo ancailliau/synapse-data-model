@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.member.json",
+  "title": "member",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "org": {
+      "description": "The GUID of the org the person is a member of.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "person": {
+      "description": "The GUID of the person that is a member of an org.",
+      "$ref": "../forms/ps.person.json"
+    },
+    "title": {
+      "description": "The persons normalized title.",
+      "type": "string"
+    },
+    "start": {
+      "description": "Earliest known association of the person with the org.",
+      "type": "string"
+    },
+    "end": {
+      "description": "Most recent known association of the person with the org.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

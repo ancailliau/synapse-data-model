@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.user.json",
+  "title": "user",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "org": {
+      "description": "The org guid which owns the netblock.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "user": {
+      "description": "The username associated with the organization.",
+      "$ref": "../forms/inet.user.json"
+    }
+  },
+  "type": "object"
+}

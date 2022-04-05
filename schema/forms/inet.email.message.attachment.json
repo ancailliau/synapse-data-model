@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.email.message.attachment.json",
+  "title": "attachment",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "message": {
+      "description": "The message containing the attached file.",
+      "$ref": "../forms/inet.email.message.json"
+    },
+    "file": {
+      "description": "The attached file.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the attached file.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

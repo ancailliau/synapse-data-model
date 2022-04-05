@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/tel.txtmesg.json",
+  "title": "txtmesg",
+  "description": "A mobile cell site which a phone may connect to.",
+  "properties": {
+    "from": {
+      "description": "The phone number assigned to the sender.",
+      "type": "string"
+    },
+    "to": {
+      "description": "The phone number assigned to the primary recipient.",
+      "type": "string"
+    },
+    "recipients": {
+      "description": "An array of phone numbers for additional recipients of the message.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "svctype": {
+      "description": "The message service type (sms, mms, rcs).",
+      "type": "string"
+    },
+    "time": {
+      "description": "The time the message was sent.",
+      "type": "string"
+    },
+    "text": {
+      "description": "The text of the message.",
+      "type": "string"
+    },
+    "file": {
+      "description": "A file containing related media.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

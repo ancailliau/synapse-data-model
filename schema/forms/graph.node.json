@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/graph.node.json",
+  "title": "node",
+  "description": "A generic digraph time edge to show relationships outside the model.",
+  "properties": {
+    "type": {
+      "description": "The type name for the non-model node.",
+      "type": "string"
+    },
+    "name": {
+      "description": "A human readable name for this record.",
+      "type": "string"
+    },
+    "data": {
+      "description": "Aribtrary non-indexed msgpack data attached to the node.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.dev.str.json",
+  "title": "str",
+  "description": "A function from an imported library.",
+  "properties": {
+    "norm": {
+      "description": "Lower case normalized version of the it:dev:str.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

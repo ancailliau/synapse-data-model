@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.os.ios.idfa.json",
+  "title": "idfa",
+  "description": "A function from an imported library.",
+  "properties": {},
+  "type": "object"
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.app.snort.hit.json",
+  "title": "hit",
+  "description": "A function from an imported library.",
+  "properties": {
+    "rule": {
+      "description": "The snort rule that matched the file.",
+      "$ref": "../forms/it.app.snort.rule.json"
+    },
+    "flow": {
+      "description": "The inet:flow that matched the snort rule.",
+      "$ref": "../forms/inet.flow.json"
+    },
+    "src": {
+      "description": "The source address of flow that caused the hit.",
+      "type": "string"
+    },
+    "src:ipv4": {
+      "description": "The source IPv4 address of the flow that caused the hit.",
+      "type": "string"
+    },
+    "src:ipv6": {
+      "description": "The source IPv6 address of the flow that caused the hit.",
+      "type": "string"
+    },
+    "src:port": {
+      "description": "The source port of the flow that caused the hit.",
+      "$ref": "../forms/inet.port.json"
+    },
+    "dst": {
+      "description": "The destination address of the trigger.",
+      "type": "string"
+    },
+    "dst:ipv4": {
+      "description": "The destination IPv4 address of the flow that caused the hit.",
+      "type": "string"
+    },
+    "dst:ipv6": {
+      "description": "The destination IPv4 address of the flow that caused the hit.",
+      "type": "string"
+    },
+    "dst:port": {
+      "description": "The destination port of the flow that caused the hit.",
+      "$ref": "../forms/inet.port.json"
+    },
+    "time": {
+      "description": "The time of the network flow that caused the hit.",
+      "type": "string"
+    },
+    "sensor": {
+      "description": "The sensor host node that produced the hit.",
+      "$ref": "../forms/it.host.json"
+    },
+    "version": {
+      "description": "The version of the rule at the time of match.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

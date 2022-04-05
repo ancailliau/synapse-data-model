@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/syn.splice.json",
+  "title": "splice",
+  "description": "A Synapse role GUID.",
+  "properties": {
+    "type": {
+      "description": "Type of splice.",
+      "type": "string"
+    },
+    "iden": {
+      "description": "The iden of the node involved in the splice.",
+      "type": "string"
+    },
+    "form": {
+      "description": "The form involved in the splice.",
+      "$ref": "../forms/syn.form.json"
+    },
+    "prop": {
+      "description": "Property modified in the splice.",
+      "$ref": "../forms/syn.prop.json"
+    },
+    "tag": {
+      "description": "Tag modified in the splice.",
+      "type": "string"
+    },
+    "valu": {
+      "description": "The value being set in the splice.",
+      "type": "string"
+    },
+    "oldv": {
+      "description": "The value before the splice.",
+      "type": "string"
+    },
+    "user": {
+      "description": "The user who caused the splice.",
+      "type": "string"
+    },
+    "prov": {
+      "description": "The provenance stack of the splice.",
+      "type": "string"
+    },
+    "time": {
+      "description": "The time the splice occurred.",
+      "type": "string"
+    },
+    "splice": {
+      "description": "The splice.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

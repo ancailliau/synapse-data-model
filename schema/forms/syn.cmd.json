@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/syn.cmd.json",
+  "title": "cmd",
+  "description": "A Synapse role GUID.",
+  "properties": {
+    "doc": {
+      "description": "Description of the command.",
+      "type": "string"
+    },
+    "package": {
+      "description": "Storm package which provided the command.",
+      "type": "string"
+    },
+    "svciden": {
+      "description": "Storm service iden which provided the package.",
+      "type": "string"
+    },
+    "input": {
+      "description": "The list of forms accepted by the command as input.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/syn.form.json"
+      }
+    },
+    "output": {
+      "description": "The list of forms produced by the command as output.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/syn.form.json"
+      }
+    },
+    "nodedata": {
+      "description": "The list of nodedata that may be added by the command.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/syn.nodedata.json"
+      }
+    }
+  },
+  "type": "object"
+}

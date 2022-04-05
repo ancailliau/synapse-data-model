@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ps.achievement.json",
+  "title": "achievement",
+  "description": "A GUID representing entry in a contact's work history.",
+  "properties": {
+    "awardee": {
+      "description": "The recipient of the award.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "award": {
+      "description": "The award bestowed on the awardee.",
+      "$ref": "../forms/ou.award.json"
+    },
+    "awarded": {
+      "description": "The date the award was granted to the awardee.",
+      "type": "string"
+    },
+    "expires": {
+      "description": "The date the award or certification expires.",
+      "type": "string"
+    },
+    "revoked": {
+      "description": "The date the award was revoked by the org.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/file.mime.pe.export.json",
+  "title": "export",
+  "description": "A section inside a Mach-O binary denoting a named region of bytes inside a segment.",
+  "properties": {
+    "file": {
+      "description": "The file containing the export.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the export in the file.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

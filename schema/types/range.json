@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/range.json",
+  "title": "Range",
+  "description": "",
+  "$ref": "range.json"
+}

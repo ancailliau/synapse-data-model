@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.mitre.attack.group.json",
+  "title": "group",
+  "description": "A function from an imported library.",
+  "properties": {
+    "org": {
+      "description": "Used to map an ATT&CK group to a synapse ou:org.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "name": {
+      "description": "The primary name for the ATT&CK group.",
+      "$ref": "../forms/ou.name.json"
+    },
+    "names": {
+      "description": "An array of alternate names for the ATT&CK group.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ou.name.json"
+      },
+      "uniqueItems": true
+    },
+    "desc": {
+      "description": "A description of the ATT&CK group.",
+      "type": "string"
+    },
+    "url": {
+      "description": "The URL that documents the ATT&CK group.",
+      "type": "string"
+    },
+    "tag": {
+      "description": "The synapse tag used to annotate nodes included in this ATT&CK group ID.",
+      "type": "string"
+    },
+    "references": {
+      "description": "An array of URLs that document the ATT&CK group.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "techniques": {
+      "description": "An array of ATT&CK technique IDs used by the group.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.mitre.attack.technique.json"
+      },
+      "uniqueItems": true
+    },
+    "software": {
+      "description": "An array of ATT&CK software IDs used by the group.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.mitre.attack.software.json"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

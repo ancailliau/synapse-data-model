@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.cidr6.json",
+  "title": "cidr6",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "broadcast": {
+      "description": "The broadcast IP address from the CIDR notation.",
+      "type": "string"
+    },
+    "mask": {
+      "description": "The mask from the CIDR notation.",
+      "type": "integer"
+    },
+    "network": {
+      "description": "The network IP address from the CIDR notation.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

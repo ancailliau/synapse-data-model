@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.hasalias.json",
+  "title": "hasalias",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "org": {
+      "description": "The org guid which has the alias.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "alias": {
+      "description": "Alias for the organization.",
+      "$ref": "../forms/ou.alias.json"
+    }
+  },
+  "type": "object"
+}

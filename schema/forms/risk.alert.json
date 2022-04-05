@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/risk.alert.json",
+  "title": "alert",
+  "description": "A compromise type taxonomy.",
+  "properties": {
+    "type": {
+      "description": "An alert type.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The alert name.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A free-form description / overview of the alert.",
+      "type": "string"
+    },
+    "detected": {
+      "description": "The time the alerted condition was detected.",
+      "type": "string"
+    },
+    "vuln": {
+      "description": "The optional vulnerability that the alert indicates.",
+      "$ref": "../forms/risk.vuln.json"
+    },
+    "attack": {
+      "description": "A confirmed attack that this alert indicates.",
+      "$ref": "../forms/risk.attack.json"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/edu.course.json",
+  "title": "course",
+  "description": "A GUID representing entry in a contact's work history.",
+  "properties": {
+    "name": {
+      "description": "The name of the course.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A brief course description.",
+      "type": "string"
+    },
+    "code": {
+      "description": "The course catalog number or designator.",
+      "type": "string"
+    },
+    "institution": {
+      "description": "The org or department which teaches the course.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "prereqs": {
+      "description": "The pre-requisite courses for taking this course.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/edu.course.json"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

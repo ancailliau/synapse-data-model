@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.dns.wild.aaaa.json",
+  "title": "aaaa",
+  "description": "A DNS AAAA wild card record and the IPv6 it resolves to.",
+  "properties": {
+    "fqdn": {
+      "description": "The domain containing a wild card record.",
+      "type": "string"
+    },
+    "ipv6": {
+      "description": "The IPv6 address returned by wild card resolutions.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

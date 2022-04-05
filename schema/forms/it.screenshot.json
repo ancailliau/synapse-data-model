@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.screenshot.json",
+  "title": "screenshot",
+  "description": "A function from an imported library.",
+  "properties": {
+    "image": {
+      "description": "The image file.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A brief description of the screenshot.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

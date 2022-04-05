@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.exec.pipe.json",
+  "title": "pipe",
+  "description": "A function from an imported library.",
+  "properties": {
+    "proc": {
+      "description": "The main process executing code that created the named pipe.",
+      "$ref": "../forms/it.exec.proc.json"
+    },
+    "host": {
+      "description": "The host running the process that created the named pipe. Typically the same host referenced in :proc, if present.",
+      "$ref": "../forms/it.host.json"
+    },
+    "exe": {
+      "description": "The specific file containing code that created the named pipe. May or may not be the same :exe specified in :proc, if present.",
+      "type": "string"
+    },
+    "time": {
+      "description": "The time the named pipe was created.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The named pipe string.",
+      "$ref": "../forms/it.dev.pipe.json"
+    }
+  },
+  "type": "object"
+}

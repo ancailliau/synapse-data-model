@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.web.chprofile.json",
+  "title": "chprofile",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "acct": {
+      "description": "The web account associated with the change.",
+      "$ref": "../forms/inet.web.acct.json"
+    },
+    "acct:site": {
+      "description": "The site or service associated with the account.",
+      "type": "string"
+    },
+    "acct:user": {
+      "description": "The unique identifier for the account.",
+      "$ref": "../forms/inet.user.json"
+    },
+    "client": {
+      "description": "The source address used to make the account change.",
+      "$ref": "../forms/inet.client.json"
+    },
+    "client:ipv4": {
+      "description": "The source IPv4 address used to make the account change.",
+      "type": "string"
+    },
+    "client:ipv6": {
+      "description": "The source IPv6 address used to make the account change.",
+      "type": "string"
+    },
+    "time": {
+      "description": "The date and time when the account change occurred.",
+      "type": "string"
+    },
+    "pv": {
+      "description": "The prop=valu of the account property that was changed. Valu should be the old / original value, while the new value should be updated on the inet:web:acct form.",
+      "type": "string"
+    },
+    "pv:prop": {
+      "description": "The property that was changed.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

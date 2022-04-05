@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/file.bytes.json",
+  "title": "bytes",
+  "description": "A section inside a Mach-O binary denoting a named region of bytes inside a segment.",
+  "properties": {
+    "size": {
+      "description": "The file size in bytes.",
+      "type": "integer"
+    },
+    "md5": {
+      "description": "The md5 hash of the file.",
+      "$ref": "../forms/hash.md5.json"
+    },
+    "sha1": {
+      "description": "The sha1 hash of the file.",
+      "$ref": "../forms/hash.sha1.json"
+    },
+    "sha256": {
+      "description": "The sha256 hash of the file.",
+      "$ref": "../forms/hash.sha256.json"
+    },
+    "sha512": {
+      "description": "The sha512 hash of the file.",
+      "$ref": "../forms/hash.sha512.json"
+    },
+    "name": {
+      "description": "The best known base name for the file.",
+      "type": "string"
+    },
+    "mime": {
+      "description": "The \"best\" mime type name for the file.",
+      "$ref": "../forms/file.mime.json"
+    },
+    "mime:x509:cn": {
+      "description": "The Common Name (CN) attribute of the x509 Subject.",
+      "type": "string"
+    },
+    "mime:pe:size": {
+      "description": "The size of the executable file according to the PE file header.",
+      "type": "integer"
+    },
+    "mime:pe:imphash": {
+      "description": "The PE import hash of the file as calculated by pefile; https://github.com/erocarrera/pefile .",
+      "type": "string"
+    },
+    "mime:pe:compiled": {
+      "description": "The compile time of the file according to the PE header.",
+      "type": "string"
+    },
+    "mime:pe:pdbpath": {
+      "description": "The PDB string according to the PE.",
+      "type": "string"
+    },
+    "mime:pe:exports:time": {
+      "description": "The export time of the file according to the PE.",
+      "type": "string"
+    },
+    "mime:pe:exports:libname": {
+      "description": "The export library name according to the PE.",
+      "type": "string"
+    },
+    "mime:pe:richhdr": {
+      "description": "The sha256 hash of the rich header bytes.",
+      "$ref": "../forms/hash.sha256.json"
+    }
+  },
+  "type": "object"
+}

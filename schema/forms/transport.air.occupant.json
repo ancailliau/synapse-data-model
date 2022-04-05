@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/transport.air.occupant.json",
+  "title": "occupant",
+  "description": "A telemetry sample from a vessel in transit.",
+  "properties": {
+    "type": {
+      "description": "The type of occupant such as pilot, crew or passenger.",
+      "type": "string"
+    },
+    "flight": {
+      "description": "The flight that the occupant was aboard.",
+      "$ref": "../forms/transport.air.flight.json"
+    },
+    "seat": {
+      "description": "The seat assigned to the occupant",
+      "type": "string"
+    },
+    "contact": {
+      "description": "The contact information of the occupant.",
+      "$ref": "../forms/ps.contact.json"
+    }
+  },
+  "type": "object"
+}

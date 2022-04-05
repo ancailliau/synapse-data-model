@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/taxonomy.json",
+  "title": "Taxonomy",
+  "description": "",
+  "$ref": "str.json"
+}

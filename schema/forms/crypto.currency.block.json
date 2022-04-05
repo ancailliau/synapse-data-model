@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/crypto.currency.block.json",
+  "title": "block",
+  "description": "A digital signature relationship between an X.509 certificate and a file.",
+  "properties": {
+    "coin": {
+      "description": "The coin/blockchain this block resides on.",
+      "$ref": "../forms/crypto.currency.coin.json"
+    },
+    "offset": {
+      "description": "The index of this block.",
+      "type": "integer"
+    },
+    "hash": {
+      "description": "The unique hash for the block.",
+      "type": "string"
+    },
+    "minedby": {
+      "description": "The address which mined the block.",
+      "$ref": "../forms/crypto.currency.address.json"
+    },
+    "time": {
+      "description": "Time timestamp embedded in the block by the miner.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

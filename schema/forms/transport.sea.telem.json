@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/transport.sea.telem.json",
+  "title": "telem",
+  "description": "A telemetry sample from a vessel in transit.",
+  "properties": {
+    "vessel": {
+      "description": "The vessel being measured.",
+      "$ref": "../forms/transport.sea.vessel.json"
+    },
+    "time": {
+      "description": "The time the telemetry was sampled.",
+      "type": "string"
+    },
+    "latlong": {
+      "description": "The lat/lon of the vessel at the time.",
+      "type": "string"
+    },
+    "loc": {
+      "description": "The location of the vessel at the time.",
+      "type": "string"
+    },
+    "place": {
+      "description": "The place that the lat/lon geocodes to.",
+      "$ref": "../forms/geo.place.json"
+    },
+    "accuracy": {
+      "description": "The horizontal accuracy of the latlong sample.",
+      "type": "number"
+    },
+    "draft": {
+      "description": "The keel depth at the time.",
+      "type": "number"
+    },
+    "airdraft": {
+      "description": "The maximum height of the ship from the waterline.",
+      "type": "number"
+    }
+  },
+  "type": "object"
+}

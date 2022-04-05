@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.industry.json",
+  "title": "industry",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "name": {
+      "description": "A terse name for the industry.",
+      "type": "string"
+    },
+    "subs": {
+      "description": "An array of sub-industries.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ou.industry.json"
+      },
+      "uniqueItems": true
+    },
+    "sic": {
+      "description": "An array of SIC codes that map to the industry.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ou.sic.json"
+      },
+      "uniqueItems": true
+    },
+    "naics": {
+      "description": "An array of NAICS codes that map to the industry.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ou.naics.json"
+      },
+      "uniqueItems": true
+    },
+    "isic": {
+      "description": "An array of ISIC codes that map to the industry.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ou.isic.json"
+      },
+      "uniqueItems": true
+    },
+    "desc": {
+      "description": "A description of the industry.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.dns.rev.json",
+  "title": "rev",
+  "description": "A DNS AAAA wild card record and the IPv6 it resolves to.",
+  "properties": {
+    "ipv4": {
+      "description": "The IPv4 address queried for its DNS PTR record.",
+      "type": "string"
+    },
+    "fqdn": {
+      "description": "The domain returned in the PTR record.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

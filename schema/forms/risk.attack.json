@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/risk.attack.json",
+  "title": "attack",
+  "description": "A compromise type taxonomy.",
+  "properties": {
+    "desc": {
+      "description": "A description of the attack.",
+      "type": "string"
+    },
+    "type": {
+      "description": "The attack type.",
+      "$ref": "../forms/risk.attacktype.json"
+    },
+    "time": {
+      "description": "Set if the time of the attack is known.",
+      "type": "string"
+    },
+    "success": {
+      "description": "Set if the attack was known to have succeeded or not.",
+      "type": "boolean"
+    },
+    "targeted": {
+      "description": "Set if the attack was assessed to be targeted or not.",
+      "type": "boolean"
+    },
+    "goal": {
+      "description": "The tactical goal of this specific attack.",
+      "$ref": "../forms/ou.goal.json"
+    },
+    "campaign": {
+      "description": "Set if the attack was part of a larger campaign.",
+      "$ref": "../forms/ou.campaign.json"
+    },
+    "compromise": {
+      "description": "A compromise that this attack contributed to.",
+      "$ref": "../forms/risk.compromise.json"
+    },
+    "prev": {
+      "description": "The previous/parent attack in a list or hierarchy.",
+      "$ref": "../forms/risk.attack.json"
+    },
+    "actor:org": {
+      "description": "Deprecated. Please use :attacker to allow entity resolution.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "actor:person": {
+      "description": "Deprecated. Please use :attacker to allow entity resolution.",
+      "$ref": "../forms/ps.person.json"
+    },
+    "attacker": {
+      "description": "Contact information associated with the attacker.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "target": {
+      "description": "Contact information associated with the target.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "target:org": {
+      "description": "Deprecated. Please use :target to allow entity resolution.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "target:host": {
+      "description": "The host was the target of the attack.",
+      "$ref": "../forms/it.host.json"
+    },
+    "target:person": {
+      "description": "Deprecated. Please use :target to allow entity resolution.",
+      "$ref": "../forms/ps.person.json"
+    },
+    "target:place": {
+      "description": "The place that was the target of the attack.",
+      "$ref": "../forms/geo.place.json"
+    },
+    "via:ipv4": {
+      "description": "The target host was contacted via the IPv4 address.",
+      "type": "string"
+    },
+    "via:ipv6": {
+      "description": "The target host was contacted via the IPv6 address.",
+      "type": "string"
+    },
+    "via:email": {
+      "description": "The target person/org was contacted via the email address.",
+      "type": "string"
+    },
+    "via:phone": {
+      "description": "The target person/org was contacted via the phone number.",
+      "type": "string"
+    },
+    "used:vuln": {
+      "description": "The actor used the vuln in the attack.",
+      "$ref": "../forms/risk.vuln.json"
+    },
+    "used:url": {
+      "description": "The actor used the url in the attack.",
+      "type": "string"
+    },
+    "used:host": {
+      "description": "The actor used the host in the attack.",
+      "$ref": "../forms/it.host.json"
+    },
+    "used:email": {
+      "description": "The actor used the email in the attack.",
+      "type": "string"
+    },
+    "used:file": {
+      "description": "The actor used the file in the attack.",
+      "type": "string"
+    },
+    "used:server": {
+      "description": "The actor used the server in the attack.",
+      "$ref": "../forms/inet.server.json"
+    },
+    "used:software": {
+      "description": "The actor used the software in the attack.",
+      "$ref": "../forms/it.prod.softver.json"
+    }
+  },
+  "type": "object"
+}

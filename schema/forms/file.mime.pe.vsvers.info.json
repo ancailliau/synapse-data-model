@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/file.mime.pe.vsvers.info.json",
+  "title": "info",
+  "description": "A section inside a Mach-O binary denoting a named region of bytes inside a segment.",
+  "properties": {
+    "file": {
+      "description": "The file containing the vsversion keyval pair.",
+      "type": "string"
+    },
+    "keyval": {
+      "description": "The vsversion info keyval in this file:bytes node.",
+      "$ref": "../forms/file.mime.pe.vsvers.keyval.json"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/transport.air.craft.json",
+  "title": "craft",
+  "description": "A telemetry sample from a vessel in transit.",
+  "properties": {
+    "tailnum": {
+      "description": "The aircraft tail number.",
+      "$ref": "../forms/transport.air.tailnum.json"
+    },
+    "type": {
+      "description": "The type of aircraft.",
+      "type": "string"
+    },
+    "built": {
+      "description": "The date the aircraft was constructed.",
+      "type": "string"
+    },
+    "make": {
+      "description": "The make of the aircraft.",
+      "type": "string"
+    },
+    "model": {
+      "description": "The model of the aircraft.",
+      "type": "string"
+    },
+    "serial": {
+      "description": "The serial number of the aircraft.",
+      "type": "string"
+    },
+    "operator": {
+      "description": "Contact info representing the person or org that operates the aircraft.",
+      "$ref": "../forms/ps.contact.json"
+    }
+  },
+  "type": "object"
+}

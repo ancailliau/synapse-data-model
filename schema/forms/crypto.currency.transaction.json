@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/crypto.currency.transaction.json",
+  "title": "transaction",
+  "description": "A digital signature relationship between an X.509 certificate and a file.",
+  "properties": {
+    "hash": {
+      "description": "The unique transaction hash for the transaction.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "An analyst specified description of the transaction.",
+      "type": "string"
+    },
+    "block": {
+      "description": "The block which records the transaction.",
+      "$ref": "../forms/crypto.currency.block.json"
+    },
+    "block:coin": {
+      "description": "The coin/blockchain of the block which records this transaction.",
+      "$ref": "../forms/crypto.currency.coin.json"
+    },
+    "block:offset": {
+      "description": "The offset of the block which records this transaction.",
+      "type": "integer"
+    },
+    "success": {
+      "description": "Set to true if the transaction was successfully executed and recorded.",
+      "type": "boolean"
+    },
+    "status:code": {
+      "description": "A coin specific status code which may represent an error reason.",
+      "type": "integer"
+    },
+    "status:message": {
+      "description": "A coin specific status message which may contain an error reason.",
+      "type": "string"
+    },
+    "to": {
+      "description": "The destination address of the transaction.",
+      "$ref": "../forms/crypto.currency.address.json"
+    },
+    "from": {
+      "description": "The source address of the transaction.",
+      "$ref": "../forms/crypto.currency.address.json"
+    },
+    "inputs": {
+      "description": "Deprecated. Please use crypto:payment:input:transaction.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/crypto.payment.input.json"
+      },
+      "uniqueItems": true
+    },
+    "outputs": {
+      "description": "Deprecated. Please use crypto:payment:output:transaction.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/crypto.payment.output.json"
+      },
+      "uniqueItems": true
+    },
+    "fee": {
+      "description": "The total fee paid to execute the transaction.",
+      "$ref": "../forms/econ.price.json"
+    },
+    "value": {
+      "description": "The total value of the transaction.",
+      "$ref": "../forms/econ.price.json"
+    },
+    "time": {
+      "description": "The time this transaction was initiated.",
+      "type": "string"
+    },
+    "eth:gasused": {
+      "description": "The amount of gas used to execute this transaction.",
+      "type": "integer"
+    },
+    "eth:gaslimit": {
+      "description": "The ETH gas limit specified for this transaction.",
+      "type": "integer"
+    },
+    "eth:gasprice": {
+      "description": "The gas price (in ETH) specified for this transaction.",
+      "$ref": "../forms/econ.price.json"
+    },
+    "contract:input": {
+      "description": "Input value to a smart contract call.",
+      "type": "string"
+    },
+    "contract:output": {
+      "description": "Output value of a smart contract call.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

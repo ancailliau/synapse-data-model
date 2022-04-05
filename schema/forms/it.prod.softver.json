@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.prod.softver.json",
+  "title": "softver",
+  "description": "A function from an imported library.",
+  "properties": {
+    "software": {
+      "description": "Software associated with this version instance.",
+      "$ref": "../forms/it.prod.soft.json"
+    },
+    "software:name": {
+      "description": "The name of the software at a particular version.",
+      "type": "string"
+    },
+    "name": {
+      "description": "Name of the software.",
+      "$ref": "../forms/it.dev.str.json"
+    },
+    "names": {
+      "description": "Observed/variant names for this software version.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.dev.str.json"
+      },
+      "uniqueItems": true
+    },
+    "desc": {
+      "description": "A description of the software.",
+      "type": "string"
+    },
+    "cpe": {
+      "description": "The NIST CPE 2.3 string specifying this software version",
+      "$ref": "../forms/it.sec.cpe.json"
+    },
+    "cves": {
+      "description": "A list of CVEs that apply to this software version.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.sec.cve.json"
+      },
+      "uniqueItems": true
+    },
+    "vers": {
+      "description": "Version string associated with this version instance.",
+      "$ref": "../forms/it.dev.str.json"
+    },
+    "vers:norm": {
+      "description": "Normalized version of the version string.",
+      "type": "string"
+    },
+    "arch": {
+      "description": "Software architecture.",
+      "$ref": "../forms/it.dev.str.json"
+    },
+    "released": {
+      "description": "Timestamp for when this version of the software was released.",
+      "type": "string"
+    },
+    "semver": {
+      "description": "System normalized semantic version number.",
+      "type": "string"
+    },
+    "semver:major": {
+      "description": "Version major number.",
+      "type": "integer"
+    },
+    "semver:minor": {
+      "description": "Version minor number.",
+      "type": "integer"
+    },
+    "semver:patch": {
+      "description": "Version patch number.",
+      "type": "integer"
+    },
+    "semver:pre": {
+      "description": "Semver prerelease string.",
+      "type": "string"
+    },
+    "semver:build": {
+      "description": "Semver build string.",
+      "type": "string"
+    },
+    "url": {
+      "description": "URL where a specific version of the software is available from.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

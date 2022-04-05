@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.conference.json",
+  "title": "conference",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "org": {
+      "description": "The org which created/managed the conference.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "organizer": {
+      "description": "Contact information for the primary organizer of the conference.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "sponsors": {
+      "description": "An array of contacts which sponsored the conference.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ps.contact.json"
+      },
+      "uniqueItems": true
+    },
+    "name": {
+      "description": "The full name of the conference.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A description of the conference.",
+      "type": "string"
+    },
+    "base": {
+      "description": "The base name which is shared by all conference instances.",
+      "type": "string"
+    },
+    "start": {
+      "description": "The conference start date / time.",
+      "type": "string"
+    },
+    "end": {
+      "description": "The conference end date / time.",
+      "type": "string"
+    },
+    "place": {
+      "description": "The geo:place node where the conference was held.",
+      "$ref": "../forms/geo.place.json"
+    },
+    "url": {
+      "description": "The inet:url node for the conference website.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

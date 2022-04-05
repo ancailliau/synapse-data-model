@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/syn.trigger.json",
+  "title": "trigger",
+  "description": "A Synapse role GUID.",
+  "properties": {
+    "vers": {
+      "description": "Trigger version.",
+      "type": "integer"
+    },
+    "doc": {
+      "description": "A documentation string describing the trigger.",
+      "type": "string"
+    },
+    "name": {
+      "description": "A user friendly name/alias for the trigger.",
+      "type": "string"
+    },
+    "cond": {
+      "description": "The trigger condition.",
+      "type": "string"
+    },
+    "user": {
+      "description": "User who owns the trigger.",
+      "type": "string"
+    },
+    "storm": {
+      "description": "The Storm query for the trigger.",
+      "type": "string"
+    },
+    "enabled": {
+      "description": "Trigger enabled status.",
+      "type": "boolean"
+    },
+    "form": {
+      "description": "Form the trigger is watching for.",
+      "type": "string"
+    },
+    "prop": {
+      "description": "Property the trigger is watching for.",
+      "type": "string"
+    },
+    "tag": {
+      "description": "Tag the trigger is watching for.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

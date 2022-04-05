@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/tel.mob.cell.json",
+  "title": "cell",
+  "description": "A mobile cell site which a phone may connect to.",
+  "properties": {
+    "carrier": {
+      "description": "Mobile carrier.",
+      "$ref": "../forms/tel.mob.carrier.json"
+    },
+    "carrier:mcc": {
+      "description": "Mobile Country Code.",
+      "$ref": "../forms/tel.mob.mcc.json"
+    },
+    "carrier:mnc": {
+      "description": "Mobile Network Code.",
+      "$ref": "../forms/tel.mob.mnc.json"
+    },
+    "lac": {
+      "description": "Location Area Code. LTE networks may call this a TAC.",
+      "type": "integer"
+    },
+    "cid": {
+      "description": "The Cell ID.",
+      "type": "integer"
+    },
+    "radio": {
+      "description": "Cell radio type.",
+      "type": "string"
+    },
+    "latlong": {
+      "description": "Last known location of the cell site.",
+      "type": "string"
+    },
+    "loc": {
+      "description": "Location at which the cell is operated.",
+      "type": "string"
+    },
+    "place": {
+      "description": "The place associated with the latlong property.",
+      "$ref": "../forms/geo.place.json"
+    }
+  },
+  "type": "object"
+}

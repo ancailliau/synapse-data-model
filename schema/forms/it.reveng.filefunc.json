@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.reveng.filefunc.json",
+  "title": "filefunc",
+  "description": "A function from an imported library.",
+  "properties": {
+    "function": {
+      "description": "The guid matching the function.",
+      "$ref": "../forms/it.reveng.function.json"
+    },
+    "file": {
+      "description": "The file that contains the function.",
+      "type": "string"
+    },
+    "va": {
+      "description": "The virtual address of the first codeblock of the function.",
+      "type": "integer"
+    },
+    "rank": {
+      "description": "The function rank score used to evaluate if it exhibits interesting behavior.",
+      "type": "integer"
+    },
+    "complexity": {
+      "description": "The complexity of the function.",
+      "type": "integer"
+    },
+    "funccalls": {
+      "description": "Other function calls within the scope of the function.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.reveng.filefunc.json"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.group.json",
+  "title": "group",
+  "description": "A function from an imported library.",
+  "properties": {
+    "name": {
+      "description": "The name of the group.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A brief description of the group.",
+      "type": "string"
+    },
+    "host": {
+      "description": "The host where the group is registered.",
+      "$ref": "../forms/it.host.json"
+    },
+    "domain": {
+      "description": "The authentication domain where the group is registered.",
+      "$ref": "../forms/it.domain.json"
+    },
+    "groups": {
+      "description": "Groups that are a member of this group.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.group.json"
+      },
+      "uniqueItems": true
+    },
+    "posix:gid": {
+      "description": "The primary group ID of the account.",
+      "type": "integer"
+    },
+    "windows:sid": {
+      "description": "The Microsoft Windows Security Identifier of the group.",
+      "$ref": "../forms/it.os.windows.sid.json"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.whois.recns.json",
+  "title": "recns",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "ns": {
+      "description": "A nameserver for a domain as listed in the domain whois record.",
+      "type": "string"
+    },
+    "rec": {
+      "description": "The whois record containing the nameserver data.",
+      "$ref": "../forms/inet.whois.rec.json"
+    },
+    "rec:fqdn": {
+      "description": "The domain associated with the whois record.",
+      "type": "string"
+    },
+    "rec:asof": {
+      "description": "The date of the whois record.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

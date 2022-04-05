@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/graph.cluster.json",
+  "title": "cluster",
+  "description": "A generic digraph time edge to show relationships outside the model.",
+  "properties": {
+    "name": {
+      "description": "A human friendly name for the cluster.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A human friendly long form description for the cluster.",
+      "type": "string"
+    },
+    "type": {
+      "description": "An optional type field used to group clusters.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

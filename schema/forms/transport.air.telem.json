@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/transport.air.telem.json",
+  "title": "telem",
+  "description": "A telemetry sample from a vessel in transit.",
+  "properties": {
+    "flight": {
+      "description": "The flight being measured.",
+      "$ref": "../forms/transport.air.flight.json"
+    },
+    "latlong": {
+      "description": "The lat/lon of the aircraft at the time.",
+      "type": "string"
+    },
+    "loc": {
+      "description": "The location of the aircraft at the time.",
+      "type": "string"
+    },
+    "place": {
+      "description": "The place that the lat/lon geocodes to.",
+      "$ref": "../forms/geo.place.json"
+    },
+    "accuracy": {
+      "description": "The horizontal accuracy of the latlong sample.",
+      "type": "number"
+    },
+    "altitude": {
+      "description": "The altitude of the aircraft at the time.",
+      "$ref": "../forms/geo.altitude.json"
+    },
+    "altitude:accuracy": {
+      "description": "The vertical accuracy of the altitude measurement.",
+      "type": "number"
+    },
+    "time": {
+      "description": "The time the telemetry sample was taken.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

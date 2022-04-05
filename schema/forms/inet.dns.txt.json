@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.dns.txt.json",
+  "title": "txt",
+  "description": "A DNS AAAA wild card record and the IPv6 it resolves to.",
+  "properties": {
+    "fqdn": {
+      "description": "The domain queried for its TXT record.",
+      "type": "string"
+    },
+    "txt": {
+      "description": "The string returned in the TXT record.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

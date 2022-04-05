@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.sec.cpe.json",
+  "title": "cpe",
+  "description": "A function from an imported library.",
+  "properties": {
+    "v2_2": {
+      "description": "The CPE 2.2 string which is equivalent to the primary property.",
+      "type": "string"
+    },
+    "part": {
+      "description": "The \"part\" field from the CPE 2.3 string.",
+      "type": "string"
+    },
+    "vendor": {
+      "description": "The \"vendor\" field from the CPE 2.3 string.",
+      "$ref": "../forms/ou.name.json"
+    },
+    "product": {
+      "description": "The \"product\" field from the CPE 2.3 string.",
+      "type": "string"
+    },
+    "version": {
+      "description": "The \"version\" field from the CPE 2.3 string.",
+      "type": "string"
+    },
+    "update": {
+      "description": "The \"update\" field from the CPE 2.3 string.",
+      "type": "string"
+    },
+    "edition": {
+      "description": "The \"edition\" field from the CPE 2.3 string.",
+      "type": "string"
+    },
+    "language": {
+      "description": "The \"language\" field from the CPE 2.3 string.",
+      "type": "string"
+    },
+    "sw_edition": {
+      "description": "The \"sw_edition\" field from the CPE 2.3 string.",
+      "type": "string"
+    },
+    "target_sw": {
+      "description": "The \"target_sw\" field from the CPE 2.3 string.",
+      "type": "string"
+    },
+    "target_hw": {
+      "description": "The \"target_hw\" field from the CPE 2.3 string.",
+      "type": "string"
+    },
+    "other": {
+      "description": "The \"other\" field from the CPE 2.3 string.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/econ.fin.security.json",
+  "title": "security",
+  "description": "A sample of the price of a security at a single moment in time",
+  "properties": {
+    "exchange": {
+      "description": "The exchange on which the security is traded",
+      "$ref": "../forms/econ.fin.exchange.json"
+    },
+    "ticker": {
+      "description": "The identifier for this security within the exchange",
+      "type": "string"
+    },
+    "type": {
+      "description": "A user defined type such as stock, bond, option, future, or forex",
+      "type": "string"
+    },
+    "price": {
+      "description": "The last known/available price of the security",
+      "$ref": "../forms/econ.price.json"
+    },
+    "time": {
+      "description": "The time of the last know price sample",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

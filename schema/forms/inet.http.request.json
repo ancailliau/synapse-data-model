@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.http.request.json",
+  "title": "request",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "method": {
+      "description": "The HTTP request method string.",
+      "type": "string"
+    },
+    "path": {
+      "description": "The requested HTTP path (without query parameters).",
+      "type": "string"
+    },
+    "url": {
+      "description": "The reconstructed URL for the request if known.",
+      "type": "string"
+    },
+    "query": {
+      "description": "The HTTP query string which optionally follows the path.",
+      "type": "string"
+    },
+    "headers": {
+      "description": "An array of HTTP headers from the request.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/inet.http.request.header.json"
+      }
+    },
+    "body": {
+      "description": "The body of the HTTP request.",
+      "type": "string"
+    },
+    "response:time": {
+      "description": null,
+      "type": "string"
+    },
+    "response:code": {
+      "description": null,
+      "type": "integer"
+    },
+    "response:reason": {
+      "description": null,
+      "type": "string"
+    },
+    "response:headers": {
+      "description": "An array of HTTP headers from the response.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/inet.http.response.header.json"
+      }
+    },
+    "response:body": {
+      "description": null,
+      "type": "string"
+    },
+    "session": {
+      "description": "The HTTP session this request was part of.",
+      "$ref": "../forms/inet.http.session.json"
+    }
+  },
+  "type": "object"
+}

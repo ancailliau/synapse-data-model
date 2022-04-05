@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/tel.phone.json",
+  "title": "phone",
+  "description": "A mobile cell site which a phone may connect to.",
+  "properties": {
+    "loc": {
+      "description": "The location associated with the number.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

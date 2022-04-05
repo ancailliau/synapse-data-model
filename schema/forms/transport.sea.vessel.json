@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/transport.sea.vessel.json",
+  "title": "vessel",
+  "description": "A telemetry sample from a vessel in transit.",
+  "properties": {
+    "imo": {
+      "description": "The International Maritime Organization number for the vessel.",
+      "$ref": "../forms/transport.sea.imo.json"
+    },
+    "name": {
+      "description": "The name of the vessel",
+      "type": "string"
+    },
+    "length": {
+      "description": "The official overall vessel length",
+      "type": "number"
+    },
+    "beam": {
+      "description": "The official overall vessel beam",
+      "type": "number"
+    },
+    "flag": {
+      "description": "The country the vessel is flagged to.",
+      "$ref": "../forms/iso.3166.cc.json"
+    },
+    "mmsi": {
+      "description": "The Maritime Mobile Service Identifier assigned to the vessel.",
+      "$ref": "../forms/transport.sea.mmsi.json"
+    },
+    "built": {
+      "description": "The year the vessel was constructed.",
+      "type": "string"
+    },
+    "operator": {
+      "description": "The contact information of the operator.",
+      "$ref": "../forms/ps.contact.json"
+    }
+  },
+  "type": "object"
+}

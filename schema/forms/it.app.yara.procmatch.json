@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.app.yara.procmatch.json",
+  "title": "procmatch",
+  "description": "A function from an imported library.",
+  "properties": {
+    "rule": {
+      "description": "The YARA rule that matched the file.",
+      "$ref": "../forms/it.app.yara.rule.json"
+    },
+    "proc": {
+      "description": "The process that matched the YARA rule.",
+      "$ref": "../forms/it.exec.proc.json"
+    },
+    "time": {
+      "description": "The time that the YARA engine matched the process to the rule.",
+      "type": "string"
+    },
+    "version": {
+      "description": "The most recent version of the rule evaluated as a match.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

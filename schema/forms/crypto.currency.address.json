@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/crypto.currency.address.json",
+  "title": "address",
+  "description": "A digital signature relationship between an X.509 certificate and a file.",
+  "properties": {
+    "coin": {
+      "description": "The crypto coin to which the address belongs.",
+      "$ref": "../forms/crypto.currency.coin.json"
+    },
+    "iden": {
+      "description": "The coin specific address identifier.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A free-form description of the address.",
+      "type": "string"
+    },
+    "contact": {
+      "description": "Contact information associated with the address.",
+      "$ref": "../forms/ps.contact.json"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.whois.iprec.json",
+  "title": "iprec",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "net4": {
+      "description": "The IPv4 address range assigned.",
+      "$ref": "../forms/inet.net4.json"
+    },
+    "net4:min": {
+      "description": "The first IPv4 in the range assigned.",
+      "type": "string"
+    },
+    "net4:max": {
+      "description": "The last IPv4 in the range assigned.",
+      "type": "string"
+    },
+    "net6": {
+      "description": "The IPv6 address range assigned.",
+      "$ref": "../forms/inet.net6.json"
+    },
+    "net6:min": {
+      "description": "The first IPv6 in the range assigned.",
+      "type": "string"
+    },
+    "net6:max": {
+      "description": "The last IPv6 in the range assigned.",
+      "type": "string"
+    },
+    "asof": {
+      "description": "The date of the record.",
+      "type": "string"
+    },
+    "created": {
+      "description": "The \"created\" time from the record.",
+      "type": "string"
+    },
+    "updated": {
+      "description": "The \"last updated\" time from the record.",
+      "type": "string"
+    },
+    "text": {
+      "description": "The full text of the record.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "Notes concerning the record.",
+      "type": "string"
+    },
+    "asn": {
+      "description": "The associated Autonomous System Number (ASN).",
+      "$ref": "../forms/inet.asn.json"
+    },
+    "id": {
+      "description": "The registry unique identifier (e.g. NET-74-0-0-0-1).",
+      "$ref": "../forms/inet.whois.regid.json"
+    },
+    "name": {
+      "description": "The name assigned to the network by the registrant.",
+      "type": "string"
+    },
+    "parentid": {
+      "description": "The registry unique identifier of the parent whois record (e.g. NET-74-0-0-0-0).",
+      "$ref": "../forms/inet.whois.regid.json"
+    },
+    "registrant": {
+      "description": "The registrant contact from the record.",
+      "$ref": "../forms/inet.whois.ipcontact.json"
+    },
+    "contacts": {
+      "description": "Additional contacts from the record.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/inet.whois.ipcontact.json"
+      },
+      "uniqueItems": true
+    },
+    "country": {
+      "description": "The two-letter ISO 3166 country code.",
+      "type": "string"
+    },
+    "status": {
+      "description": "The state of the registered network.",
+      "type": "string"
+    },
+    "type": {
+      "description": "The classification of the registered network (e.g. direct allocation).",
+      "type": "string"
+    },
+    "links": {
+      "description": "URLs provided with the record.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

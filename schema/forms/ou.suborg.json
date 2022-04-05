@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.suborg.json",
+  "title": "suborg",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "org": {
+      "description": "The org which owns the sub organization.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "sub": {
+      "description": "The sub org which owned by the org.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "perc": {
+      "description": "The optional percentage of sub which is owned by org.",
+      "type": "integer"
+    },
+    "founded": {
+      "description": "The date on which the suborg relationship was founded.",
+      "type": "string"
+    },
+    "dissolved": {
+      "description": "The date on which the suborg relationship was dissolved.",
+      "type": "string"
+    },
+    "current": {
+      "description": "Bool indicating if the suborg relationship still current.",
+      "type": "boolean"
+    }
+  },
+  "type": "object"
+}

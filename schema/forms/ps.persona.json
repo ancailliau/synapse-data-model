@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ps.persona.json",
+  "title": "persona",
+  "description": "A GUID representing entry in a contact's work history.",
+  "properties": {
+    "person": {
+      "description": "The real person behind the persona.",
+      "$ref": "../forms/ps.person.json"
+    },
+    "dob": {
+      "description": "The Date of Birth (DOB) if known.",
+      "type": "string"
+    },
+    "img": {
+      "description": "The primary image of a suspected person.",
+      "type": "string"
+    },
+    "nick": {
+      "description": "A username commonly used by the suspected person.",
+      "$ref": "../forms/inet.user.json"
+    },
+    "name": {
+      "description": "The localized name for the suspected person.",
+      "$ref": "../forms/ps.name.json"
+    },
+    "name:sur": {
+      "description": "The surname of the suspected person.",
+      "$ref": "../forms/ps.tokn.json"
+    },
+    "name:middle": {
+      "description": "The middle name of the suspected person.",
+      "$ref": "../forms/ps.tokn.json"
+    },
+    "name:given": {
+      "description": "The given name of the suspected person.",
+      "$ref": "../forms/ps.tokn.json"
+    },
+    "names": {
+      "description": "Variations of the name for a persona.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ps.name.json"
+      },
+      "uniqueItems": true
+    },
+    "nicks": {
+      "description": "Usernames used by the persona.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/inet.user.json"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

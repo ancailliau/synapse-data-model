@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.web.mesg.json",
+  "title": "mesg",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "from": {
+      "description": "The web account that sent the message.",
+      "$ref": "../forms/inet.web.acct.json"
+    },
+    "to": {
+      "description": "The web account that received the message.",
+      "$ref": "../forms/inet.web.acct.json"
+    },
+    "client": {
+      "description": "The source address of the message.",
+      "$ref": "../forms/inet.client.json"
+    },
+    "client:ipv4": {
+      "description": "The source IPv4 address of the message.",
+      "type": "string"
+    },
+    "client:ipv6": {
+      "description": "The source IPv6 address of the message.",
+      "type": "string"
+    },
+    "time": {
+      "description": "The date and time at which the message was sent.",
+      "type": "string"
+    },
+    "url": {
+      "description": "The URL where the message is posted / visible.",
+      "type": "string"
+    },
+    "text": {
+      "description": "The text of the message.",
+      "type": "string"
+    },
+    "file": {
+      "description": "The file attached to or sent with the message.",
+      "type": "string"
+    },
+    "place": {
+      "description": "The place that the message was reportedly sent from.",
+      "$ref": "../forms/geo.place.json"
+    },
+    "place:name": {
+      "description": "The name of the place that the message was reportedly sent from. Used for entity resolution.",
+      "$ref": "../forms/geo.name.json"
+    },
+    "instance": {
+      "description": "The instance where the message was sent.",
+      "$ref": "../forms/inet.web.instance.json"
+    }
+  },
+  "type": "object"
+}

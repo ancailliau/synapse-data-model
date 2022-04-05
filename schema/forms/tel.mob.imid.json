@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/tel.mob.imid.json",
+  "title": "imid",
+  "description": "A mobile cell site which a phone may connect to.",
+  "properties": {
+    "imei": {
+      "description": "The IMEI for the phone hardware.",
+      "type": "string"
+    },
+    "imsi": {
+      "description": "The IMSI for the phone subscriber.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

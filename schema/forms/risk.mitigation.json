@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/risk.mitigation.json",
+  "title": "mitigation",
+  "description": "A compromise type taxonomy.",
+  "properties": {
+    "vuln": {
+      "description": "The vulnerability that this mitigation addresses.",
+      "$ref": "../forms/risk.vuln.json"
+    },
+    "name": {
+      "description": "A brief name for this risk mitigation.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A description of the mitigation approach for the vulnerability.",
+      "type": "string"
+    },
+    "software": {
+      "description": "A software version which implements a fix for the vulnerability.",
+      "$ref": "../forms/it.prod.softver.json"
+    },
+    "hardware": {
+      "description": "A hardware version which implements a fix for the vulnerability.",
+      "$ref": "../forms/it.prod.hardware.json"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/file.mime.macho.version.json",
+  "title": "version",
+  "description": "A section inside a Mach-O binary denoting a named region of bytes inside a segment.",
+  "properties": {
+    "version": {
+      "description": "The version of the Mach-O file encoded in an LC_VERSION load command.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

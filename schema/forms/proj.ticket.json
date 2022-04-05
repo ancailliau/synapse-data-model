@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/proj.ticket.json",
+  "title": "ticket",
+  "description": null,
+  "properties": {
+    "project": {
+      "description": null,
+      "$ref": "../forms/proj.project.json"
+    },
+    "ext:id": {
+      "description": "A ticket ID from an external system.",
+      "type": "string"
+    },
+    "ext:url": {
+      "description": "A URL to the ticket in an external system.",
+      "type": "string"
+    },
+    "epic": {
+      "description": "The epic that includes the ticket.",
+      "$ref": "../forms/proj.epic.json"
+    },
+    "created": {
+      "description": "The time the ticket was created.",
+      "type": "string"
+    },
+    "updated": {
+      "description": "The last time the ticket was updated.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the ticket.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A description of the ticket.",
+      "type": "string"
+    },
+    "points": {
+      "description": "Optional SCRUM style story points value.",
+      "type": "integer"
+    },
+    "status": {
+      "description": "The ticket completion status.",
+      "type": "integer"
+    },
+    "sprint": {
+      "description": "The sprint that contains the ticket.",
+      "$ref": "../forms/proj.sprint.json"
+    },
+    "priority": {
+      "description": "The priority of the ticket.",
+      "type": "integer"
+    },
+    "type": {
+      "description": "The type of ticket. (eg story / bug)",
+      "type": "string"
+    },
+    "creator": {
+      "description": "The synapse user who created the ticket.",
+      "$ref": "../forms/syn.user.json"
+    },
+    "assignee": {
+      "description": "The synapse user who the ticket is assigned to.",
+      "$ref": "../forms/syn.user.json"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.exec.file.write.json",
+  "title": "write",
+  "description": "A function from an imported library.",
+  "properties": {
+    "proc": {
+      "description": "The main process executing code that wrote to / modified the existing file.",
+      "$ref": "../forms/it.exec.proc.json"
+    },
+    "host": {
+      "description": "The host running the process that wrote to the file. Typically the same host referenced in :proc, if present.",
+      "$ref": "../forms/it.host.json"
+    },
+    "exe": {
+      "description": "The specific file containing code that wrote to the file. May or may not be the same :exe specified in :proc, if present.",
+      "type": "string"
+    },
+    "time": {
+      "description": "The time the file was written to/modified.",
+      "type": "string"
+    },
+    "path": {
+      "description": "The path where the file was written to/modified.",
+      "type": "string"
+    },
+    "path:dir": {
+      "description": "The parent directory of the file path (parsed from :path).",
+      "type": "string"
+    },
+    "path:ext": {
+      "description": "The file extension of the file name (parsed from :path).",
+      "type": "string"
+    },
+    "path:base": {
+      "description": "The final component of the file path (parsed from :path).",
+      "type": "string"
+    },
+    "file": {
+      "description": "The file that was modified.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

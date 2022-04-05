@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.exec.loadlib.json",
+  "title": "loadlib",
+  "description": "A function from an imported library.",
+  "properties": {
+    "proc": {
+      "description": "The process where the library was loaded.",
+      "$ref": "../forms/it.exec.proc.json"
+    },
+    "va": {
+      "description": "The base memory address where the library was loaded in the process.",
+      "type": "integer"
+    },
+    "loaded": {
+      "description": "The time the library was loaded.",
+      "type": "string"
+    },
+    "unloaded": {
+      "description": "The time the library was unloaded.",
+      "type": "string"
+    },
+    "path": {
+      "description": "The path that the library was loaded from.",
+      "type": "string"
+    },
+    "file": {
+      "description": "The library file that was loaded.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

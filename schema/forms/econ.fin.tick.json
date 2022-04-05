@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/econ.fin.tick.json",
+  "title": "tick",
+  "description": "A sample of the price of a security at a single moment in time",
+  "properties": {
+    "security": {
+      "description": "The security measured by the tick",
+      "$ref": "../forms/econ.fin.security.json"
+    },
+    "time": {
+      "description": "The time the price was sampled",
+      "type": "string"
+    },
+    "price": {
+      "description": "The price of the security at the time",
+      "$ref": "../forms/econ.price.json"
+    }
+  },
+  "type": "object"
+}

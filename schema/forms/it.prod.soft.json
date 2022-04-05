@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.prod.soft.json",
+  "title": "soft",
+  "description": "A function from an imported library.",
+  "properties": {
+    "name": {
+      "description": "Name of the software.",
+      "type": "string"
+    },
+    "names": {
+      "description": "Observed/variant names for this software.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.dev.str.json"
+      },
+      "uniqueItems": true
+    },
+    "desc": {
+      "description": "A description of the software.",
+      "type": "string"
+    },
+    "desc:short": {
+      "description": "A short description of the software.",
+      "type": "string"
+    },
+    "cpe": {
+      "description": "The NIST CPE 2.3 string specifying this software.",
+      "$ref": "../forms/it.sec.cpe.json"
+    },
+    "author": {
+      "description": "The contact information of the org or person who authored the software.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "author:org": {
+      "description": "Organization which authored the software.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "author:acct": {
+      "description": "Web account of the software author.",
+      "$ref": "../forms/inet.web.acct.json"
+    },
+    "author:email": {
+      "description": "Email address of the sofware author.",
+      "type": "string"
+    },
+    "author:person": {
+      "description": "Person who authored the software.",
+      "$ref": "../forms/ps.person.json"
+    },
+    "url": {
+      "description": "URL relevant for the software.",
+      "type": "string"
+    },
+    "isos": {
+      "description": "Set to True if the software is an operating system.",
+      "type": "boolean"
+    },
+    "islib": {
+      "description": "Set to True if the software is a library.",
+      "type": "boolean"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/syn.cron.json",
+  "title": "cron",
+  "description": "A Synapse role GUID.",
+  "properties": {
+    "doc": {
+      "description": "A description of the cron job.",
+      "type": "string"
+    },
+    "name": {
+      "description": "A user friendly name/alias for the cron job.",
+      "type": "string"
+    },
+    "storm": {
+      "description": "The storm query executed by the cron job.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

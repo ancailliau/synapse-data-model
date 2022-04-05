@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.jobtitle.json",
+  "title": "jobtitle",
+  "description": "A title for a position within an org.",
+  "properties": {},
+  "type": "object"
+}

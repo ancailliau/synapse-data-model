@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/mat.item.json",
+  "title": "item",
+  "description": null,
+  "properties": {
+    "name": {
+      "description": "The human readable name of the material item.",
+      "type": "string"
+    },
+    "spec": {
+      "description": "The mat:spec of which this item is an instance.",
+      "$ref": "../forms/mat.spec.json"
+    },
+    "place": {
+      "description": "The most recent place the item is known to reside.",
+      "$ref": "../forms/geo.place.json"
+    },
+    "latlong": {
+      "description": "The last known lat/long location of the node.",
+      "type": "string"
+    },
+    "loc": {
+      "description": "The geo-political location string for the node.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

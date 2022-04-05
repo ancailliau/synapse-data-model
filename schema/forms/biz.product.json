@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/biz.product.json",
+  "title": "product",
+  "description": "A product type taxonomy.",
+  "properties": {
+    "name": {
+      "description": "The name of the product.",
+      "type": "string"
+    },
+    "type": {
+      "description": "The type of product.",
+      "$ref": "../forms/biz.prodtype.json"
+    },
+    "summary": {
+      "description": "A brief summary of the product.",
+      "type": "string"
+    },
+    "madeby:org": {
+      "description": "The product manufacturer.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "madeby:orgname": {
+      "description": "The reported ou:name of the product manufacturer.",
+      "$ref": "../forms/ou.name.json"
+    },
+    "madeby:orgfqdn": {
+      "description": "The reported inet:fqdn of the product manufacturer.",
+      "type": "string"
+    },
+    "price:retail": {
+      "description": "The MSRP price of the product.",
+      "$ref": "../forms/econ.price.json"
+    },
+    "price:bottom": {
+      "description": "The minimum offered or observed price of the product.",
+      "$ref": "../forms/econ.price.json"
+    },
+    "bundles": {
+      "description": "An array of bundles included with the product.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/biz.bundle.json"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

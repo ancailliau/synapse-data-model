@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.exec.reg.set.json",
+  "title": "set",
+  "description": "A function from an imported library.",
+  "properties": {
+    "proc": {
+      "description": "The main process executing code that wrote to the registry.",
+      "$ref": "../forms/it.exec.proc.json"
+    },
+    "host": {
+      "description": "The host running the process that wrote to the registry. Typically the same host referenced in :proc, if present.",
+      "$ref": "../forms/it.host.json"
+    },
+    "exe": {
+      "description": "The specific file containing code that wrote to the registry. May or may not be the same :exe referenced in :proc, if present.",
+      "type": "string"
+    },
+    "time": {
+      "description": "The time the registry was written to.",
+      "type": "string"
+    },
+    "reg": {
+      "description": "The registry key or value that was written to.",
+      "$ref": "../forms/it.dev.regval.json"
+    }
+  },
+  "type": "object"
+}

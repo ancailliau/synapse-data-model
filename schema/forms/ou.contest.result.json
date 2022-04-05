@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.contest.result.json",
+  "title": "result",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "contest": {
+      "description": "The contest.",
+      "$ref": "../forms/ou.contest.json"
+    },
+    "participant": {
+      "description": "The participant",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "rank": {
+      "description": "The rank order of the participant.",
+      "type": "integer"
+    },
+    "score": {
+      "description": "The score of the participant.",
+      "type": "integer"
+    },
+    "url": {
+      "description": "The contest result website URL.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

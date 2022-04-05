@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.contest.json",
+  "title": "contest",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "name": {
+      "description": "The name of the contest.",
+      "type": "string"
+    },
+    "type": {
+      "description": "The type of contest.",
+      "type": "string"
+    },
+    "family": {
+      "description": "A name for a series of recurring contests.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A description of the contest.",
+      "type": "string"
+    },
+    "url": {
+      "description": "The contest website URL.",
+      "type": "string"
+    },
+    "start": {
+      "description": "The contest start date / time.",
+      "type": "string"
+    },
+    "end": {
+      "description": "The contest end date / time.",
+      "type": "string"
+    },
+    "loc": {
+      "description": "The geopolitical affiliation of the contest.",
+      "type": "string"
+    },
+    "place": {
+      "description": "The geo:place where the contest was held.",
+      "$ref": "../forms/geo.place.json"
+    },
+    "latlong": {
+      "description": "The latlong where the contest was held.",
+      "type": "string"
+    },
+    "conference": {
+      "description": "The conference that the contest is associated with.",
+      "$ref": "../forms/ou.conference.json"
+    },
+    "contests": {
+      "description": "An array of sub-contests that contributed to the rankings.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ou.contest.json"
+      },
+      "uniqueItems": true
+    },
+    "sponsors": {
+      "description": "Contact information for contest sponsors.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ps.contact.json"
+      },
+      "uniqueItems": true
+    },
+    "organizers": {
+      "description": "Contact information for contest organizers.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ps.contact.json"
+      },
+      "uniqueItems": true
+    },
+    "participants": {
+      "description": "Contact information for contest participants.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ps.contact.json"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

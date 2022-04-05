@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/tel.mob.imsiphone.json",
+  "title": "imsiphone",
+  "description": "A mobile cell site which a phone may connect to.",
+  "properties": {
+    "phone": {
+      "description": "The phone number assigned to the IMSI.",
+      "type": "string"
+    },
+    "imsi": {
+      "description": "The IMSI with the assigned phone number.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

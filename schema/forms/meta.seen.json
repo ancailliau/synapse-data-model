@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/meta.seen.json",
+  "title": "seen",
+  "description": "A generic digraph time edge to show relationships outside the model.",
+  "properties": {
+    "source": {
+      "description": "The source which observed or provided the node.",
+      "$ref": "../forms/meta.source.json"
+    },
+    "node": {
+      "description": "The node which was observed by or received from the source.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

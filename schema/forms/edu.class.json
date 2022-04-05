@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/edu.class.json",
+  "title": "class",
+  "description": "A GUID representing entry in a contact's work history.",
+  "properties": {
+    "course": {
+      "description": "The course being taught in the class.",
+      "$ref": "../forms/edu.course.json"
+    },
+    "instructor": {
+      "description": "The primary instructor for the class.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "assistants": {
+      "description": "An array of assistant/co-instructor contacts.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ps.contact.json"
+      },
+      "uniqueItems": true
+    },
+    "date:first": {
+      "description": "The date of the first day of class.",
+      "type": "string"
+    },
+    "date:last": {
+      "description": "The date of the last day of class.",
+      "type": "string"
+    },
+    "isvirtual": {
+      "description": "Set if the class is known to be virtual.",
+      "type": "boolean"
+    },
+    "virtual:url": {
+      "description": "The URL a student would use to attend the virtual class.",
+      "type": "string"
+    },
+    "virtual:provider": {
+      "description": "Contact info for the virtual infrastructure provider.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "place": {
+      "description": "The place that the class is held.",
+      "$ref": "../forms/geo.place.json"
+    }
+  },
+  "type": "object"
+}

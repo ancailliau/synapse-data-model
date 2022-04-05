@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.hosturl.json",
+  "title": "hosturl",
+  "description": "A function from an imported library.",
+  "properties": {
+    "host": {
+      "description": "Host serving a url.",
+      "$ref": "../forms/it.host.json"
+    },
+    "url": {
+      "description": "URL available on the host.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

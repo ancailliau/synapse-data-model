@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.email.message.link.json",
+  "title": "link",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "message": {
+      "description": "The message containing the embedded link.",
+      "$ref": "../forms/inet.email.message.json"
+    },
+    "url": {
+      "description": "The url contained within the email message.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

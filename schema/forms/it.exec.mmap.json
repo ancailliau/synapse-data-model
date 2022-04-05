@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.exec.mmap.json",
+  "title": "mmap",
+  "description": "A function from an imported library.",
+  "properties": {
+    "proc": {
+      "description": "The process where the memory was mapped.",
+      "$ref": "../forms/it.exec.proc.json"
+    },
+    "va": {
+      "description": "The base memory address where the map was created in the process.",
+      "type": "integer"
+    },
+    "size": {
+      "description": "The size of the memory map in bytes.",
+      "type": "integer"
+    },
+    "perms:read": {
+      "description": "True if the mmap is mapped with read permissions.",
+      "type": "boolean"
+    },
+    "perms:write": {
+      "description": "True if the mmap is mapped with write permissions.",
+      "type": "boolean"
+    },
+    "perms:execute": {
+      "description": "True if the mmap is mapped with execute permissions.",
+      "type": "boolean"
+    },
+    "created": {
+      "description": "The time the memory map was created.",
+      "type": "string"
+    },
+    "deleted": {
+      "description": "The time the memory map was deleted.",
+      "type": "string"
+    },
+    "path": {
+      "description": "The file path if the mmap is a mapped view of a file.",
+      "type": "string"
+    },
+    "hash:sha256": {
+      "description": "A SHA256 hash of the memory map. Bytes may optionally be present in the axon.",
+      "$ref": "../forms/hash.sha256.json"
+    }
+  },
+  "type": "object"
+}

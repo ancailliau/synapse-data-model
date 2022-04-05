@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/econ.pay.iin.json",
+  "title": "iin",
+  "description": "A sample of the price of a security at a single moment in time",
+  "properties": {
+    "org": {
+      "description": "The issuer organization.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "name": {
+      "description": "The registered name of the issuer.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

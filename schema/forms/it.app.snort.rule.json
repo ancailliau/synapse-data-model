@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.app.snort.rule.json",
+  "title": "rule",
+  "description": "A function from an imported library.",
+  "properties": {
+    "text": {
+      "description": "The snort rule text.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the snort rule.",
+      "type": "string"
+    },
+    "version": {
+      "description": "The current version of the rule.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.asnet4.json",
+  "title": "asnet4",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "asn": {
+      "description": "The Autonomous System Number (ASN) of the netblock.",
+      "$ref": "../forms/inet.asn.json"
+    },
+    "net4": {
+      "description": "The IPv4 address range assigned to the ASN.",
+      "$ref": "../forms/inet.net4.json"
+    },
+    "net4:min": {
+      "description": "The first IPv4 in the range assigned to the ASN.",
+      "type": "string"
+    },
+    "net4:max": {
+      "description": "The last IPv4 in the range assigned to the ASN.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

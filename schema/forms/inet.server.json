@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.server.json",
+  "title": "server",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "proto": {
+      "description": "The network protocol of the server.",
+      "type": "string"
+    },
+    "ipv4": {
+      "description": "The IPv4 of the server.",
+      "type": "string"
+    },
+    "ipv6": {
+      "description": "The IPv6 of the server.",
+      "type": "string"
+    },
+    "host": {
+      "description": "The it:host node for the server.",
+      "$ref": "../forms/it.host.json"
+    },
+    "port": {
+      "description": "The server tcp/udp port.",
+      "$ref": "../forms/inet.port.json"
+    }
+  },
+  "type": "object"
+}

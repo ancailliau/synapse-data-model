@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.fqdn.json",
+  "title": "fqdn",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "domain": {
+      "description": "The parent domain for the FQDN.",
+      "type": "string"
+    },
+    "host": {
+      "description": "The host part of the FQDN.",
+      "type": "string"
+    },
+    "issuffix": {
+      "description": "True if the FQDN is considered a suffix.",
+      "type": "boolean"
+    },
+    "iszone": {
+      "description": "True if the FQDN is considered a zone.",
+      "type": "boolean"
+    },
+    "zone": {
+      "description": "The zone level parent for this FQDN.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

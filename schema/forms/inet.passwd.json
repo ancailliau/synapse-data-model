@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.passwd.json",
+  "title": "passwd",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "md5": {
+      "description": "The MD5 hash of the password.",
+      "$ref": "../forms/hash.md5.json"
+    },
+    "sha1": {
+      "description": "The SHA1 hash of the password.",
+      "$ref": "../forms/hash.sha1.json"
+    },
+    "sha256": {
+      "description": "The SHA256 hash of the password.",
+      "$ref": "../forms/hash.sha256.json"
+    }
+  },
+  "type": "object"
+}

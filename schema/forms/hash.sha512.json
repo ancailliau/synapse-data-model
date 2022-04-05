@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/hash.sha512.json",
+  "title": "sha512",
+  "description": "A digital signature relationship between an X.509 certificate and a file.",
+  "properties": {},
+  "type": "object"
+}

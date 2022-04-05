@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/file.string.json",
+  "title": "string",
+  "description": "A section inside a Mach-O binary denoting a named region of bytes inside a segment.",
+  "properties": {
+    "file": {
+      "description": "The file containing the string.",
+      "type": "string"
+    },
+    "string": {
+      "description": "The string contained in this file:bytes node.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

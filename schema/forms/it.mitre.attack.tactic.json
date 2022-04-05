@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.mitre.attack.tactic.json",
+  "title": "tactic",
+  "description": "A function from an imported library.",
+  "properties": {
+    "name": {
+      "description": "The primary name for the ATT&CK tactic.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A description of the ATT&CK tactic.",
+      "type": "string"
+    },
+    "url": {
+      "description": "The URL that documents the ATT&CK tactic.",
+      "type": "string"
+    },
+    "tag": {
+      "description": "The synapse tag used to annotate nodes included in this ATT&CK tactic.",
+      "type": "string"
+    },
+    "references": {
+      "description": "An array of URLs that document the ATT&CK tactic.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

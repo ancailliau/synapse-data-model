@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/biz.deal.json",
+  "title": "deal",
+  "description": "A product type taxonomy.",
+  "properties": {
+    "title": {
+      "description": "A title for the deal.",
+      "type": "string"
+    },
+    "type": {
+      "description": "The type of deal.",
+      "$ref": "../forms/biz.dealtype.json"
+    },
+    "status": {
+      "description": "The status of the deal.",
+      "$ref": "../forms/biz.dealstatus.json"
+    },
+    "updated": {
+      "description": "The last time the deal had a significant update.",
+      "type": "string"
+    },
+    "contacted": {
+      "description": "The last time the contacts communicated about the deal.",
+      "type": "string"
+    },
+    "rfp": {
+      "description": "The RFP that the deal is in response to.",
+      "$ref": "../forms/biz.rfp.json"
+    },
+    "buyer": {
+      "description": "The primary contact information for the buyer.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "buyer:org": {
+      "description": "The buyer org.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "buyer:orgname": {
+      "description": "The reported ou:name of the buyer org.",
+      "$ref": "../forms/ou.name.json"
+    },
+    "buyer:orgfqdn": {
+      "description": "The reported inet:fqdn of the buyer org.",
+      "type": "string"
+    },
+    "seller": {
+      "description": "The primary contact information for the seller.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "seller:org": {
+      "description": "The seller org.",
+      "$ref": "../forms/ou.org.json"
+    },
+    "seller:orgname": {
+      "description": "The reported ou:name of the seller org.",
+      "$ref": "../forms/ou.name.json"
+    },
+    "seller:orgfqdn": {
+      "description": "The reported inet:fqdn of the seller org.",
+      "type": "string"
+    },
+    "currency": {
+      "description": "The currency of econ:price values associated with the deal.",
+      "$ref": "../forms/econ.currency.json"
+    },
+    "buyer:budget": {
+      "description": "The buyers budget for the eventual purchase.",
+      "$ref": "../forms/econ.price.json"
+    },
+    "buyer:deadline": {
+      "description": "When the buyer intends to make a decision.",
+      "type": "string"
+    },
+    "offer:price": {
+      "description": "The total price of the offered products.",
+      "$ref": "../forms/econ.price.json"
+    },
+    "offer:expires": {
+      "description": "When the offer expires.",
+      "type": "string"
+    },
+    "purchase": {
+      "description": "Records a purchase resulting from the deal.",
+      "$ref": "../forms/econ.purchase.json"
+    }
+  },
+  "type": "object"
+}

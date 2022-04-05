@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/it.prod.hardware.json",
+  "title": "hardware",
+  "description": "A function from an imported library.",
+  "properties": {
+    "name": {
+      "description": "The display name for this hardware specification.",
+      "type": "string"
+    },
+    "type": {
+      "description": "The type of hardware.",
+      "$ref": "../forms/it.prod.hardwaretype.json"
+    },
+    "desc": {
+      "description": "A brief description of the hardware.",
+      "type": "string"
+    },
+    "cpe": {
+      "description": "The NIST CPE 2.3 string specifying this hardware.",
+      "$ref": "../forms/it.sec.cpe.json"
+    },
+    "make": {
+      "description": "The name of the organization which manufactures this hardware.",
+      "$ref": "../forms/ou.name.json"
+    },
+    "model": {
+      "description": "The model name or number for this hardware specification.",
+      "type": "string"
+    },
+    "version": {
+      "description": "Version string associated with this hardware specification.",
+      "type": "string"
+    },
+    "released": {
+      "description": "The initial release date for this hardware.",
+      "type": "string"
+    },
+    "parts": {
+      "description": "An array of it:prod:hadware parts included in this hardware specification.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/it.prod.hardware.json"
+      },
+      "uniqueItems": true
+    }
+  },
+  "type": "object"
+}

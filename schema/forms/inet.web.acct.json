@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.web.acct.json",
+  "title": "acct",
+  "description": "A JARM hash sample taken from a server.",
+  "properties": {
+    "avatar": {
+      "description": "The file representing the avatar (e.g., profile picture) for the account.",
+      "type": "string"
+    },
+    "dob": {
+      "description": "A self-declared date of birth for the account (if the account belongs to a person).",
+      "type": "string"
+    },
+    "email": {
+      "description": "The email address associated with the account.",
+      "type": "string"
+    },
+    "linked:accts": {
+      "description": "Linked accounts specified in the account profile.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/inet.web.acct.json"
+      },
+      "uniqueItems": true
+    },
+    "latlong": {
+      "description": "The last known latitude/longitude for the node.",
+      "type": "string"
+    },
+    "place": {
+      "description": "The geo:place associated with the latlong property.",
+      "$ref": "../forms/geo.place.json"
+    },
+    "loc": {
+      "description": "A self-declared location for the account.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The localized name associated with the account (may be different from the account identifier, e.g., a display name).",
+      "$ref": "../forms/inet.user.json"
+    },
+    "name:en": {
+      "description": "The English version of the name associated with the (may be different from the account identifier, e.g., a display name).",
+      "$ref": "../forms/inet.user.json"
+    },
+    "aliases": {
+      "description": "An array of alternate names for the user.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/inet.user.json"
+      },
+      "uniqueItems": true
+    },
+    "occupation": {
+      "description": "A self-declared occupation for the account.",
+      "type": "string"
+    },
+    "passwd": {
+      "description": "The current password for the account.",
+      "$ref": "../forms/inet.passwd.json"
+    },
+    "phone": {
+      "description": "The phone number associated with the account.",
+      "type": "string"
+    },
+    "realname": {
+      "description": "The localized version of the real name of the account owner / registrant.",
+      "$ref": "../forms/ps.name.json"
+    },
+    "realname:en": {
+      "description": "The English version of the real name of the account owner / registrant.",
+      "$ref": "../forms/ps.name.json"
+    },
+    "signup": {
+      "description": "The date and time the account was registered.",
+      "type": "string"
+    },
+    "signup:client": {
+      "description": "The client address used to sign up for the account.",
+      "$ref": "../forms/inet.client.json"
+    },
+    "signup:client:ipv4": {
+      "description": "The IPv4 address used to sign up for the account.",
+      "type": "string"
+    },
+    "signup:client:ipv6": {
+      "description": "The IPv6 address used to sign up for the account.",
+      "type": "string"
+    },
+    "site": {
+      "description": "The site or service associated with the account.",
+      "type": "string"
+    },
+    "tagline": {
+      "description": "The text of the account status or tag line.",
+      "type": "string"
+    },
+    "url": {
+      "description": "The service provider URL where the account is hosted.",
+      "type": "string"
+    },
+    "user": {
+      "description": "The unique identifier for the account (may be different from the common name or display name).",
+      "$ref": "../forms/inet.user.json"
+    },
+    "webpage": {
+      "description": "A related URL specified by the account (e.g., a personal or company web page, blog, etc.).",
+      "type": "string"
+    },
+    "recovery:email": {
+      "description": "An email address registered as a recovery email address for the account.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

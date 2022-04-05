@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/ou.preso.json",
+  "title": "preso",
+  "description": "A title for a position within an org.",
+  "properties": {
+    "organizer": {
+      "description": "Contact information for the primary organizer of the presentation.",
+      "$ref": "../forms/ps.contact.json"
+    },
+    "sponsors": {
+      "description": "A set of contacts which sponsored the presentation.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ps.contact.json"
+      },
+      "uniqueItems": true
+    },
+    "presenters": {
+      "description": "A set of contacts which gave the presentation.",
+      "type": "array",
+      "items": {
+        "$ref": "../forms/ps.contact.json"
+      },
+      "uniqueItems": true
+    },
+    "title": {
+      "description": "The full name of the presentation.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A description of the presentation.",
+      "type": "string"
+    },
+    "time": {
+      "description": "The scheduled presentation start time.",
+      "type": "string"
+    },
+    "duration": {
+      "description": "The scheduled duration of the presentation.",
+      "type": "string"
+    },
+    "loc": {
+      "description": "The geopolitical location string for where the presentation was given.",
+      "type": "string"
+    },
+    "place": {
+      "description": "The geo:place node where the presentation was held.",
+      "$ref": "../forms/geo.place.json"
+    },
+    "deck:url": {
+      "description": "The URL hosting a copy of the presentation materials.",
+      "type": "string"
+    },
+    "deck:file": {
+      "description": "A file containing the presentation materials.",
+      "type": "string"
+    },
+    "attendee:url": {
+      "description": "The URL visited by live attendees of the presentation.",
+      "type": "string"
+    },
+    "recording:url": {
+      "description": "The URL hosting a recording of the presentation.",
+      "type": "string"
+    },
+    "recording:file": {
+      "description": "A file containing a recording of the presentation.",
+      "type": "string"
+    },
+    "conference": {
+      "description": "The conference which hosted the presentation.",
+      "$ref": "../forms/ou.conference.json"
+    }
+  },
+  "type": "object"
+}

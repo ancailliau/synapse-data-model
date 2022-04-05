@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/tel.mob.imei.json",
+  "title": "imei",
+  "description": "A mobile cell site which a phone may connect to.",
+  "properties": {
+    "tac": {
+      "description": "The Type Allocate Code within the IMEI.",
+      "$ref": "../forms/tel.mob.tac.json"
+    },
+    "serial": {
+      "description": "The serial number within the IMEI.",
+      "type": "integer"
+    }
+  },
+  "type": "object"
+}

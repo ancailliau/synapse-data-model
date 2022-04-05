@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/syn.tagprop.json",
+  "title": "tagprop",
+  "description": "A Synapse role GUID.",
+  "properties": {
+    "doc": {
+      "description": "Description of the tagprop definition.",
+      "type": "string"
+    },
+    "type": {
+      "description": "The synapse type for this tagprop.",
+      "$ref": "../forms/syn.type.json"
+    }
+  },
+  "type": "object"
+}
