@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.hostsoft.json",
+  "title": "hostsoft",
+  "description": "A version of a software product which is present on a given host.",
+  "type": "object"
+}

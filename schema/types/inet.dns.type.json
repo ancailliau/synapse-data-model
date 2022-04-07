@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.dns.type.json",
+  "title": "type",
+  "description": "A DNS query/answer type integer.",
+  "type": "integer"
+}

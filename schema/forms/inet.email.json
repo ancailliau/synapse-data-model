@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.email.json",
   "title": "email",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "user": {
       "description": "The username of the email address.",
-      "$ref": "../forms/inet.user.json"
+      "$ref": "../types/inet.user.json"
     },
     "fqdn": {
       "description": "The domain of the email address.",

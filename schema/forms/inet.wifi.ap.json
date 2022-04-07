@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.wifi.ap.json",
   "title": "ap",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "ssid": {
       "description": "The SSID for the wireless access point.",
-      "$ref": "../forms/inet.wifi.ssid.json"
+      "$ref": "../types/inet.wifi.ssid.json"
     },
     "bssid": {
       "description": "The MAC address for the wireless access point.",
-      "$ref": "../forms/inet.mac.json"
+      "$ref": "../types/inet.mac.json"
     },
     "latlong": {
       "description": "The best known latitude/longitude for the wireless access point.",
@@ -30,7 +30,7 @@
     },
     "place": {
       "description": "The geo:place associated with the latlong property.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     },
     "loc": {
       "description": "The geo-political location string for the wireless access point.",
@@ -38,7 +38,7 @@
     },
     "org": {
       "description": "The organization that owns/operates the access point.",
-      "$ref": "../forms/ou.org.json"
+      "$ref": "../types/ou.org.json"
     }
   },
   "type": "object"

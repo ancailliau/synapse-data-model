@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/econ.pay.pan.json",
+  "title": "pan",
+  "description": "A Primary Account Number (PAN) or card number.",
+  "type": "string"
+}

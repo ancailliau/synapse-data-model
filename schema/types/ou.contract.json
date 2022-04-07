@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.contract.json",
+  "title": "contract",
+  "description": "An contract between multiple entities.",
+  "type": "string"
+}

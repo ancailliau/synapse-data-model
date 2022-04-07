@@ -2,19 +2,19 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.web.mesg.json",
   "title": "mesg",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "from": {
       "description": "The web account that sent the message.",
-      "$ref": "../forms/inet.web.acct.json"
+      "$ref": "../types/inet.web.acct.json"
     },
     "to": {
       "description": "The web account that received the message.",
-      "$ref": "../forms/inet.web.acct.json"
+      "$ref": "../types/inet.web.acct.json"
     },
     "client": {
       "description": "The source address of the message.",
-      "$ref": "../forms/inet.client.json"
+      "$ref": "../types/inet.client.json"
     },
     "client:ipv4": {
       "description": "The source IPv4 address of the message.",
@@ -42,15 +42,15 @@
     },
     "place": {
       "description": "The place that the message was reportedly sent from.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     },
     "place:name": {
       "description": "The name of the place that the message was reportedly sent from. Used for entity resolution.",
-      "$ref": "../forms/geo.name.json"
+      "$ref": "../types/geo.name.json"
     },
     "instance": {
       "description": "The instance where the message was sent.",
-      "$ref": "../forms/inet.web.instance.json"
+      "$ref": "../types/inet.web.instance.json"
     }
   },
   "type": "object"

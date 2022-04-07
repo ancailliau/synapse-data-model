@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/lang.trans.json",
+  "title": "trans",
+  "description": "Deprecated. Please use lang:translation.",
+  "type": "string"
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/pe.langid.json",
+  "title": "langid",
+  "description": "The PE language id.",
+  "type": "integer"
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.name.json",
+  "title": "name",
+  "description": "The name of an organization. This may be a formal name or informal name of the organization.",
+  "type": "string"
+}

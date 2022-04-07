@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ou.contest.json",
   "title": "contest",
-  "description": "A title for a position within an org.",
+  "description": "",
   "properties": {
     "name": {
       "description": "The name of the contest.",
@@ -38,7 +38,7 @@
     },
     "place": {
       "description": "The geo:place where the contest was held.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     },
     "latlong": {
       "description": "The latlong where the contest was held.",
@@ -46,13 +46,13 @@
     },
     "conference": {
       "description": "The conference that the contest is associated with.",
-      "$ref": "../forms/ou.conference.json"
+      "$ref": "../types/ou.conference.json"
     },
     "contests": {
       "description": "An array of sub-contests that contributed to the rankings.",
       "type": "array",
       "items": {
-        "$ref": "../forms/ou.contest.json"
+        "$ref": "#"
       },
       "uniqueItems": true
     },

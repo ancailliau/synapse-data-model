@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.ssl.cert.json",
   "title": "cert",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "file": {
       "description": "The file bytes for the SSL certificate.",
@@ -10,7 +10,7 @@
     },
     "server": {
       "description": "The server that presented the SSL certificate.",
-      "$ref": "../forms/inet.server.json"
+      "$ref": "../types/inet.server.json"
     },
     "server:ipv4": {
       "description": "The SSL server IPv4 address.",
@@ -22,7 +22,7 @@
     },
     "server:port": {
       "description": "The SSL server listening port.",
-      "$ref": "../forms/inet.port.json"
+      "$ref": "../types/inet.port.json"
     }
   },
   "type": "object"

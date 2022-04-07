@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.av.filehit.json",
+  "title": "filehit",
+  "description": "A file that triggered an alert on a specific antivirus signature.",
+  "type": "object"
+}

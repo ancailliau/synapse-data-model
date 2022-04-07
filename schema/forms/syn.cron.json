@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/syn.cron.json",
   "title": "cron",
-  "description": "A Synapse role GUID.",
+  "description": "",
   "properties": {
     "doc": {
       "description": "A description of the cron job.",

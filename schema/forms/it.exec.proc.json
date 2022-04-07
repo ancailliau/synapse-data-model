@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.exec.proc.json",
   "title": "proc",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "host": {
       "description": "The host that executed the process. May be an actual or a virtual / notional host.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "exe": {
       "description": "The file considered the \"main\" executable for the process. For example, rundll32.exe may be considered the \"main\" executable for DLLs loaded by that program.",
@@ -14,7 +14,7 @@
     },
     "cmd": {
       "description": "The command string used to launch the process, including any command line parameters.",
-      "$ref": "../forms/it.cmd.json"
+      "$ref": "../types/it.cmd.json"
     },
     "pid": {
       "description": "The process ID.",
@@ -34,11 +34,11 @@
     },
     "user": {
       "description": "The user name of the process owner.",
-      "$ref": "../forms/inet.user.json"
+      "$ref": "../types/inet.user.json"
     },
     "account": {
       "description": "The account of the process owner.",
-      "$ref": "../forms/it.account.json"
+      "$ref": "../types/it.account.json"
     },
     "path": {
       "description": "The path to the executable of the process.",
@@ -50,11 +50,11 @@
     },
     "src:proc": {
       "description": "The process which created the process.",
-      "$ref": "../forms/it.exec.proc.json"
+      "$ref": "../types/it.exec.proc.json"
     },
     "killedby": {
       "description": "The process which killed this process.",
-      "$ref": "../forms/it.exec.proc.json"
+      "$ref": "../types/it.exec.proc.json"
     }
   },
   "type": "object"

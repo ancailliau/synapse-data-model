@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/file.mime.png.json",
+  "title": "png",
+  "description": "The GUID of a set of mime metadata for a .png file.",
+  "type": "string"
+}

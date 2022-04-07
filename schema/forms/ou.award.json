@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ou.award.json",
   "title": "award",
-  "description": "A title for a position within an org.",
+  "description": "",
   "properties": {
     "name": {
       "description": "The name of the award.",
@@ -14,7 +14,7 @@
     },
     "org": {
       "description": "The organization which issues the award.",
-      "$ref": "../forms/ou.org.json"
+      "$ref": "../types/ou.org.json"
     }
   },
   "type": "object"

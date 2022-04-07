@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.dev.str.json",
+  "title": "str",
+  "description": "A developer-selected string.",
+  "type": "string"
+}

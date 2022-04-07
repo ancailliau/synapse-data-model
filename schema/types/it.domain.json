@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.domain.json",
+  "title": "domain",
+  "description": "A logical boundary of authentication and configuration such as a windows domain.",
+  "type": "string"
+}

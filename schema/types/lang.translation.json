@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/lang.translation.json",
+  "title": "translation",
+  "description": "A translation of text from one language to another.",
+  "type": "string"
+}

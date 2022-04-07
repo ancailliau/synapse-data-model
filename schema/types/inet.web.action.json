@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.web.action.json",
+  "title": "action",
+  "description": "An instance of an account performing an action at an Internet-based site or service.",
+  "type": "string"
+}

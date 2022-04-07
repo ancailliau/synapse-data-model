@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/file.mime.msdoc.json",
+  "title": "msdoc",
+  "description": "The GUID of a set of mime metadata for a Microsoft Word file.",
+  "type": "string"
+}

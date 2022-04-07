@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.prod.softos.json",
+  "title": "softos",
+  "description": "The software version is known to be compatible with the given os software version.",
+  "type": "object"
+}

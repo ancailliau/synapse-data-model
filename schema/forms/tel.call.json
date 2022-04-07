@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/tel.call.json",
   "title": "call",
-  "description": "A mobile cell site which a phone may connect to.",
+  "description": "",
   "properties": {
     "src": {
       "description": "The source phone number for a call.",

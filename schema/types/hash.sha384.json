@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/hash.sha384.json",
+  "title": "sha384",
+  "description": "A hex encoded SHA384 hash.",
+  "type": "string"
+}

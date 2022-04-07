@@ -2,43 +2,43 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/risk.hasvuln.json",
   "title": "hasvuln",
-  "description": "A compromise type taxonomy.",
+  "description": "",
   "properties": {
     "vuln": {
       "description": "The vulnerability present in the target.",
-      "$ref": "../forms/risk.vuln.json"
+      "$ref": "../types/risk.vuln.json"
     },
     "person": {
       "description": "The vulnerable person.",
-      "$ref": "../forms/ps.person.json"
+      "$ref": "../types/ps.person.json"
     },
     "org": {
       "description": "The vulnerable org.",
-      "$ref": "../forms/ou.org.json"
+      "$ref": "../types/ou.org.json"
     },
     "place": {
       "description": "The vulnerable place.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     },
     "software": {
       "description": "The vulnerable software.",
-      "$ref": "../forms/it.prod.softver.json"
+      "$ref": "../types/it.prod.softver.json"
     },
     "hardware": {
       "description": "The vulnerable hardware.",
-      "$ref": "../forms/it.prod.hardware.json"
+      "$ref": "../types/it.prod.hardware.json"
     },
     "spec": {
       "description": "The vulnerable material specification.",
-      "$ref": "../forms/mat.spec.json"
+      "$ref": "../types/mat.spec.json"
     },
     "item": {
       "description": "The vulnerable material item.",
-      "$ref": "../forms/mat.item.json"
+      "$ref": "../types/mat.item.json"
     },
     "host": {
       "description": "The vulnerable host.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     }
   },
   "type": "object"

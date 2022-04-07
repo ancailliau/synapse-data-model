@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/file.mime.macho.version.json",
+  "title": "version",
+  "description": "A specific load command used to denote the version of the source used to build the Mach-O binary.",
+  "type": "string"
+}

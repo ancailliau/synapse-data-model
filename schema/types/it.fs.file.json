@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.fs.file.json",
+  "title": "file",
+  "description": "A file on a host.",
+  "type": "string"
+}

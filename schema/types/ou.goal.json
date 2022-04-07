@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.goal.json",
+  "title": "goal",
+  "description": "An assessed or stated goal which may be abstract or org specific.",
+  "type": "string"
+}

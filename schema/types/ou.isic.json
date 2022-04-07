@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.isic.json",
+  "title": "isic",
+  "description": "An International Standard Industrial Classification of All Economic Activities (ISIC) code.",
+  "type": "string"
+}

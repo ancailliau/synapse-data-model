@@ -2,19 +2,19 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ps.name.json",
   "title": "name",
-  "description": "A GUID representing entry in a contact's work history.",
+  "description": "",
   "properties": {
     "sur": {
       "description": "The surname part of the name.",
-      "$ref": "../forms/ps.tokn.json"
+      "$ref": "../types/ps.tokn.json"
     },
     "middle": {
       "description": "The middle name part of the name.",
-      "$ref": "../forms/ps.tokn.json"
+      "$ref": "../types/ps.tokn.json"
     },
     "given": {
       "description": "The given name part of the name.",
-      "$ref": "../forms/ps.tokn.json"
+      "$ref": "../types/ps.tokn.json"
     }
   },
   "type": "object"

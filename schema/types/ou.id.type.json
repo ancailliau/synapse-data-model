@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.id.type.json",
+  "title": "type",
+  "description": "A type of id number issued by an org.",
+  "type": "string"
+}

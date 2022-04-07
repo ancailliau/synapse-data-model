@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.app.snort.hit.json",
   "title": "hit",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "rule": {
       "description": "The snort rule that matched the file.",
-      "$ref": "../forms/it.app.snort.rule.json"
+      "$ref": "../types/it.app.snort.rule.json"
     },
     "flow": {
       "description": "The inet:flow that matched the snort rule.",
-      "$ref": "../forms/inet.flow.json"
+      "$ref": "../types/inet.flow.json"
     },
     "src": {
       "description": "The source address of flow that caused the hit.",
@@ -26,7 +26,7 @@
     },
     "src:port": {
       "description": "The source port of the flow that caused the hit.",
-      "$ref": "../forms/inet.port.json"
+      "$ref": "../types/inet.port.json"
     },
     "dst": {
       "description": "The destination address of the trigger.",
@@ -42,7 +42,7 @@
     },
     "dst:port": {
       "description": "The destination port of the flow that caused the hit.",
-      "$ref": "../forms/inet.port.json"
+      "$ref": "../types/inet.port.json"
     },
     "time": {
       "description": "The time of the network flow that caused the hit.",
@@ -50,7 +50,7 @@
     },
     "sensor": {
       "description": "The sensor host node that produced the hit.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "version": {
       "description": "The version of the rule at the time of match.",

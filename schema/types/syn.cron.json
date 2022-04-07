@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/syn.cron.json",
+  "title": "cron",
+  "description": "A Cortex cron job.",
+  "type": "string"
+}

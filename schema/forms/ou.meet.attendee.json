@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ou.meet.attendee.json",
   "title": "attendee",
-  "description": "A title for a position within an org.",
+  "description": "",
   "properties": {
     "meet": {
       "description": "The meeting which was attended.",
-      "$ref": "../forms/ou.meet.json"
+      "$ref": "../types/ou.meet.json"
     },
     "person": {
       "description": "The person who attended the meeting.",
-      "$ref": "../forms/ps.person.json"
+      "$ref": "../types/ps.person.json"
     },
     "arrived": {
       "description": "The time when a person arrived to the meeting.",

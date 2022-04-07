@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.exec.mmap.json",
   "title": "mmap",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "proc": {
       "description": "The process where the memory was mapped.",
-      "$ref": "../forms/it.exec.proc.json"
+      "$ref": "../types/it.exec.proc.json"
     },
     "va": {
       "description": "The base memory address where the map was created in the process.",
@@ -42,7 +42,7 @@
     },
     "hash:sha256": {
       "description": "A SHA256 hash of the memory map. Bytes may optionally be present in the axon.",
-      "$ref": "../forms/hash.sha256.json"
+      "$ref": "../types/hash.sha256.json"
     }
   },
   "type": "object"

@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.prod.softfile.json",
   "title": "softfile",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "soft": {
       "description": "The software which distributes the file.",
-      "$ref": "../forms/it.prod.softver.json"
+      "$ref": "../types/it.prod.softver.json"
     },
     "file": {
       "description": "The file distributed by the software.",

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/biz.product.json",
+  "title": "product",
+  "description": "A product which is available for purchase.",
+  "type": "string"
+}

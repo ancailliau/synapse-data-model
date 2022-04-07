@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/econ.fin.security.json",
+  "title": "security",
+  "description": "A financial security which is typically traded on an exchange.",
+  "type": "string"
+}

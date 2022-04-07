@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/crypto.smart.token.json",
+  "title": "token",
+  "description": "A token managed by a smart contract.",
+  "type": "object"
+}

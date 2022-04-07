@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.fs.file.json",
   "title": "file",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "host": {
       "description": "The host containing the file.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "path": {
       "description": "The path for the file.",
@@ -42,11 +42,11 @@
     },
     "user": {
       "description": "The owner of the file.",
-      "$ref": "../forms/inet.user.json"
+      "$ref": "../types/inet.user.json"
     },
     "group": {
       "description": "The group owner of the file.",
-      "$ref": "../forms/inet.user.json"
+      "$ref": "../types/inet.user.json"
     }
   },
   "type": "object"

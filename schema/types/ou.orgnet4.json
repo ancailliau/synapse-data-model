@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.orgnet4.json",
+  "title": "orgnet4",
+  "description": "An organization's IPv4 netblock.",
+  "type": "object"
+}

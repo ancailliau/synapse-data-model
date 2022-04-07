@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.ssl.jarmsample.json",
+  "title": "jarmsample",
+  "description": "A JARM hash sample taken from a server.",
+  "type": "object"
+}

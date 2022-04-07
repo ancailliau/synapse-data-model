@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.whois.ipcontact.json",
   "title": "ipcontact",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "contact": {
       "description": "Contact information associated with a registration.",
-      "$ref": "../forms/ps.contact.json"
+      "$ref": "../types/ps.contact.json"
     },
     "asof": {
       "description": "The date of the record.",
@@ -34,11 +34,11 @@
     },
     "asn": {
       "description": "The associated Autonomous System Number (ASN).",
-      "$ref": "../forms/inet.asn.json"
+      "$ref": "../types/inet.asn.json"
     },
     "id": {
       "description": "The registry unique identifier (e.g. NET-74-0-0-0-1).",
-      "$ref": "../forms/inet.whois.regid.json"
+      "$ref": "../types/inet.whois.regid.json"
     },
     "links": {
       "description": "URLs provided with the record.",
@@ -56,7 +56,7 @@
       "description": "Additional contacts referenced by this contact.",
       "type": "array",
       "items": {
-        "$ref": "../forms/inet.whois.ipcontact.json"
+        "$ref": "#"
       },
       "uniqueItems": true
     }

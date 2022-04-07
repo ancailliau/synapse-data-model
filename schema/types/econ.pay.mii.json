@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/econ.pay.mii.json",
+  "title": "mii",
+  "description": "A Major Industry Identifier (MII).",
+  "type": "integer"
+}

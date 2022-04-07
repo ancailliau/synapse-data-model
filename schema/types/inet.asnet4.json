@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.asnet4.json",
+  "title": "asnet4",
+  "description": "An Autonomous System Number (ASN) and its associated IPv4 address range.",
+  "type": "object"
+}

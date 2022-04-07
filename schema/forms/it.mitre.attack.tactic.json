@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.mitre.attack.tactic.json",
   "title": "tactic",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "name": {
       "description": "The primary name for the ATT&CK tactic.",

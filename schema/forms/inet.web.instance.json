@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.web.instance.json",
+  "title": "instance",
+  "description": "",
+  "properties": {
+    "url": {
+      "description": "The primary URL used to identify the instance.",
+      "type": "string"
+    },
+    "id": {
+      "description": "The operator specified ID of this instance.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The visible name of the instance.",
+      "type": "string"
+    },
+    "created": {
+      "description": "The time the instance was created.",
+      "type": "string"
+    },
+    "creator": {
+      "description": "The account which created the instance.",
+      "$ref": "../types/inet.web.acct.json"
+    },
+    "owner": {
+      "description": "The organization which created the instance.",
+      "$ref": "../types/ou.org.json"
+    },
+    "owner:fqdn": {
+      "description": "The FQDN of the organization which created the instance. Used for entity resolution.",
+      "type": "string"
+    },
+    "owner:name": {
+      "description": "The name of the organization which created the instance. Used for entity resolution.",
+      "$ref": "../types/ou.name.json"
+    },
+    "operator": {
+      "description": "The organization which operates the instance.",
+      "$ref": "../types/ou.org.json"
+    },
+    "operator:name": {
+      "description": "The name of the organization which operates the instance. Used for entity resolution.",
+      "$ref": "../types/ou.name.json"
+    },
+    "operator:fqdn": {
+      "description": "The FQDN of the organization which operates the instance. Used for entity resolution.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

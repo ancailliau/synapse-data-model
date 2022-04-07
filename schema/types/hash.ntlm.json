@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/hash.ntlm.json",
+  "title": "ntlm",
+  "description": "A hex encoded Microsoft Windows NTLM password hash.",
+  "type": "string"
+}

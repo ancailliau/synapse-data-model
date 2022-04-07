@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.group.json",
   "title": "group",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "name": {
       "description": "The name of the group.",
@@ -14,17 +14,17 @@
     },
     "host": {
       "description": "The host where the group is registered.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "domain": {
       "description": "The authentication domain where the group is registered.",
-      "$ref": "../forms/it.domain.json"
+      "$ref": "../types/it.domain.json"
     },
     "groups": {
       "description": "Groups that are a member of this group.",
       "type": "array",
       "items": {
-        "$ref": "../forms/it.group.json"
+        "$ref": "#"
       },
       "uniqueItems": true
     },
@@ -34,7 +34,7 @@
     },
     "windows:sid": {
       "description": "The Microsoft Windows Security Identifier of the group.",
-      "$ref": "../forms/it.os.windows.sid.json"
+      "$ref": "../types/it.os.windows.sid.json"
     }
   },
   "type": "object"

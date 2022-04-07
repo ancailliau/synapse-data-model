@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.dns.query.json",
+  "title": "query",
+  "description": "A DNS query unique to a given client.",
+  "type": "object"
+}

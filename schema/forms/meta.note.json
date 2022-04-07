@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/meta.note.json",
+  "title": "note",
+  "description": "",
+  "properties": {
+    "text": {
+      "description": "The analyst authored note text.",
+      "type": "string"
+    },
+    "author": {
+      "description": "The contact information of the author.",
+      "$ref": "../types/ps.contact.json"
+    },
+    "creator": {
+      "description": "The synapse user who authored the note.",
+      "$ref": "../types/syn.user.json"
+    },
+    "created": {
+      "description": "The time the note was created.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

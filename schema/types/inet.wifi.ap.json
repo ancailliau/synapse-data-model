@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.wifi.ap.json",
+  "title": "ap",
+  "description": "An SSID/MAC address combination for a wireless access point.",
+  "type": "object"
+}

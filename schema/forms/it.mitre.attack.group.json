@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.mitre.attack.group.json",
   "title": "group",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "org": {
       "description": "Used to map an ATT&CK group to a synapse ou:org.",
-      "$ref": "../forms/ou.org.json"
+      "$ref": "../types/ou.org.json"
     },
     "name": {
       "description": "The primary name for the ATT&CK group.",
-      "$ref": "../forms/ou.name.json"
+      "$ref": "../types/ou.name.json"
     },
     "names": {
       "description": "An array of alternate names for the ATT&CK group.",

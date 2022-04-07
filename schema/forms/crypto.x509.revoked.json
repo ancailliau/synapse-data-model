@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/crypto.x509.revoked.json",
   "title": "revoked",
-  "description": "A digital signature relationship between an X.509 certificate and a file.",
+  "description": "",
   "properties": {
     "crl": {
       "description": "The CRL which revoked the certificate.",
-      "$ref": "../forms/crypto.x509.crl.json"
+      "$ref": "../types/crypto.x509.crl.json"
     },
     "cert": {
       "description": "The certificate revoked by the CRL.",
-      "$ref": "../forms/crypto.x509.cert.json"
+      "$ref": "../types/crypto.x509.cert.json"
     }
   },
   "type": "object"

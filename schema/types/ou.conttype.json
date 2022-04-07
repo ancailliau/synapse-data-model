@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.conttype.json",
+  "title": "conttype",
+  "description": "A contract type taxonomy.",
+  "type": "string"
+}

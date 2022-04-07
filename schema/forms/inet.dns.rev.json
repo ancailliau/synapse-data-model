@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.dns.rev.json",
   "title": "rev",
-  "description": "A DNS AAAA wild card record and the IPv6 it resolves to.",
+  "description": "",
   "properties": {
     "ipv4": {
       "description": "The IPv4 address queried for its DNS PTR record.",

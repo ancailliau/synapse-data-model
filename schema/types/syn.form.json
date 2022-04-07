@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/syn.form.json",
+  "title": "form",
+  "description": "A Synapse form used for representing nodes in the graph.",
+  "type": "string"
+}

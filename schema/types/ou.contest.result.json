@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.contest.result.json",
+  "title": "result",
+  "description": "The results from a single contest participant.",
+  "type": "object"
+}

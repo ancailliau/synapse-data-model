@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/biz.rfp.json",
+  "title": "rfp",
+  "description": "An RFP (Request for Proposal) soliciting proposals.",
+  "type": "string"
+}

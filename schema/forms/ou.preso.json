@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ou.preso.json",
   "title": "preso",
-  "description": "A title for a position within an org.",
+  "description": "",
   "properties": {
     "organizer": {
       "description": "Contact information for the primary organizer of the presentation.",
-      "$ref": "../forms/ps.contact.json"
+      "$ref": "../types/ps.contact.json"
     },
     "sponsors": {
       "description": "A set of contacts which sponsored the presentation.",
@@ -46,7 +46,7 @@
     },
     "place": {
       "description": "The geo:place node where the presentation was held.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     },
     "deck:url": {
       "description": "The URL hosting a copy of the presentation materials.",
@@ -70,7 +70,7 @@
     },
     "conference": {
       "description": "The conference which hosted the presentation.",
-      "$ref": "../forms/ou.conference.json"
+      "$ref": "../types/ou.conference.json"
     }
   },
   "type": "object"

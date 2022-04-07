@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ou.orgnet4.json",
   "title": "orgnet4",
-  "description": "A title for a position within an org.",
+  "description": "",
   "properties": {
     "org": {
       "description": "The org guid which owns the netblock.",
-      "$ref": "../forms/ou.org.json"
+      "$ref": "../types/ou.org.json"
     },
     "net": {
       "description": "Netblock owned by the organization.",
-      "$ref": "../forms/inet.net4.json"
+      "$ref": "../types/inet.net4.json"
     },
     "name": {
       "description": "The name that the organization assigns to this netblock.",

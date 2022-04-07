@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.dns.answer.json",
+  "title": "answer",
+  "description": "A single answer from within a DNS reply.",
+  "type": "string"
+}

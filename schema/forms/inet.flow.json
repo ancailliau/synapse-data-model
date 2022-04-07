@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.flow.json",
   "title": "flow",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "time": {
       "description": "The time the network connection was initiated.",
@@ -18,7 +18,7 @@
     },
     "dst": {
       "description": "The destination address / port for a connection.",
-      "$ref": "../forms/inet.server.json"
+      "$ref": "../types/inet.server.json"
     },
     "dst:ipv4": {
       "description": "The destination IPv4 address.",
@@ -30,7 +30,7 @@
     },
     "dst:port": {
       "description": "The destination port.",
-      "$ref": "../forms/inet.port.json"
+      "$ref": "../types/inet.port.json"
     },
     "dst:proto": {
       "description": "The destination protocol.",
@@ -38,11 +38,11 @@
     },
     "dst:host": {
       "description": "The guid of the destination host.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "dst:proc": {
       "description": "The guid of the destination process.",
-      "$ref": "../forms/it.exec.proc.json"
+      "$ref": "../types/it.exec.proc.json"
     },
     "dst:exe": {
       "description": "The file (executable) that received the connection.",
@@ -62,7 +62,7 @@
     },
     "src": {
       "description": "The source address / port for a connection.",
-      "$ref": "../forms/inet.client.json"
+      "$ref": "../types/inet.client.json"
     },
     "src:ipv4": {
       "description": "The source IPv4 address.",
@@ -74,7 +74,7 @@
     },
     "src:port": {
       "description": "The source port.",
-      "$ref": "../forms/inet.port.json"
+      "$ref": "../types/inet.port.json"
     },
     "src:proto": {
       "description": "The source protocol.",
@@ -82,11 +82,11 @@
     },
     "src:host": {
       "description": "The guid of the source host.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "src:proc": {
       "description": "The guid of the source process.",
-      "$ref": "../forms/it.exec.proc.json"
+      "$ref": "../types/it.exec.proc.json"
     },
     "src:exe": {
       "description": "The file (executable) that created the connection.",

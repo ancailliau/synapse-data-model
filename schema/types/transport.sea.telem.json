@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/transport.sea.telem.json",
+  "title": "telem",
+  "description": "A telemetry sample from a vessel in transit.",
+  "type": "string"
+}

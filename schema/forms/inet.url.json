@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.url.json",
   "title": "url",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "fqdn": {
       "description": "The fqdn used in the URL (e.g., http://www.woot.com/page.html).",
@@ -18,7 +18,7 @@
     },
     "passwd": {
       "description": "The optional password used to access the URL.",
-      "$ref": "../forms/inet.passwd.json"
+      "$ref": "../types/inet.passwd.json"
     },
     "base": {
       "description": "The base scheme, user/pass, fqdn, port and path w/o parameters.",
@@ -34,7 +34,7 @@
     },
     "port": {
       "description": "The port of the URL. URLs prefixed with http will be set to port 80 and URLs prefixed with https will be set to port 443 unless otherwise specified.",
-      "$ref": "../forms/inet.port.json"
+      "$ref": "../types/inet.port.json"
     },
     "proto": {
       "description": "The protocol in the URL.",
@@ -42,7 +42,7 @@
     },
     "user": {
       "description": "The optional username used to access the URL.",
-      "$ref": "../forms/inet.user.json"
+      "$ref": "../types/inet.user.json"
     }
   },
   "type": "object"

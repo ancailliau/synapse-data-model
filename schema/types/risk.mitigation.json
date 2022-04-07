@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/risk.mitigation.json",
+  "title": "mitigation",
+  "description": "A mitigation for a specific risk:vuln.",
+  "type": "string"
+}

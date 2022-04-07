@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/file.mime.pe.resource.json",
   "title": "resource",
-  "description": "A section inside a Mach-O binary denoting a named region of bytes inside a segment.",
+  "description": "",
   "properties": {
     "file": {
       "description": "The file containing the resource.",
@@ -10,11 +10,11 @@
     },
     "type": {
       "description": "The typecode for the resource.",
-      "$ref": "../forms/pe.resource.type.json"
+      "$ref": "../types/pe.resource.type.json"
     },
     "langid": {
       "description": "The language code for the resource.",
-      "$ref": "../forms/pe.langid.json"
+      "$ref": "../types/pe.langid.json"
     },
     "resource": {
       "description": "The sha256 hash of the resource bytes.",

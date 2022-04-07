@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.web.file.json",
   "title": "file",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "acct": {
       "description": "The account that owns or is associated with the file.",
-      "$ref": "../forms/inet.web.acct.json"
+      "$ref": "../types/inet.web.acct.json"
     },
     "acct:site": {
       "description": "The site or service associated with the account.",
@@ -14,7 +14,7 @@
     },
     "acct:user": {
       "description": "The unique identifier for the account.",
-      "$ref": "../forms/inet.user.json"
+      "$ref": "../types/inet.user.json"
     },
     "file": {
       "description": "The file owned by or associated with the account.",
@@ -30,7 +30,7 @@
     },
     "client": {
       "description": "The source client address used to post or submit the file.",
-      "$ref": "../forms/inet.client.json"
+      "$ref": "../types/inet.client.json"
     },
     "client:ipv4": {
       "description": "The source IPv4 address used to post or submit the file.",

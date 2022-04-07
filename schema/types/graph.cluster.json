@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/graph.cluster.json",
+  "title": "cluster",
+  "description": "A generic node, used in conjunction with Edge types, to cluster arbitrary nodes to a single node in the model.",
+  "type": "string"
+}

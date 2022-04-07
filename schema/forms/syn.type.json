@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/syn.type.json",
   "title": "type",
-  "description": "A Synapse role GUID.",
+  "description": "",
   "properties": {
     "doc": {
       "description": "The docstring for the type.",
@@ -14,7 +14,7 @@
     },
     "subof": {
       "description": "Type which this inherits from.",
-      "$ref": "../forms/syn.type.json"
+      "$ref": "../types/syn.type.json"
     },
     "opts": {
       "description": "Arbitrary type options.",

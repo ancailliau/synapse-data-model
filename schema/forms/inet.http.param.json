@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.http.param.json",
   "title": "param",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "name": {
       "description": "The name of the HTTP query parameter.",

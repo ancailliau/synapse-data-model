@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.av.sig.json",
+  "title": "sig",
+  "description": "A signature name within the namespace of an antivirus engine name.",
+  "type": "object"
+}

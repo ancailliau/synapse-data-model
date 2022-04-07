@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/transport.air.flight.json",
   "title": "flight",
-  "description": "A telemetry sample from a vessel in transit.",
+  "description": "",
   "properties": {
     "num": {
       "description": "The flight number of this flight.",
-      "$ref": "../forms/transport.air.flightnum.json"
+      "$ref": "../types/transport.air.flightnum.json"
     },
     "scheduled:departure": {
       "description": "The time this flight was originally scheduled to depart",
@@ -26,23 +26,23 @@
     },
     "carrier": {
       "description": "The org which operates the given flight number.",
-      "$ref": "../forms/ou.org.json"
+      "$ref": "../types/ou.org.json"
     },
     "craft": {
       "description": "The aircraft that flew this flight.",
-      "$ref": "../forms/transport.air.craft.json"
+      "$ref": "../types/transport.air.craft.json"
     },
     "tailnum": {
       "description": "The tail/registration number at the time the aircraft flew this flight.",
-      "$ref": "../forms/transport.air.tailnum.json"
+      "$ref": "../types/transport.air.tailnum.json"
     },
     "to:port": {
       "description": "The destination airport of this flight.",
-      "$ref": "../forms/transport.air.port.json"
+      "$ref": "../types/transport.air.port.json"
     },
     "from:port": {
       "description": "The origin airport of this flight.",
-      "$ref": "../forms/transport.air.port.json"
+      "$ref": "../types/transport.air.port.json"
     },
     "stops": {
       "description": "An ordered list of aiport codes for stops which occured during this flight.",

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/mat.item.json",
   "title": "item",
-  "description": null,
+  "description": "",
   "properties": {
     "name": {
       "description": "The human readable name of the material item.",
@@ -10,11 +10,11 @@
     },
     "spec": {
       "description": "The mat:spec of which this item is an instance.",
-      "$ref": "../forms/mat.spec.json"
+      "$ref": "../types/mat.spec.json"
     },
     "place": {
       "description": "The most recent place the item is known to reside.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     },
     "latlong": {
       "description": "The last known lat/long location of the node.",

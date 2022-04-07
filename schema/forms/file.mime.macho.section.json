@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/file.mime.macho.section.json",
   "title": "section",
-  "description": "A section inside a Mach-O binary denoting a named region of bytes inside a segment.",
+  "description": "",
   "properties": {
     "segment": {
       "description": "The Mach-O segment that contains this section.",
-      "$ref": "../forms/file.mime.macho.segment.json"
+      "$ref": "../types/file.mime.macho.segment.json"
     },
     "name": {
       "description": "Name of the section.",
@@ -22,7 +22,7 @@
     },
     "sha256": {
       "description": "The sha256 hash of the bytes of the Mach-O section.",
-      "$ref": "../forms/hash.sha256.json"
+      "$ref": "../types/hash.sha256.json"
     },
     "offset": {
       "description": "The file offset to the begining of the section",

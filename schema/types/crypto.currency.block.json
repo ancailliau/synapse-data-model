@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/crypto.currency.block.json",
+  "title": "block",
+  "description": "An individual crypto currency block record on the blockchain.",
+  "type": "object"
+}

@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.http.response.header.json",
   "title": "header",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "name": {
       "description": "The name of the HTTP response header.",
-      "$ref": "../forms/inet.http.header.name.json"
+      "$ref": "../types/inet.http.header.name.json"
     },
     "value": {
       "description": "The value of the HTTP response header.",

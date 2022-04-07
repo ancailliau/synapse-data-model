@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ou.id.update.json",
   "title": "update",
-  "description": "A title for a position within an org.",
+  "description": "",
   "properties": {
     "number": {
       "description": "The id number that was updated.",
-      "$ref": "../forms/ou.id.number.json"
+      "$ref": "../types/ou.id.number.json"
     },
     "status": {
       "description": "The updated status of the id number.",

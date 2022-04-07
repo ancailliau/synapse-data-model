@@ -2,19 +2,19 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/tel.mob.carrier.json",
   "title": "carrier",
-  "description": "A mobile cell site which a phone may connect to.",
+  "description": "",
   "properties": {
     "mcc": {
-      "description": null,
-      "$ref": "../forms/tel.mob.mcc.json"
+      "description": "",
+      "$ref": "../types/tel.mob.mcc.json"
     },
     "mnc": {
-      "description": null,
-      "$ref": "../forms/tel.mob.mnc.json"
+      "description": "",
+      "$ref": "../types/tel.mob.mnc.json"
     },
     "org": {
       "description": "Organization operating the carrier.",
-      "$ref": "../forms/ou.org.json"
+      "$ref": "../types/ou.org.json"
     },
     "loc": {
       "description": "Location the carrier operates from.",

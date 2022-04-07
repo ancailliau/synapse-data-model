@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/mat.item.json",
+  "title": "item",
+  "description": "A GUID assigned to a material object.",
+  "type": "string"
+}

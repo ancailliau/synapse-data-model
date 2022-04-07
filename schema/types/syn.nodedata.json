@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/syn.nodedata.json",
+  "title": "nodedata",
+  "description": "A nodedata key and the form it may be present on.",
+  "type": "object"
+}

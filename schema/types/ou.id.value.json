@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.id.value.json",
+  "title": "value",
+  "description": "The value of an org:id:number.",
+  "type": "string"
+}

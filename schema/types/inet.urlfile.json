@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.urlfile.json",
+  "title": "urlfile",
+  "description": "A file hosted at a specific Universal Resource Locator (URL).",
+  "type": "object"
+}

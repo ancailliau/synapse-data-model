@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/econ.pay.cvv.json",
+  "title": "cvv",
+  "description": "A Card Verification Value (CVV).",
+  "type": "string"
+}

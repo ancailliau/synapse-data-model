@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.web.memb.json",
+  "title": "memb",
+  "description": "A web account that is a member of a web group.",
+  "type": "object"
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.employment.json",
+  "title": "employment",
+  "description": "An employment type taxonomy.",
+  "type": "string"
+}

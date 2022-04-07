@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.whois.ipquery.json",
   "title": "ipquery",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "time": {
       "description": "The time the request was made.",
@@ -30,7 +30,7 @@
     },
     "rec": {
       "description": "The resulting record from the query.",
-      "$ref": "../forms/inet.whois.iprec.json"
+      "$ref": "../types/inet.whois.iprec.json"
     }
   },
   "type": "object"

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.reveng.filefunc.json",
+  "title": "filefunc",
+  "description": "An instance of a function in an executable.",
+  "type": "object"
+}

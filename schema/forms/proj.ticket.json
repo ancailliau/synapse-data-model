@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/proj.ticket.json",
   "title": "ticket",
-  "description": null,
+  "description": "",
   "properties": {
     "project": {
-      "description": null,
-      "$ref": "../forms/proj.project.json"
+      "description": "",
+      "$ref": "../types/proj.project.json"
     },
     "ext:id": {
       "description": "A ticket ID from an external system.",
@@ -18,7 +18,7 @@
     },
     "epic": {
       "description": "The epic that includes the ticket.",
-      "$ref": "../forms/proj.epic.json"
+      "$ref": "../types/proj.epic.json"
     },
     "created": {
       "description": "The time the ticket was created.",
@@ -46,7 +46,7 @@
     },
     "sprint": {
       "description": "The sprint that contains the ticket.",
-      "$ref": "../forms/proj.sprint.json"
+      "$ref": "../types/proj.sprint.json"
     },
     "priority": {
       "description": "The priority of the ticket.",
@@ -58,11 +58,11 @@
     },
     "creator": {
       "description": "The synapse user who created the ticket.",
-      "$ref": "../forms/syn.user.json"
+      "$ref": "../types/syn.user.json"
     },
     "assignee": {
       "description": "The synapse user who the ticket is assigned to.",
-      "$ref": "../forms/syn.user.json"
+      "$ref": "../types/syn.user.json"
     }
   },
   "type": "object"

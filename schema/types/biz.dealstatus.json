@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/biz.dealstatus.json",
+  "title": "dealstatus",
+  "description": "A deal/rfp status taxonomy.",
+  "type": "string"
+}

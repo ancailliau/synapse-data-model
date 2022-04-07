@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.urlredir.json",
   "title": "urlredir",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "src": {
       "description": "The original/source URL before redirect.",

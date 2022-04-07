@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/crypto.currency.client.json",
   "title": "client",
-  "description": "A digital signature relationship between an X.509 certificate and a file.",
+  "description": "",
   "properties": {
     "inetaddr": {
       "description": "The Internet client address observed using the crypto currency address.",
-      "$ref": "../forms/inet.client.json"
+      "$ref": "../types/inet.client.json"
     },
     "coinaddr": {
       "description": "The crypto currency address observed in use the the Internet client.",
-      "$ref": "../forms/crypto.currency.address.json"
+      "$ref": "../types/crypto.currency.address.json"
     }
   },
   "type": "object"

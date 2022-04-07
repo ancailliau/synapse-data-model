@@ -2,26 +2,26 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/proj.epic.json",
   "title": "epic",
-  "description": null,
+  "description": "",
   "properties": {
     "name": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "project": {
-      "description": null,
-      "$ref": "../forms/proj.project.json"
+      "description": "",
+      "$ref": "../types/proj.project.json"
     },
     "creator": {
-      "description": null,
-      "$ref": "../forms/syn.user.json"
+      "description": "",
+      "$ref": "../types/syn.user.json"
     },
     "created": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "updated": {
-      "description": null,
+      "description": "",
       "type": "string"
     }
   },

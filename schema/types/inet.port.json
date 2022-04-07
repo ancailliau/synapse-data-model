@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.port.json",
+  "title": "port",
+  "description": "A network port.",
+  "type": "integer"
+}

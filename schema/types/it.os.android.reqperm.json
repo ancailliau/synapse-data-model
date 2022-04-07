@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.os.android.reqperm.json",
+  "title": "reqperm",
+  "description": "The given software requests the android permission.",
+  "type": "object"
+}

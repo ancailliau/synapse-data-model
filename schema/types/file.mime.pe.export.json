@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/file.mime.pe.export.json",
+  "title": "export",
+  "description": "The fused knowledge of a file:bytes node containing a pe named export.",
+  "type": "object"
+}

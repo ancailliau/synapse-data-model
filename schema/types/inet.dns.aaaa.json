@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.dns.aaaa.json",
+  "title": "aaaa",
+  "description": "The result of a DNS AAAA record lookup.",
+  "type": "object"
+}

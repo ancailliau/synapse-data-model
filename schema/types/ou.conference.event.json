@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.conference.event.json",
+  "title": "event",
+  "description": "A conference event with a name and associated conference.",
+  "type": "string"
+}

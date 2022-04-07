@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.network.json",
   "title": "network",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "name": {
       "description": "The name of the network.",
@@ -14,15 +14,15 @@
     },
     "org": {
       "description": "The org that owns/operates the network.",
-      "$ref": "../forms/ou.org.json"
+      "$ref": "../types/ou.org.json"
     },
     "net4": {
       "description": "The optional contiguous IPv4 address range of this network.",
-      "$ref": "../forms/inet.net4.json"
+      "$ref": "../types/inet.net4.json"
     },
     "net6": {
       "description": "The optional contiguous IPv6 address range of this network.",
-      "$ref": "../forms/inet.net6.json"
+      "$ref": "../types/inet.net6.json"
     }
   },
   "type": "object"

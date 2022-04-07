@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/tel.mob.mcc.json",
   "title": "mcc",
-  "description": "A mobile cell site which a phone may connect to.",
+  "description": "",
   "properties": {
     "loc": {
       "description": "Location assigned to the MCC.",

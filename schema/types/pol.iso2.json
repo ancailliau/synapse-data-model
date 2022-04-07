@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/pol.iso2.json",
+  "title": "iso2",
+  "description": "The 2 digit ISO country code.",
+  "type": "string"
+}

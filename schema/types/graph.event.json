@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/graph.event.json",
+  "title": "event",
+  "description": "A generic event node to represent events outside the model.",
+  "type": "string"
+}

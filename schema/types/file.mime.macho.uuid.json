@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/file.mime.macho.uuid.json",
+  "title": "uuid",
+  "description": "A specific load command denoting a UUID used to uniquely identify the Mach-O binary.",
+  "type": "string"
+}

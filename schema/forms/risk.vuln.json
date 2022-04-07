@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/risk.vuln.json",
   "title": "vuln",
-  "description": "A compromise type taxonomy.",
+  "description": "",
   "properties": {
     "name": {
       "description": "A user specified name for the vulnerability.",
@@ -18,7 +18,7 @@
     },
     "cve": {
       "description": "The CVE ID of the vulnerability.",
-      "$ref": "../forms/it.sec.cve.json"
+      "$ref": "../types/it.sec.cve.json"
     },
     "cvss:av": {
       "description": "The CVSS Attack Vector (AV) value.",

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.net6.json",
+  "title": "net6",
+  "description": "An IPv6 address range.",
+  "type": "string"
+}

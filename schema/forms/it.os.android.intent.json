@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.os.android.intent.json",
   "title": "intent",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {},
   "type": "object"
 }

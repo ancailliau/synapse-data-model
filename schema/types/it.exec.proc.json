@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.exec.proc.json",
+  "title": "proc",
+  "description": "A process executing on a host. May be an actual (e.g., endpoint) or virtual (e.g., malware sandbox) host.",
+  "type": "string"
+}

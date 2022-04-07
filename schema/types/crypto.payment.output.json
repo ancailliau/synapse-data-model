@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/crypto.payment.output.json",
+  "title": "output",
+  "description": "A payment received from a transaction.",
+  "type": "string"
+}

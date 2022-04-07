@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.search.result.json",
+  "title": "result",
+  "description": "A single result from a web search.",
+  "type": "string"
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/econ.fin.exchange.json",
+  "title": "exchange",
+  "description": "A financial exchange where securities are traded.",
+  "type": "string"
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.whois.iprec.json",
+  "title": "iprec",
+  "description": "An IPv4/IPv6 block registration record.",
+  "type": "string"
+}

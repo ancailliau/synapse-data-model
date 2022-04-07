@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.exec.loadlib.json",
   "title": "loadlib",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "proc": {
       "description": "The process where the library was loaded.",
-      "$ref": "../forms/it.exec.proc.json"
+      "$ref": "../types/it.exec.proc.json"
     },
     "va": {
       "description": "The base memory address where the library was loaded in the process.",

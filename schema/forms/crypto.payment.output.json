@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/crypto.payment.output.json",
+  "title": "output",
+  "description": "",
+  "properties": {
+    "transaction": {
+      "description": "The transaction the payment was output from.",
+      "$ref": "../types/crypto.currency.transaction.json"
+    },
+    "address": {
+      "description": "The address which received payment from the transaction.",
+      "$ref": "../types/crypto.currency.address.json"
+    },
+    "value": {
+      "description": "The value of the currency recieved from the transaction.",
+      "$ref": "../types/econ.price.json"
+    }
+  },
+  "type": "object"
+}

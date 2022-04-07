@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/proj.project.json",
   "title": "project",
-  "description": null,
+  "description": "",
   "properties": {
     "name": {
       "description": "The project name.",
@@ -14,7 +14,7 @@
     },
     "creator": {
       "description": "The synapse user who created the project.",
-      "$ref": "../forms/syn.user.json"
+      "$ref": "../types/syn.user.json"
     },
     "created": {
       "description": "The time the project was created.",

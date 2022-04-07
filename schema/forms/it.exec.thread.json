@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.exec.thread.json",
   "title": "thread",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "proc": {
       "description": "The process which contains the thread.",
-      "$ref": "../forms/it.exec.proc.json"
+      "$ref": "../types/it.exec.proc.json"
     },
     "created": {
       "description": "The time the thread was created.",
@@ -22,11 +22,11 @@
     },
     "src:proc": {
       "description": "An external process which created the thread.",
-      "$ref": "../forms/it.exec.proc.json"
+      "$ref": "../types/it.exec.proc.json"
     },
     "src:thread": {
       "description": "The thread which created this thread.",
-      "$ref": "../forms/it.exec.thread.json"
+      "$ref": "../types/it.exec.thread.json"
     }
   },
   "type": "object"

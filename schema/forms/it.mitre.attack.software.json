@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.mitre.attack.software.json",
   "title": "software",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "software": {
       "description": "Used to map an ATT&CK software to a synapse it:prod:soft.",
-      "$ref": "../forms/it.prod.soft.json"
+      "$ref": "../types/it.prod.soft.json"
     },
     "name": {
       "description": "The primary name for the ATT&CK software.",

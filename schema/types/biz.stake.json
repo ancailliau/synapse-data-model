@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/biz.stake.json",
+  "title": "stake",
+  "description": "A stake or partial ownership in a company.",
+  "type": "string"
+}

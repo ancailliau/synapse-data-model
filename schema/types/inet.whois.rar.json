@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.whois.rar.json",
+  "title": "rar",
+  "description": "A domain registrar.",
+  "type": "string"
+}

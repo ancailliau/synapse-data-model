@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.host.json",
+  "title": "host",
+  "description": "A GUID that represents a host or system.",
+  "type": "string"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.ssl.jarmsample.json",
+  "title": "jarmsample",
+  "description": "",
+  "properties": {
+    "jarmhash": {
+      "description": "The JARM hash computed from the server responses.",
+      "$ref": "../types/inet.ssl.jarmhash.json"
+    },
+    "server": {
+      "description": "The server that was sampled to compute the JARM hash.",
+      "$ref": "../types/inet.server.json"
+    }
+  },
+  "type": "object"
+}

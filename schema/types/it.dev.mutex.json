@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.dev.mutex.json",
+  "title": "mutex",
+  "description": "A string representing a mutex.",
+  "type": "string"
+}

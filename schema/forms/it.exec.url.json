@@ -2,19 +2,19 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.exec.url.json",
   "title": "url",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "proc": {
       "description": "The main process executing code that requested the URL.",
-      "$ref": "../forms/it.exec.proc.json"
+      "$ref": "../types/it.exec.proc.json"
     },
     "browser": {
       "description": "The software version of the browser.",
-      "$ref": "../forms/it.prod.softver.json"
+      "$ref": "../types/it.prod.softver.json"
     },
     "host": {
       "description": "The host running the process that requested the URL. Typically the same host referenced in :proc, if present.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "exe": {
       "description": "The specific file containing code that requested the URL. May or may not be the same :exe specified in :proc, if present.",
@@ -42,11 +42,11 @@
     },
     "http:request": {
       "description": "The HTTP request made to retrieve the intial URL contents.",
-      "$ref": "../forms/inet.http.request.json"
+      "$ref": "../types/inet.http.request.json"
     },
     "client": {
       "description": "The address of the client during the URL retrieval.",
-      "$ref": "../forms/inet.client.json"
+      "$ref": "../types/inet.client.json"
     },
     "client:ipv4": {
       "description": "The IPv4 of the client during the URL retrieval..",
@@ -58,7 +58,7 @@
     },
     "client:port": {
       "description": "The client port during the URL retrieval..",
-      "$ref": "../forms/inet.port.json"
+      "$ref": "../types/inet.port.json"
     }
   },
   "type": "object"

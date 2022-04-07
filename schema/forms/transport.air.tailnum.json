@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/transport.air.tailnum.json",
   "title": "tailnum",
-  "description": "A telemetry sample from a vessel in transit.",
+  "description": "",
   "properties": {
     "loc": {
       "description": "The geopolitical location that the tailnumber is allocated to.",

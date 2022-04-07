@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/econ.acct.payment.json",
+  "title": "payment",
+  "description": "A payment or crypto currency transaction.",
+  "type": "string"
+}

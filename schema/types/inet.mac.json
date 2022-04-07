@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.mac.json",
+  "title": "mac",
+  "description": "A 48-bit Media Access Control (MAC) address.",
+  "type": "string"
+}

@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/crypto.x509.signedfile.json",
   "title": "signedfile",
-  "description": "A digital signature relationship between an X.509 certificate and a file.",
+  "description": "",
   "properties": {
     "cert": {
       "description": "The certificate for the key which signed the file.",
-      "$ref": "../forms/crypto.x509.cert.json"
+      "$ref": "../types/crypto.x509.cert.json"
     },
     "file": {
       "description": "The file which was signed by the certificates key.",

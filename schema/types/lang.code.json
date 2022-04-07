@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/lang.code.json",
+  "title": "code",
+  "description": "An optionally 2 part language code.",
+  "type": "string"
+}

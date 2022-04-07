@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/transport.sea.vessel.json",
   "title": "vessel",
-  "description": "A telemetry sample from a vessel in transit.",
+  "description": "",
   "properties": {
     "imo": {
       "description": "The International Maritime Organization number for the vessel.",
-      "$ref": "../forms/transport.sea.imo.json"
+      "$ref": "../types/transport.sea.imo.json"
     },
     "name": {
       "description": "The name of the vessel",
@@ -26,7 +26,7 @@
     },
     "mmsi": {
       "description": "The Maritime Mobile Service Identifier assigned to the vessel.",
-      "$ref": "../forms/transport.sea.mmsi.json"
+      "$ref": "../types/transport.sea.mmsi.json"
     },
     "built": {
       "description": "The year the vessel was constructed.",
@@ -34,7 +34,7 @@
     },
     "operator": {
       "description": "The contact information of the operator.",
-      "$ref": "../forms/ps.contact.json"
+      "$ref": "../types/ps.contact.json"
     }
   },
   "type": "object"

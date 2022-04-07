@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/geo.altitude.json",
+  "title": "altitude",
+  "description": "A negative or positive offset from Mean Sea Level (6,371.0088km from Earths core).",
+  "type": "number"
+}

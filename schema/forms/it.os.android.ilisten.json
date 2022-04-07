@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.os.android.ilisten.json",
   "title": "ilisten",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "app": {
       "description": "The app software which listens for the android intent.",
-      "$ref": "../forms/it.prod.softver.json"
+      "$ref": "../types/it.prod.softver.json"
     },
     "intent": {
       "description": "The android intent which is listened for by the app.",
-      "$ref": "../forms/it.os.android.intent.json"
+      "$ref": "../types/it.os.android.intent.json"
     }
   },
   "type": "object"

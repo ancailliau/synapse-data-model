@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.prod.softver.json",
+  "title": "softver",
+  "description": "A specific version of a software product.",
+  "type": "string"
+}

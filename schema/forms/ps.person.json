@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ps.person.json",
   "title": "person",
-  "description": "A GUID representing entry in a contact's work history.",
+  "description": "",
   "properties": {
     "dob": {
       "description": "The date on which the person was born.",
@@ -22,23 +22,23 @@
     },
     "nick": {
       "description": "A username commonly used by the person.",
-      "$ref": "../forms/inet.user.json"
+      "$ref": "../types/inet.user.json"
     },
     "name": {
       "description": "The localized name for the person.",
-      "$ref": "../forms/ps.name.json"
+      "$ref": "../types/ps.name.json"
     },
     "name:sur": {
       "description": "The surname of the person.",
-      "$ref": "../forms/ps.tokn.json"
+      "$ref": "../types/ps.tokn.json"
     },
     "name:middle": {
       "description": "The middle name of the person.",
-      "$ref": "../forms/ps.tokn.json"
+      "$ref": "../types/ps.tokn.json"
     },
     "name:given": {
       "description": "The given name of the person.",
-      "$ref": "../forms/ps.tokn.json"
+      "$ref": "../types/ps.tokn.json"
     },
     "names": {
       "description": "Variations of the name for the person.",

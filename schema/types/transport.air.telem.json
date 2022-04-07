@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/transport.air.telem.json",
+  "title": "telem",
+  "description": "A telemtry sample from an aircraft in transit.",
+  "type": "string"
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.reveng.impfunc.json",
+  "title": "impfunc",
+  "description": "A function from an imported library.",
+  "type": "string"
+}

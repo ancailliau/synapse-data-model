@@ -2,19 +2,19 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/biz.stake.json",
   "title": "stake",
-  "description": "A product type taxonomy.",
+  "description": "",
   "properties": {
     "vitals": {
       "description": "The ou:vitals snapshot this stake is part of.",
-      "$ref": "../forms/ou.vitals.json"
+      "$ref": "../types/ou.vitals.json"
     },
     "org": {
       "description": "The resolved org.",
-      "$ref": "../forms/ou.org.json"
+      "$ref": "../types/ou.org.json"
     },
     "orgname": {
       "description": "The org name as reported by the source of the vitals.",
-      "$ref": "../forms/ou.name.json"
+      "$ref": "../types/ou.name.json"
     },
     "orgfqdn": {
       "description": "The org FQDN as reported by the source of the vitals.",
@@ -34,11 +34,11 @@
     },
     "invested": {
       "description": "The amount of money invested in the cap table iteration.",
-      "$ref": "../forms/econ.price.json"
+      "$ref": "../types/econ.price.json"
     },
     "value": {
       "description": "The monetary value of the stake.",
-      "$ref": "../forms/econ.price.json"
+      "$ref": "../types/econ.price.json"
     },
     "percent": {
       "description": "The percentage ownership represented by this stake.",
@@ -46,11 +46,11 @@
     },
     "owner": {
       "description": "Contact information of the owner of the stake.",
-      "$ref": "../forms/ps.contact.json"
+      "$ref": "../types/ps.contact.json"
     },
     "purchase": {
       "description": "The purchase event for the stake.",
-      "$ref": "../forms/econ.purchase.json"
+      "$ref": "../types/econ.purchase.json"
     }
   },
   "type": "object"

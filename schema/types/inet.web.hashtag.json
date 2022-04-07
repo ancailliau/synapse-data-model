@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.web.hashtag.json",
+  "title": "hashtag",
+  "description": "A hashtag used in a web post.",
+  "type": "string"
+}

@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/edu.class.json",
   "title": "class",
-  "description": "A GUID representing entry in a contact's work history.",
+  "description": "",
   "properties": {
     "course": {
       "description": "The course being taught in the class.",
-      "$ref": "../forms/edu.course.json"
+      "$ref": "../types/edu.course.json"
     },
     "instructor": {
       "description": "The primary instructor for the class.",
-      "$ref": "../forms/ps.contact.json"
+      "$ref": "../types/ps.contact.json"
     },
     "assistants": {
       "description": "An array of assistant/co-instructor contacts.",
@@ -38,11 +38,11 @@
     },
     "virtual:provider": {
       "description": "Contact info for the virtual infrastructure provider.",
-      "$ref": "../forms/ps.contact.json"
+      "$ref": "../types/ps.contact.json"
     },
     "place": {
       "description": "The place that the class is held.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     }
   },
   "type": "object"

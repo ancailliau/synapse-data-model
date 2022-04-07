@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ps.education.json",
+  "title": "education",
+  "description": "A period of education for an individual.",
+  "type": "string"
+}

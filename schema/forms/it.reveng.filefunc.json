@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.reveng.filefunc.json",
   "title": "filefunc",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "function": {
       "description": "The guid matching the function.",
-      "$ref": "../forms/it.reveng.function.json"
+      "$ref": "../types/it.reveng.function.json"
     },
     "file": {
       "description": "The file that contains the function.",
@@ -28,7 +28,7 @@
       "description": "Other function calls within the scope of the function.",
       "type": "array",
       "items": {
-        "$ref": "../forms/it.reveng.filefunc.json"
+        "$ref": "#"
       },
       "uniqueItems": true
     }

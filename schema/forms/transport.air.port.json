@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/transport.air.port.json",
   "title": "port",
-  "description": "A telemetry sample from a vessel in transit.",
+  "description": "",
   "properties": {
     "name": {
       "description": "The name of the airport",
@@ -10,7 +10,7 @@
     },
     "place": {
       "description": "The place where the IATA airport code is assigned.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     }
   },
   "type": "object"

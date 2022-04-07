@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/graph.event.json",
   "title": "event",
-  "description": "A generic digraph time edge to show relationships outside the model.",
+  "description": "",
   "properties": {
     "time": {
       "description": "The time of the event.",

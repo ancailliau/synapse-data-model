@@ -2,22 +2,22 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/edge.has.json",
   "title": "has",
-  "description": "A generic digraph time edge to show relationships outside the model.",
+  "description": "",
   "properties": {
     "n1": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "n1:form": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "n2": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "n2:form": {
-      "description": null,
+      "description": "",
       "type": "string"
     }
   },

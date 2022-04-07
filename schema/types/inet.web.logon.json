@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.web.logon.json",
+  "title": "logon",
+  "description": "An instance of an account authenticating to an Internet-based site or service.",
+  "type": "string"
+}

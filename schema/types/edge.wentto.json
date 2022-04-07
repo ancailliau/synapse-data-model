@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/edge.wentto.json",
+  "title": "wentto",
+  "description": "A digraph edge which records that N1 went to N2 at a specific time.",
+  "type": "string"
+}

@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.av.sig.json",
   "title": "sig",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "soft": {
       "description": "The anti-virus product which contains the signature.",
-      "$ref": "../forms/it.prod.soft.json"
+      "$ref": "../types/it.prod.soft.json"
     },
     "name": {
       "description": "The signature name.",

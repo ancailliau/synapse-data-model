@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/syn.prop.json",
   "title": "prop",
-  "description": "A Synapse role GUID.",
+  "description": "",
   "properties": {
     "doc": {
       "description": "Description of the property definition.",
@@ -10,11 +10,11 @@
     },
     "form": {
       "description": "The form of the property.",
-      "$ref": "../forms/syn.form.json"
+      "$ref": "../types/syn.form.json"
     },
     "type": {
       "description": "The synapse type for this property.",
-      "$ref": "../forms/syn.type.json"
+      "$ref": "../types/syn.type.json"
     },
     "relname": {
       "description": "Relative property name.",

@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/transport.air.craft.json",
   "title": "craft",
-  "description": "A telemetry sample from a vessel in transit.",
+  "description": "",
   "properties": {
     "tailnum": {
       "description": "The aircraft tail number.",
-      "$ref": "../forms/transport.air.tailnum.json"
+      "$ref": "../types/transport.air.tailnum.json"
     },
     "type": {
       "description": "The type of aircraft.",
@@ -30,7 +30,7 @@
     },
     "operator": {
       "description": "Contact info representing the person or org that operates the aircraft.",
-      "$ref": "../forms/ps.contact.json"
+      "$ref": "../types/ps.contact.json"
     }
   },
   "type": "object"

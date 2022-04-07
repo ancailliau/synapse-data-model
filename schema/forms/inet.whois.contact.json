@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.whois.contact.json",
   "title": "contact",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "rec": {
       "description": "The whois record containing the contact data.",
-      "$ref": "../forms/inet.whois.rec.json"
+      "$ref": "../types/inet.whois.rec.json"
     },
     "rec:fqdn": {
       "description": "The domain associated with the whois record.",
@@ -34,7 +34,7 @@
     },
     "orgname": {
       "description": "The name of the contact organization.",
-      "$ref": "../forms/ou.name.json"
+      "$ref": "../types/ou.name.json"
     },
     "address": {
       "description": "The content of the street address field(s) of the contact.",

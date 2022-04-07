@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/auth.access.json",
+  "title": "access",
+  "description": "An instance of using creds to access a resource.",
+  "type": "string"
+}

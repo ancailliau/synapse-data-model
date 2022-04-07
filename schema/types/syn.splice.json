@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/syn.splice.json",
+  "title": "splice",
+  "description": "A splice from a layer.",
+  "type": "string"
+}

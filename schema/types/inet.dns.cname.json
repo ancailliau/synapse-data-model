@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.dns.cname.json",
+  "title": "cname",
+  "description": "The result of a DNS CNAME record lookup.",
+  "type": "object"
+}

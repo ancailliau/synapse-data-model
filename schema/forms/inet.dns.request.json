@@ -2,39 +2,39 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.dns.request.json",
   "title": "request",
-  "description": "A DNS AAAA wild card record and the IPv6 it resolves to.",
+  "description": "",
   "properties": {
     "time": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "query": {
-      "description": null,
-      "$ref": "../forms/inet.dns.query.json"
+      "description": "",
+      "$ref": "../types/inet.dns.query.json"
     },
     "query:name": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "query:name:ipv4": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "query:name:ipv6": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "query:name:fqdn": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "query:type": {
-      "description": null,
+      "description": "",
       "type": "integer"
     },
     "server": {
-      "description": null,
-      "$ref": "../forms/inet.server.json"
+      "description": "",
+      "$ref": "../types/inet.server.json"
     },
     "reply:code": {
       "description": "The DNS server response code.",
@@ -46,11 +46,11 @@
     },
     "proc": {
       "description": "The process that attempted the DNS lookup.",
-      "$ref": "../forms/it.exec.proc.json"
+      "$ref": "../types/it.exec.proc.json"
     },
     "host": {
       "description": "The host that attempted the DNS lookup.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     }
   },
   "type": "object"

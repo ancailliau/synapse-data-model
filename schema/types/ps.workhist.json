@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ps.workhist.json",
+  "title": "workhist",
+  "description": "A GUID representing entry in a contact's work history.",
+  "type": "string"
+}

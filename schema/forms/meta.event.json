@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/meta.event.json",
+  "title": "event",
+  "description": "",
+  "properties": {
+    "timeline": {
+      "description": "The timeline containing the event.",
+      "$ref": "../types/meta.timeline.json"
+    },
+    "title": {
+      "description": "A title for the event.",
+      "type": "string"
+    },
+    "summary": {
+      "description": "A prose summary of the event.",
+      "type": "string"
+    },
+    "time": {
+      "description": "The time that the event occurred.",
+      "type": "string"
+    },
+    "duration": {
+      "description": "The duration of the event.",
+      "type": "string"
+    },
+    "type": {
+      "description": "Type of event.",
+      "$ref": "../types/meta.event.taxonomy.json"
+    }
+  },
+  "type": "object"
+}

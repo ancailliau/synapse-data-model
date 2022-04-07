@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.prod.hardware.json",
   "title": "hardware",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "name": {
       "description": "The display name for this hardware specification.",
@@ -10,7 +10,7 @@
     },
     "type": {
       "description": "The type of hardware.",
-      "$ref": "../forms/it.prod.hardwaretype.json"
+      "$ref": "../types/it.prod.hardwaretype.json"
     },
     "desc": {
       "description": "A brief description of the hardware.",
@@ -22,7 +22,7 @@
     },
     "make": {
       "description": "The name of the organization which manufactures this hardware.",
-      "$ref": "../forms/ou.name.json"
+      "$ref": "../types/ou.name.json"
     },
     "model": {
       "description": "The model name or number for this hardware specification.",
@@ -40,7 +40,7 @@
       "description": "An array of it:prod:hadware parts included in this hardware specification.",
       "type": "array",
       "items": {
-        "$ref": "../forms/it.prod.hardware.json"
+        "$ref": "#"
       },
       "uniqueItems": true
     }

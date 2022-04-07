@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ou.goal.json",
   "title": "goal",
-  "description": "A title for a position within an org.",
+  "description": "",
   "properties": {
     "name": {
       "description": "A terse name for the goal.",
@@ -18,7 +18,7 @@
     },
     "prev": {
       "description": "The previous/parent goal in a list or hierarchy.",
-      "$ref": "../forms/ou.goal.json"
+      "$ref": "../types/ou.goal.json"
     }
   },
   "type": "object"

@@ -2,23 +2,23 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.account.json",
   "title": "account",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "user": {
       "description": "The username associated with the account",
-      "$ref": "../forms/inet.user.json"
+      "$ref": "../types/inet.user.json"
     },
     "contact": {
       "description": "Additional contact information associated with this account.",
-      "$ref": "../forms/ps.contact.json"
+      "$ref": "../types/ps.contact.json"
     },
     "host": {
       "description": "The host where the account is registered.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "domain": {
       "description": "The authentication domain where the account is registered.",
-      "$ref": "../forms/it.domain.json"
+      "$ref": "../types/it.domain.json"
     },
     "posix:uid": {
       "description": "The user ID of the account.",
@@ -42,7 +42,7 @@
     },
     "windows:sid": {
       "description": "The Microsoft Windows Security Identifier of the account.",
-      "$ref": "../forms/it.os.windows.sid.json"
+      "$ref": "../types/it.os.windows.sid.json"
     },
     "groups": {
       "description": "An array of groups that the account is a member of.",

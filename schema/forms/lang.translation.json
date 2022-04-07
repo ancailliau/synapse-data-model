@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/lang.translation.json",
   "title": "translation",
-  "description": "A translation of text from one language to another.",
+  "description": "",
   "properties": {
     "input": {
       "description": "The input text.",
@@ -10,7 +10,7 @@
     },
     "input:lang": {
       "description": "The input language code.",
-      "$ref": "../forms/lang.code.json"
+      "$ref": "../types/lang.code.json"
     },
     "output": {
       "description": "The output text.",
@@ -18,7 +18,7 @@
     },
     "output:lang": {
       "description": "The output language code.",
-      "$ref": "../forms/lang.code.json"
+      "$ref": "../types/lang.code.json"
     },
     "desc": {
       "description": "A description of the meaning of the output.",
@@ -26,7 +26,7 @@
     },
     "engine": {
       "description": "The translation engine version used.",
-      "$ref": "../forms/it.prod.softver.json"
+      "$ref": "../types/it.prod.softver.json"
     }
   },
   "type": "object"

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/econ.acct.balance.json",
   "title": "balance",
-  "description": "A sample of the price of a security at a single moment in time",
+  "description": "",
   "properties": {
     "time": {
       "description": "The time the balance was recorded.",
@@ -10,23 +10,23 @@
     },
     "pay:card": {
       "description": "The payment card holding the balance.",
-      "$ref": "../forms/econ.pay.card.json"
+      "$ref": "../types/econ.pay.card.json"
     },
     "crypto:address": {
       "description": "The crypto currency address holding the balance.",
-      "$ref": "../forms/crypto.currency.address.json"
+      "$ref": "../types/crypto.currency.address.json"
     },
     "amount": {
       "description": "The account balance at the time.",
-      "$ref": "../forms/econ.price.json"
+      "$ref": "../types/econ.price.json"
     },
     "currency": {
       "description": "The currency of the balance amount.",
-      "$ref": "../forms/econ.currency.json"
+      "$ref": "../types/econ.currency.json"
     },
     "delta": {
       "description": "The change since last regular sample.",
-      "$ref": "../forms/econ.price.json"
+      "$ref": "../types/econ.price.json"
     }
   },
   "type": "object"

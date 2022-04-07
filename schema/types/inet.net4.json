@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.net4.json",
+  "title": "net4",
+  "description": "An IPv4 address range.",
+  "type": "string"
+}

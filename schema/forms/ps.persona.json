@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ps.persona.json",
   "title": "persona",
-  "description": "A GUID representing entry in a contact's work history.",
+  "description": "",
   "properties": {
     "person": {
       "description": "The real person behind the persona.",
-      "$ref": "../forms/ps.person.json"
+      "$ref": "../types/ps.person.json"
     },
     "dob": {
       "description": "The Date of Birth (DOB) if known.",
@@ -18,23 +18,23 @@
     },
     "nick": {
       "description": "A username commonly used by the suspected person.",
-      "$ref": "../forms/inet.user.json"
+      "$ref": "../types/inet.user.json"
     },
     "name": {
       "description": "The localized name for the suspected person.",
-      "$ref": "../forms/ps.name.json"
+      "$ref": "../types/ps.name.json"
     },
     "name:sur": {
       "description": "The surname of the suspected person.",
-      "$ref": "../forms/ps.tokn.json"
+      "$ref": "../types/ps.tokn.json"
     },
     "name:middle": {
       "description": "The middle name of the suspected person.",
-      "$ref": "../forms/ps.tokn.json"
+      "$ref": "../types/ps.tokn.json"
     },
     "name:given": {
       "description": "The given name of the suspected person.",
-      "$ref": "../forms/ps.tokn.json"
+      "$ref": "../types/ps.tokn.json"
     },
     "names": {
       "description": "Variations of the name for a persona.",

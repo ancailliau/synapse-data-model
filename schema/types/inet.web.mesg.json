@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.web.mesg.json",
+  "title": "mesg",
+  "description": "A message sent from one web account to another web account.",
+  "type": "object"
+}

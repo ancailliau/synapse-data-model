@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.search.result.json",
   "title": "result",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "query": {
       "description": "The search query that produced the result.",
-      "$ref": "../forms/inet.search.query.json"
+      "$ref": "../types/inet.search.query.json"
     },
     "title": {
       "description": "The title of the matching web page.",

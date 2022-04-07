@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.alias.json",
+  "title": "alias",
+  "description": "An alias for the org GUID.",
+  "type": "string"
+}

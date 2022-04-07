@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.app.yara.match.json",
   "title": "match",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "rule": {
       "description": "The YARA rule that matched the file.",
-      "$ref": "../forms/it.app.yara.rule.json"
+      "$ref": "../types/it.app.yara.rule.json"
     },
     "file": {
       "description": "The file that matched the YARA rule.",

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/file.mime.pe.vsvers.info.json",
+  "title": "info",
+  "description": "knowledge of a file:bytes node containing vsvers info.",
+  "type": "object"
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/biz.bundle.json",
+  "title": "bundle",
+  "description": "Instances of a specific product offered for a price.",
+  "type": "string"
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.app.yara.rule.json",
+  "title": "rule",
+  "description": "A YARA rule unique identifier.",
+  "type": "string"
+}

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/proj.sprint.json",
   "title": "sprint",
-  "description": null,
+  "description": "",
   "properties": {
     "name": {
       "description": "The name of the sprint.",
@@ -14,11 +14,11 @@
     },
     "project": {
       "description": "The project containing the sprint.",
-      "$ref": "../forms/proj.project.json"
+      "$ref": "../types/proj.project.json"
     },
     "creator": {
       "description": "The synapse user who created the sprint.",
-      "$ref": "../forms/syn.user.json"
+      "$ref": "../types/syn.user.json"
     },
     "created": {
       "description": "The date the sprint was created.",

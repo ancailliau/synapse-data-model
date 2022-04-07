@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.hasalias.json",
+  "title": "hasalias",
+  "description": "The knowledge that an organization has an alias.",
+  "type": "object"
+}

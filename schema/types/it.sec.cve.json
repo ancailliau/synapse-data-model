@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.sec.cve.json",
+  "title": "cve",
+  "description": "A vulnerability as designated by a Common Vulnerabilities and Exposures (CVE) number.",
+  "type": "string"
+}

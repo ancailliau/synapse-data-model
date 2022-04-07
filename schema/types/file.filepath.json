@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/file.filepath.json",
+  "title": "filepath",
+  "description": "The fused knowledge of the association of a file:bytes node and a file:path.",
+  "type": "object"
+}

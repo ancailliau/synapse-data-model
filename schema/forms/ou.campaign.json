@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ou.campaign.json",
   "title": "campaign",
-  "description": "A title for a position within an org.",
+  "description": "",
   "properties": {
     "org": {
       "description": "The org carrying out the campaign.",
-      "$ref": "../forms/ou.org.json"
+      "$ref": "../types/ou.org.json"
     },
     "goal": {
       "description": "The assessed primary goal of the campaign.",
-      "$ref": "../forms/ou.goal.json"
+      "$ref": "../types/ou.goal.json"
     },
     "actors": {
       "description": "Actors who participated in the campaign.",
@@ -42,42 +42,42 @@
     },
     "camptype": {
       "description": "The campaign type taxonomy.",
-      "$ref": "../forms/ou.camptype.json"
+      "$ref": "../types/ou.camptype.json"
     },
     "desc": {
       "description": "A description of the campaign.",
       "type": "string"
     },
     "period": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "currency": {
-      "description": null,
-      "$ref": "../forms/econ.currency.json"
+      "description": "",
+      "$ref": "../types/econ.currency.json"
     },
     "cost": {
-      "description": null,
-      "$ref": "../forms/econ.price.json"
+      "description": "",
+      "$ref": "../types/econ.price.json"
     },
     "budget": {
-      "description": null,
-      "$ref": "../forms/econ.price.json"
+      "description": "",
+      "$ref": "../types/econ.price.json"
     },
     "goal:revenue": {
-      "description": null,
-      "$ref": "../forms/econ.price.json"
+      "description": "",
+      "$ref": "../types/econ.price.json"
     },
     "result:revenue": {
-      "description": null,
-      "$ref": "../forms/econ.price.json"
+      "description": "",
+      "$ref": "../types/econ.price.json"
     },
     "goal:pop": {
-      "description": null,
+      "description": "",
       "type": "integer"
     },
     "result:pop": {
-      "description": null,
+      "description": "",
       "type": "integer"
     }
   },

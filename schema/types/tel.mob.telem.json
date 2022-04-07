@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/tel.mob.telem.json",
+  "title": "telem",
+  "description": "A single mobile telemetry measurement.",
+  "type": "string"
+}

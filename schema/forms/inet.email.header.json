@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.email.header.json",
   "title": "header",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "name": {
       "description": "The name of the email header.",
-      "$ref": "../forms/inet.email.header.name.json"
+      "$ref": "../types/inet.email.header.name.json"
     },
     "value": {
       "description": "The value of the email header.",

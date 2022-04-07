@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/risk.alert.json",
   "title": "alert",
-  "description": "A compromise type taxonomy.",
+  "description": "",
   "properties": {
     "type": {
       "description": "An alert type.",
@@ -22,11 +22,11 @@
     },
     "vuln": {
       "description": "The optional vulnerability that the alert indicates.",
-      "$ref": "../forms/risk.vuln.json"
+      "$ref": "../types/risk.vuln.json"
     },
     "attack": {
       "description": "A confirmed attack that this alert indicates.",
-      "$ref": "../forms/risk.attack.json"
+      "$ref": "../types/risk.attack.json"
     }
   },
   "type": "object"

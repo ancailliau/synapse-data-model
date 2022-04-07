@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.os.windows.sid.json",
+  "title": "sid",
+  "description": "A Microsoft Windows Security Identifier.",
+  "type": "string"
+}

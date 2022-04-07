@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.asnet6.json",
+  "title": "asnet6",
+  "description": "An Autonomous System Number (ASN) and its associated IPv6 address range.",
+  "type": "object"
+}

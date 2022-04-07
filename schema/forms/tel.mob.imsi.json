@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/tel.mob.imsi.json",
   "title": "imsi",
-  "description": "A mobile cell site which a phone may connect to.",
+  "description": "",
   "properties": {
     "mcc": {
       "description": "The Mobile Country Code.",
-      "$ref": "../forms/tel.mob.mcc.json"
+      "$ref": "../types/tel.mob.mcc.json"
     }
   },
   "type": "object"

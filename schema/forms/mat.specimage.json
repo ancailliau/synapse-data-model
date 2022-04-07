@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/mat.specimage.json",
   "title": "specimage",
-  "description": null,
+  "description": "",
   "properties": {
     "spec": {
       "description": "The spec contained within the image file.",
-      "$ref": "../forms/mat.spec.json"
+      "$ref": "../types/mat.spec.json"
     },
     "file": {
       "description": "The file containing an image of the spec.",

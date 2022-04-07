@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/syn.trigger.json",
   "title": "trigger",
-  "description": "A Synapse role GUID.",
+  "description": "",
   "properties": {
     "vers": {
       "description": "Trigger version.",

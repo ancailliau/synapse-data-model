@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.banner.json",
+  "title": "banner",
+  "description": "A network protocol banner string presented by a server.",
+  "type": "object"
+}

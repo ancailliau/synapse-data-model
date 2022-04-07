@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.web.group.json",
   "title": "group",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "site": {
       "description": "The site or service associated with the group.",
@@ -10,11 +10,11 @@
     },
     "id": {
       "description": "The site-specific unique identifier for the group (may be different from the common name or display name).",
-      "$ref": "../forms/inet.group.json"
+      "$ref": "../types/inet.group.json"
     },
     "name": {
       "description": "The localized name associated with the group (may be different from the account identifier, e.g., a display name).",
-      "$ref": "../forms/inet.group.json"
+      "$ref": "../types/inet.group.json"
     },
     "aliases": {
       "description": "An array of alternate names for the group.",
@@ -26,7 +26,7 @@
     },
     "name:en": {
       "description": "The English version of the name associated with the group (may be different from the localized name).",
-      "$ref": "../forms/inet.group.json"
+      "$ref": "../types/inet.group.json"
     },
     "url": {
       "description": "The service provider URL where the group is hosted.",
@@ -54,7 +54,7 @@
     },
     "place": {
       "description": "The geo:place associated with the latlong property.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     },
     "signup": {
       "description": "The date and time the group was created on the site.",
@@ -62,7 +62,7 @@
     },
     "signup:client": {
       "description": "The client address used to create the group.",
-      "$ref": "../forms/inet.client.json"
+      "$ref": "../types/inet.client.json"
     },
     "signup:client:ipv4": {
       "description": "The IPv4 address used to create the group.",

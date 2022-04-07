@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/syn.trigger.json",
+  "title": "trigger",
+  "description": "A Cortex trigger.",
+  "type": "string"
+}

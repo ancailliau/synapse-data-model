@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.web.logon.json",
   "title": "logon",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "acct": {
       "description": "The web account associated with the logon event.",
-      "$ref": "../forms/inet.web.acct.json"
+      "$ref": "../types/inet.web.acct.json"
     },
     "acct:site": {
       "description": "The site or service associated with the account.",
@@ -14,7 +14,7 @@
     },
     "acct:user": {
       "description": "The unique identifier for the account.",
-      "$ref": "../forms/inet.user.json"
+      "$ref": "../types/inet.user.json"
     },
     "time": {
       "description": "The date and time the account logged into the service.",
@@ -22,7 +22,7 @@
     },
     "client": {
       "description": "The source address of the logon.",
-      "$ref": "../forms/inet.client.json"
+      "$ref": "../types/inet.client.json"
     },
     "client:ipv4": {
       "description": "The source IPv4 address of the logon.",
@@ -46,7 +46,7 @@
     },
     "place": {
       "description": "The geo:place of the user executing the logon.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     }
   },
   "type": "object"

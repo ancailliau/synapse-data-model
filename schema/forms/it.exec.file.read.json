@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.exec.file.read.json",
   "title": "read",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "proc": {
       "description": "The main process executing code that read the file.",
-      "$ref": "../forms/it.exec.proc.json"
+      "$ref": "../types/it.exec.proc.json"
     },
     "host": {
       "description": "The host running the process that read the file. Typically the same host referenced in :proc, if present.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "exe": {
       "description": "The specific file containing code that read the file. May or may not be the same :exe specified in :proc, if present.",

@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ps.persona.has.json",
   "title": "has",
-  "description": "A GUID representing entry in a contact's work history.",
+  "description": "",
   "properties": {
     "persona": {
       "description": "The persona who owns or controls the object or resource.",
-      "$ref": "../forms/ps.persona.json"
+      "$ref": "../types/ps.persona.json"
     },
     "node": {
       "description": "The object or resource that is owned or controlled by the persona.",

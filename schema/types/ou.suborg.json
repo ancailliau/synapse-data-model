@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.suborg.json",
+  "title": "suborg",
+  "description": "Any parent/child relationship between two orgs. May represent ownership, organizational structure, etc.",
+  "type": "object"
+}

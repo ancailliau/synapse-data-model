@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ps.person.has.json",
+  "title": "has",
+  "description": "A person owns, controls, or has exclusive use of an object or resource, potentially during a specific period of time.",
+  "type": "object"
+}

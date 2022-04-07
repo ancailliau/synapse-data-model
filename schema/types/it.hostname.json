@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.hostname.json",
+  "title": "hostname",
+  "description": "The name of a host or system.",
+  "type": "string"
+}

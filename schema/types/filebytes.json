@@ -1,7 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "../types/filebytes.json",
-  "title": "FileBytes",
-  "description": "",
-  "$ref": "str.json"
-}

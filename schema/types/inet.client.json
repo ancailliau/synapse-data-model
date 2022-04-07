@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.client.json",
+  "title": "client",
+  "description": "A network client address.",
+  "type": "string"
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/econ.currency.json",
+  "title": "currency",
+  "description": "The name of a system of money in general use",
+  "type": "string"
+}

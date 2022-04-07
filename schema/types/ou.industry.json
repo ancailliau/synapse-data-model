@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.industry.json",
+  "title": "industry",
+  "description": "An industry classification type.",
+  "type": "string"
+}

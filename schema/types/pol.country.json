@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/pol.country.json",
+  "title": "country",
+  "description": "A GUID for a country.",
+  "type": "string"
+}

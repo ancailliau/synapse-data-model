@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ps.persona.json",
+  "title": "persona",
+  "description": "A GUID for a suspected person.",
+  "type": "string"
+}

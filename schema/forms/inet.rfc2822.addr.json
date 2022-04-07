@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.rfc2822.addr.json",
   "title": "addr",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "name": {
       "description": "The name field parsed from an RFC 2822 address string.",
-      "$ref": "../forms/ps.name.json"
+      "$ref": "../types/ps.name.json"
     },
     "email": {
       "description": "The email field parsed from an RFC 2822 address string.",

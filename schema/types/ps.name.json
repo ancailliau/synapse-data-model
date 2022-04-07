@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ps.name.json",
+  "title": "name",
+  "description": "An arbitrary, lower spaced string with normalized whitespace.",
+  "type": "string"
+}

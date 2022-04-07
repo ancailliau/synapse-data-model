@@ -2,23 +2,23 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ps.contact.json",
   "title": "contact",
-  "description": "A GUID representing entry in a contact's work history.",
+  "description": "",
   "properties": {
     "org": {
       "description": "The org which this contact represents.",
-      "$ref": "../forms/ou.org.json"
+      "$ref": "../types/ou.org.json"
     },
     "asof": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "person": {
       "description": "The ps:person GUID which owns this contact.",
-      "$ref": "../forms/ps.person.json"
+      "$ref": "../types/ps.person.json"
     },
     "name": {
       "description": "The person name listed for the contact.",
-      "$ref": "../forms/ps.name.json"
+      "$ref": "../types/ps.name.json"
     },
     "title": {
       "description": "The job/org title listed for this contact.",
@@ -30,7 +30,7 @@
     },
     "orgname": {
       "description": "The listed org/company name for this contact.",
-      "$ref": "../forms/ou.name.json"
+      "$ref": "../types/ou.name.json"
     },
     "orgfqdn": {
       "description": "The listed org/company FQDN for this contact.",
@@ -38,19 +38,19 @@
     },
     "user": {
       "description": "The username or handle for this contact.",
-      "$ref": "../forms/inet.user.json"
+      "$ref": "../types/inet.user.json"
     },
     "web:acct": {
       "description": "The social media account for this contact.",
-      "$ref": "../forms/inet.web.acct.json"
+      "$ref": "../types/inet.web.acct.json"
     },
     "web:group": {
       "description": "A web group representing this contact.",
-      "$ref": "../forms/inet.web.group.json"
+      "$ref": "../types/inet.web.group.json"
     },
     "birth:place": {
       "description": "A fully resolved place of birth for this contact.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     },
     "birth:place:loc": {
       "description": "The loc of the place of birth of this contact.",
@@ -58,11 +58,11 @@
     },
     "birth:place:name": {
       "description": "The name of the place of birth of this contact.",
-      "$ref": "../forms/geo.name.json"
+      "$ref": "../types/geo.name.json"
     },
     "death:place": {
       "description": "A fully resolved place of death for this contact.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     },
     "death:place:loc": {
       "description": "The loc of the place of death of this contact.",
@@ -70,7 +70,7 @@
     },
     "death:place:name": {
       "description": "The name of the place of death of this contact.",
-      "$ref": "../forms/geo.name.json"
+      "$ref": "../types/geo.name.json"
     },
     "dob": {
       "description": "The date of birth for this contact.",
@@ -98,11 +98,11 @@
     },
     "address": {
       "description": "The street address listed for the contact.",
-      "$ref": "../forms/geo.address.json"
+      "$ref": "../types/geo.address.json"
     },
     "place": {
       "description": "The place associated with this contact.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     },
     "phone": {
       "description": "The main phone number for this contact.",
@@ -118,15 +118,15 @@
     },
     "id:number": {
       "description": "An ID number issued by an org and associated with this contact.",
-      "$ref": "../forms/ou.id.number.json"
+      "$ref": "../types/ou.id.number.json"
     },
     "adid": {
       "description": "A Advertising ID associated with this contact.",
-      "$ref": "../forms/it.adid.json"
+      "$ref": "../types/it.adid.json"
     },
     "imid": {
       "description": "An IMID associated with the contact.",
-      "$ref": "../forms/tel.mob.imid.json"
+      "$ref": "../types/tel.mob.imid.json"
     },
     "imid:imei": {
       "description": "An IMEI associated with the contact.",

@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.prod.softver.json",
   "title": "softver",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "software": {
       "description": "Software associated with this version instance.",
-      "$ref": "../forms/it.prod.soft.json"
+      "$ref": "../types/it.prod.soft.json"
     },
     "software:name": {
       "description": "The name of the software at a particular version.",
@@ -14,7 +14,7 @@
     },
     "name": {
       "description": "Name of the software.",
-      "$ref": "../forms/it.dev.str.json"
+      "$ref": "../types/it.dev.str.json"
     },
     "names": {
       "description": "Observed/variant names for this software version.",
@@ -42,7 +42,7 @@
     },
     "vers": {
       "description": "Version string associated with this version instance.",
-      "$ref": "../forms/it.dev.str.json"
+      "$ref": "../types/it.dev.str.json"
     },
     "vers:norm": {
       "description": "Normalized version of the version string.",
@@ -50,7 +50,7 @@
     },
     "arch": {
       "description": "Software architecture.",
-      "$ref": "../forms/it.dev.str.json"
+      "$ref": "../types/it.dev.str.json"
     },
     "released": {
       "description": "Timestamp for when this version of the software was released.",

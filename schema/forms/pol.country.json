@@ -2,38 +2,38 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/pol.country.json",
   "title": "country",
-  "description": "The ISO integer country code.",
+  "description": "",
   "properties": {
     "flag": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "founded": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "iso2": {
-      "description": null,
-      "$ref": "../forms/pol.iso2.json"
+      "description": "",
+      "$ref": "../types/pol.iso2.json"
     },
     "iso3": {
-      "description": null,
-      "$ref": "../forms/pol.iso3.json"
+      "description": "",
+      "$ref": "../types/pol.iso3.json"
     },
     "isonum": {
-      "description": null,
-      "$ref": "../forms/pol.isonum.json"
+      "description": "",
+      "$ref": "../types/pol.isonum.json"
     },
     "name": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "pop": {
-      "description": null,
+      "description": "",
       "type": "integer"
     },
     "tld": {
-      "description": null,
+      "description": "",
       "type": "string"
     }
   },

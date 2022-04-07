@@ -2,27 +2,27 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/tel.mob.telem.json",
   "title": "telem",
-  "description": "A mobile cell site which a phone may connect to.",
+  "description": "",
   "properties": {
     "time": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "latlong": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "http:request": {
       "description": "The HTTP request that the telemetry was extracted from.",
-      "$ref": "../forms/inet.http.request.json"
+      "$ref": "../types/inet.http.request.json"
     },
     "host": {
       "description": "The host that generated the mobile telemetry data.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "place": {
       "description": "The place representing the location of the mobile telemetry sample.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     },
     "loc": {
       "description": "The geo-political location of the mobile telemetry sample.",
@@ -33,79 +33,79 @@
       "type": "number"
     },
     "cell": {
-      "description": null,
-      "$ref": "../forms/tel.mob.cell.json"
+      "description": "",
+      "$ref": "../types/tel.mob.cell.json"
     },
     "cell:carrier": {
-      "description": null,
-      "$ref": "../forms/tel.mob.carrier.json"
+      "description": "",
+      "$ref": "../types/tel.mob.carrier.json"
     },
     "imsi": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "imei": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "phone": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "mac": {
-      "description": null,
-      "$ref": "../forms/inet.mac.json"
+      "description": "",
+      "$ref": "../types/inet.mac.json"
     },
     "ipv4": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "ipv6": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "wifi": {
-      "description": null,
-      "$ref": "../forms/inet.wifi.ap.json"
+      "description": "",
+      "$ref": "../types/inet.wifi.ap.json"
     },
     "wifi:ssid": {
-      "description": null,
-      "$ref": "../forms/inet.wifi.ssid.json"
+      "description": "",
+      "$ref": "../types/inet.wifi.ssid.json"
     },
     "wifi:bssid": {
-      "description": null,
-      "$ref": "../forms/inet.mac.json"
+      "description": "",
+      "$ref": "../types/inet.mac.json"
     },
     "adid": {
-      "description": null,
-      "$ref": "../forms/it.adid.json"
+      "description": "",
+      "$ref": "../types/it.adid.json"
     },
     "aaid": {
-      "description": null,
+      "description": "",
       "$ref": "../forms/it.os.android.aaid.json"
     },
     "idfa": {
-      "description": null,
+      "description": "",
       "$ref": "../forms/it.os.ios.idfa.json"
     },
     "name": {
-      "description": null,
-      "$ref": "../forms/ps.name.json"
+      "description": "",
+      "$ref": "../types/ps.name.json"
     },
     "email": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "acct": {
-      "description": null,
-      "$ref": "../forms/inet.web.acct.json"
+      "description": "",
+      "$ref": "../types/inet.web.acct.json"
     },
     "app": {
-      "description": null,
-      "$ref": "../forms/it.prod.softver.json"
+      "description": "",
+      "$ref": "../types/it.prod.softver.json"
     },
     "data": {
-      "description": null,
+      "description": "",
       "type": "string"
     }
   },

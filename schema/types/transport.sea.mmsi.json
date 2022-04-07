@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/transport.sea.mmsi.json",
+  "title": "mmsi",
+  "description": "A Maritime Mobile Service Identifier",
+  "type": "string"
+}

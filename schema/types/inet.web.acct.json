@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.web.acct.json",
+  "title": "acct",
+  "description": "An account with a given Internet-based site or service.",
+  "type": "object"
+}

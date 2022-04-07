@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/econ.fin.security.json",
   "title": "security",
-  "description": "A sample of the price of a security at a single moment in time",
+  "description": "",
   "properties": {
     "exchange": {
       "description": "The exchange on which the security is traded",
-      "$ref": "../forms/econ.fin.exchange.json"
+      "$ref": "../types/econ.fin.exchange.json"
     },
     "ticker": {
       "description": "The identifier for this security within the exchange",
@@ -18,7 +18,7 @@
     },
     "price": {
       "description": "The last known/available price of the security",
-      "$ref": "../forms/econ.price.json"
+      "$ref": "../types/econ.price.json"
     },
     "time": {
       "description": "The time of the last know price sample",

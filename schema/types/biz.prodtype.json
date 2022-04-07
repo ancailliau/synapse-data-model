@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/biz.prodtype.json",
+  "title": "prodtype",
+  "description": "A product type taxonomy.",
+  "type": "string"
+}

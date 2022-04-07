@@ -2,26 +2,26 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/proj.comment.json",
   "title": "comment",
-  "description": null,
+  "description": "",
   "properties": {
     "creator": {
-      "description": null,
-      "$ref": "../forms/syn.user.json"
+      "description": "",
+      "$ref": "../types/syn.user.json"
     },
     "created": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "updated": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "ticket": {
-      "description": null,
-      "$ref": "../forms/proj.ticket.json"
+      "description": "",
+      "$ref": "../types/proj.ticket.json"
     },
     "text": {
-      "description": null,
+      "description": "",
       "type": "string"
     }
   },

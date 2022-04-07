@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.position.json",
+  "title": "position",
+  "description": "A position within an org.  May be organized into an org chart.",
+  "type": "string"
+}

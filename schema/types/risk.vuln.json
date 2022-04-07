@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/risk.vuln.json",
+  "title": "vuln",
+  "description": "A unique vulnerability.",
+  "type": "string"
+}

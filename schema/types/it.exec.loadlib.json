@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.exec.loadlib.json",
+  "title": "loadlib",
+  "description": "A library load event in a process.",
+  "type": "string"
+}

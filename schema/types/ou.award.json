@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.award.json",
+  "title": "award",
+  "description": "An award issued by an organization.",
+  "type": "string"
+}

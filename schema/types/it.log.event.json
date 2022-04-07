@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.log.event.json",
+  "title": "event",
+  "description": "A GUID representing an individual log event.",
+  "type": "string"
+}

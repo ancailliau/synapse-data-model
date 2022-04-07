@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/transport.air.flight.json",
+  "title": "flight",
+  "description": "An individual instance of a flight.",
+  "type": "string"
+}

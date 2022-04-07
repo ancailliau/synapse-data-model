@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.prod.softlib.json",
   "title": "softlib",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "soft": {
       "description": "The software version that contains the library.",
-      "$ref": "../forms/it.prod.softver.json"
+      "$ref": "../types/it.prod.softver.json"
     },
     "lib": {
       "description": "The library software version.",
-      "$ref": "../forms/it.prod.softver.json"
+      "$ref": "../types/it.prod.softver.json"
     }
   },
   "type": "object"

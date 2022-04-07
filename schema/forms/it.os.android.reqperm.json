@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.os.android.reqperm.json",
   "title": "reqperm",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "app": {
       "description": "The android app which requests the permission.",
-      "$ref": "../forms/it.prod.softver.json"
+      "$ref": "../types/it.prod.softver.json"
     },
     "perm": {
       "description": "The android permission requested by the app.",
-      "$ref": "../forms/it.os.android.perm.json"
+      "$ref": "../types/it.os.android.perm.json"
     }
   },
   "type": "object"

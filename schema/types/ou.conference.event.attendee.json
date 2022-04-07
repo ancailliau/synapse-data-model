@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.conference.event.attendee.json",
+  "title": "attendee",
+  "description": "Deprecated. Please use ou:attendee.",
+  "type": "object"
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.dns.soa.json",
+  "title": "soa",
+  "description": "The result of a DNS SOA record lookup.",
+  "type": "string"
+}

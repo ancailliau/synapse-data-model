@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.web.group.json",
+  "title": "group",
+  "description": "A group hosted within or registered with a given Internet-based site or service.",
+  "type": "object"
+}

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/crypto.currency.transaction.json",
   "title": "transaction",
-  "description": "A digital signature relationship between an X.509 certificate and a file.",
+  "description": "",
   "properties": {
     "hash": {
       "description": "The unique transaction hash for the transaction.",
@@ -14,11 +14,11 @@
     },
     "block": {
       "description": "The block which records the transaction.",
-      "$ref": "../forms/crypto.currency.block.json"
+      "$ref": "../types/crypto.currency.block.json"
     },
     "block:coin": {
       "description": "The coin/blockchain of the block which records this transaction.",
-      "$ref": "../forms/crypto.currency.coin.json"
+      "$ref": "../types/crypto.currency.coin.json"
     },
     "block:offset": {
       "description": "The offset of the block which records this transaction.",
@@ -38,11 +38,11 @@
     },
     "to": {
       "description": "The destination address of the transaction.",
-      "$ref": "../forms/crypto.currency.address.json"
+      "$ref": "../types/crypto.currency.address.json"
     },
     "from": {
       "description": "The source address of the transaction.",
-      "$ref": "../forms/crypto.currency.address.json"
+      "$ref": "../types/crypto.currency.address.json"
     },
     "inputs": {
       "description": "Deprecated. Please use crypto:payment:input:transaction.",
@@ -62,11 +62,11 @@
     },
     "fee": {
       "description": "The total fee paid to execute the transaction.",
-      "$ref": "../forms/econ.price.json"
+      "$ref": "../types/econ.price.json"
     },
     "value": {
       "description": "The total value of the transaction.",
-      "$ref": "../forms/econ.price.json"
+      "$ref": "../types/econ.price.json"
     },
     "time": {
       "description": "The time this transaction was initiated.",
@@ -82,7 +82,7 @@
     },
     "eth:gasprice": {
       "description": "The gas price (in ETH) specified for this transaction.",
-      "$ref": "../forms/econ.price.json"
+      "$ref": "../types/econ.price.json"
     },
     "contract:input": {
       "description": "Input value to a smart contract call.",

@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.prod.softos.json",
   "title": "softos",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "soft": {
       "description": "The software which can run on the operating system.",
-      "$ref": "../forms/it.prod.softver.json"
+      "$ref": "../types/it.prod.softver.json"
     },
     "os": {
       "description": "The operating system which the software can run on.",
-      "$ref": "../forms/it.prod.softver.json"
+      "$ref": "../types/it.prod.softver.json"
     }
   },
   "type": "object"

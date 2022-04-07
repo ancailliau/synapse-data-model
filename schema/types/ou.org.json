@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.org.json",
+  "title": "org",
+  "description": "A GUID for a human organization such as a company or military unit.",
+  "type": "string"
+}

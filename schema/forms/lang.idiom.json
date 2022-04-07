@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/lang.idiom.json",
   "title": "idiom",
-  "description": "A translation of text from one language to another.",
+  "description": "",
   "properties": {
     "url": {
       "description": "Authoritative URL for the idiom.",

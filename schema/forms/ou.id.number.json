@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ou.id.number.json",
   "title": "number",
-  "description": "A title for a position within an org.",
+  "description": "",
   "properties": {
     "type": {
       "description": "The type of org id",
-      "$ref": "../forms/ou.id.type.json"
+      "$ref": "../types/ou.id.type.json"
     },
     "value": {
       "description": "The type of org id",
-      "$ref": "../forms/ou.id.value.json"
+      "$ref": "../types/ou.id.value.json"
     },
     "status": {
       "description": "A freeform status such as valid, suspended, expired.",

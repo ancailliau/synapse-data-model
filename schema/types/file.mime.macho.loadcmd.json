@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/file.mime.macho.loadcmd.json",
+  "title": "loadcmd",
+  "description": "A generic load command pulled from the Mach-O headers.",
+  "type": "string"
+}

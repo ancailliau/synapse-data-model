@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.whois.rec.json",
   "title": "rec",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "fqdn": {
       "description": "The domain associated with the whois record.",
@@ -30,11 +30,11 @@
     },
     "registrar": {
       "description": "The registrar name from the whois record.",
-      "$ref": "../forms/inet.whois.rar.json"
+      "$ref": "../types/inet.whois.rar.json"
     },
     "registrant": {
       "description": "The registrant name from the whois record.",
-      "$ref": "../forms/inet.whois.reg.json"
+      "$ref": "../types/inet.whois.reg.json"
     }
   },
   "type": "object"

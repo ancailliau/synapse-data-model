@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/biz.prodtype.json",
   "title": "prodtype",
-  "description": "A product type taxonomy.",
+  "description": "",
   "properties": {},
   "type": "object"
 }

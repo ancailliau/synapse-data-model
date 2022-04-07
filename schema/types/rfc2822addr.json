@@ -1,7 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "../types/rfc2822addr.json",
-  "title": "Rfc2822Addr",
-  "description": "",
-  "$ref": "str.json"
-}

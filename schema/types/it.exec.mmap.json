@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.exec.mmap.json",
+  "title": "mmap",
+  "description": "A memory mapped segment located in a process.",
+  "type": "string"
+}

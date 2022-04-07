@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/file.ismime.json",
+  "title": "ismime",
+  "description": "Records one, of potentially multiple, mime types for a given file.",
+  "type": "object"
+}

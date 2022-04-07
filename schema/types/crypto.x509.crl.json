@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/crypto.x509.crl.json",
+  "title": "crl",
+  "description": "A unique X.509 Certificate Revocation List.",
+  "type": "string"
+}

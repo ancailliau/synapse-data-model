@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/econ.fin.bar.json",
+  "title": "bar",
+  "description": "A sample of the open, close, high, low prices of a security in a specific time window",
+  "type": "string"
+}

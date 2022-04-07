@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/tel.mob.imid.json",
   "title": "imid",
-  "description": "A mobile cell site which a phone may connect to.",
+  "description": "",
   "properties": {
     "imei": {
       "description": "The IMEI for the phone hardware.",

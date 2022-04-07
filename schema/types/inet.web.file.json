@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.web.file.json",
+  "title": "file",
+  "description": "A file posted by a web account.",
+  "type": "object"
+}

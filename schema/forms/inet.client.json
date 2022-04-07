@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.client.json",
   "title": "client",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "proto": {
       "description": "The network protocol of the client.",
@@ -18,11 +18,11 @@
     },
     "host": {
       "description": "The it:host node for the client.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "port": {
       "description": "The client tcp/udp port.",
-      "$ref": "../forms/inet.port.json"
+      "$ref": "../types/inet.port.json"
     }
   },
   "type": "object"

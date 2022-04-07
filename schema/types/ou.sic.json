@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.sic.json",
+  "title": "sic",
+  "description": "The four digit Standard Industrial Classification Code.",
+  "type": "string"
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/edge.refs.json",
+  "title": "refs",
+  "description": "A digraph edge which records that N1 refers to or contains N2.",
+  "type": "string"
+}

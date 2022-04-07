@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/pe.resource.type.json",
+  "title": "type",
+  "description": "The typecode for the resource.",
+  "type": "integer"
+}

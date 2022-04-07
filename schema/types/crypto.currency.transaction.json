@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/crypto.currency.transaction.json",
+  "title": "transaction",
+  "description": "An individual crypto currency transaction recorded on the blockchain.",
+  "type": "string"
+}

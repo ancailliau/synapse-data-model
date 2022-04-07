@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.org.has.json",
+  "title": "has",
+  "description": "An org owns, controls, or has exclusive use of an object or resource, potentially during a specific period of time.",
+  "type": "object"
+}

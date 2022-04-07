@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.dns.request.json",
+  "title": "request",
+  "description": "A single instance of a DNS resolver request and optional reply info.",
+  "type": "string"
+}

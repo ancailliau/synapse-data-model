@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/transport.air.occupant.json",
+  "title": "occupant",
+  "description": "An occupant of a specific flight.",
+  "type": "string"
+}

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/media.news.json",
   "title": "news",
-  "description": "A GUID for a news article or report.",
+  "description": "",
   "properties": {
     "url": {
       "description": "The (optional) URL where the news was published.",
@@ -30,11 +30,11 @@
     },
     "org": {
       "description": "The org alias which published the news.",
-      "$ref": "../forms/ou.alias.json"
+      "$ref": "../types/ou.alias.json"
     },
     "author": {
       "description": "The free-form author of the news.",
-      "$ref": "../forms/ps.name.json"
+      "$ref": "../types/ps.name.json"
     },
     "authors": {
       "description": "An array of authors of the news item.",

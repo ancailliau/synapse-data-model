@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/auth.creds.json",
   "title": "creds",
-  "description": "An instance of using creds to access a resource.",
+  "description": "",
   "properties": {
     "email": {
       "description": "The email address used to identify the user.",
@@ -10,7 +10,7 @@
     },
     "user": {
       "description": "The user name used to identify the user.",
-      "$ref": "../forms/inet.user.json"
+      "$ref": "../types/inet.user.json"
     },
     "phone": {
       "description": "The phone number used to identify the user.",
@@ -18,15 +18,15 @@
     },
     "passwd": {
       "description": "The password used to authenticate.",
-      "$ref": "../forms/inet.passwd.json"
+      "$ref": "../types/inet.passwd.json"
     },
     "passwdhash": {
       "description": "The password hash used to authenticate.",
-      "$ref": "../forms/it.auth.passwdhash.json"
+      "$ref": "../types/it.auth.passwdhash.json"
     },
     "account": {
       "description": "The account that the creds allow access to.",
-      "$ref": "../forms/it.account.json"
+      "$ref": "../types/it.account.json"
     },
     "website": {
       "description": "The base URL of the website that the credentials allow access to.",
@@ -34,15 +34,15 @@
     },
     "host": {
       "description": "The host that the credentials allow access to.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "wifi:ssid": {
       "description": "The WiFi SSID that the credentials allow access to.",
-      "$ref": "../forms/inet.wifi.ssid.json"
+      "$ref": "../types/inet.wifi.ssid.json"
     },
     "web:acct": {
       "description": "The web account that the credentials allow access to.",
-      "$ref": "../forms/inet.web.acct.json"
+      "$ref": "../types/inet.web.acct.json"
     }
   },
   "type": "object"

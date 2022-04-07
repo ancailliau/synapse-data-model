@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.prod.component.json",
+  "title": "component",
+  "description": "A specific instance of an it:prod:hardware most often as part of an it:host.",
+  "type": "string"
+}

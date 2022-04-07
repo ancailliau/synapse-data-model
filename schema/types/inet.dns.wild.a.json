@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.dns.wild.a.json",
+  "title": "a",
+  "description": "A DNS A wild card record and the IPv4 it resolves to.",
+  "type": "object"
+}

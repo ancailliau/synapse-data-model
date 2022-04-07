@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/file.mime.msppt.json",
+  "title": "msppt",
+  "description": "The GUID of a set of mime metadata for a Microsoft Powerpoint file.",
+  "type": "string"
+}

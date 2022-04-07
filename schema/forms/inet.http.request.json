@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.http.request.json",
   "title": "request",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "method": {
       "description": "The HTTP request method string.",
@@ -32,15 +32,15 @@
       "type": "string"
     },
     "response:time": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "response:code": {
-      "description": null,
+      "description": "",
       "type": "integer"
     },
     "response:reason": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "response:headers": {
@@ -51,12 +51,12 @@
       }
     },
     "response:body": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "session": {
       "description": "The HTTP session this request was part of.",
-      "$ref": "../forms/inet.http.session.json"
+      "$ref": "../types/inet.http.session.json"
     }
   },
   "type": "object"

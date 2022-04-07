@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/crypto.x509.cert.json",
   "title": "cert",
-  "description": "A digital signature relationship between an X.509 certificate and a file.",
+  "description": "",
   "properties": {
     "file": {
       "description": "The file that the certificate metadata was parsed from.",
@@ -18,7 +18,7 @@
     },
     "issuer:cert": {
       "description": "The certificate used by the issuer to sign this certificate.",
-      "$ref": "../forms/crypto.x509.cert.json"
+      "$ref": "../types/crypto.x509.cert.json"
     },
     "serial": {
       "description": "The serial number string in the certificate.",
@@ -38,19 +38,19 @@
     },
     "md5": {
       "description": "The MD5 fingerprint for the certificate.",
-      "$ref": "../forms/hash.md5.json"
+      "$ref": "../types/hash.md5.json"
     },
     "sha1": {
       "description": "The SHA1 fingerprint for the certificate.",
-      "$ref": "../forms/hash.sha1.json"
+      "$ref": "../types/hash.sha1.json"
     },
     "sha256": {
       "description": "The SHA256 fingerprint for the certificate.",
-      "$ref": "../forms/hash.sha256.json"
+      "$ref": "../types/hash.sha256.json"
     },
     "rsa:key": {
       "description": "The optional RSA public key associated with the certificate.",
-      "$ref": "../forms/rsa.key.json"
+      "$ref": "../types/rsa.key.json"
     },
     "algo": {
       "description": "The X.509 signature algorithm OID.",

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ps.contactlist.json",
+  "title": "contactlist",
+  "description": "A GUID for a list of associated contacts.",
+  "type": "string"
+}

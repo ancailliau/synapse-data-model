@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.os.android.ibroadcast.json",
+  "title": "ibroadcast",
+  "description": "The given software broadcasts the given Android intent.",
+  "type": "object"
+}

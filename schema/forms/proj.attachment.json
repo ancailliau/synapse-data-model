@@ -2,31 +2,31 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/proj.attachment.json",
   "title": "attachment",
-  "description": null,
+  "description": "",
   "properties": {
     "name": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "file": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "creator": {
-      "description": null,
-      "$ref": "../forms/syn.user.json"
+      "description": "",
+      "$ref": "../types/syn.user.json"
     },
     "created": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "ticket": {
-      "description": null,
-      "$ref": "../forms/proj.ticket.json"
+      "description": "",
+      "$ref": "../types/proj.ticket.json"
     },
     "comment": {
-      "description": null,
-      "$ref": "../forms/proj.comment.json"
+      "description": "",
+      "$ref": "../types/proj.comment.json"
     }
   },
   "type": "object"

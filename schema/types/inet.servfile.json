@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.servfile.json",
+  "title": "servfile",
+  "description": "A file hosted on a server for access over a network protocol.",
+  "type": "object"
+}

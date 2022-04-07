@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.exec.reg.del.json",
   "title": "del",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "proc": {
       "description": "The main process executing code that deleted data from the registry.",
-      "$ref": "../forms/it.exec.proc.json"
+      "$ref": "../types/it.exec.proc.json"
     },
     "host": {
       "description": "The host running the process that deleted data from the registry. Typically the same host referenced in :proc, if present.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "exe": {
       "description": "The specific file containing code that deleted data from the registry. May or may not be the same :exe referenced in :proc, if present.",
@@ -22,7 +22,7 @@
     },
     "reg": {
       "description": "The registry key or value that was deleted.",
-      "$ref": "../forms/it.dev.regval.json"
+      "$ref": "../types/it.dev.regval.json"
     }
   },
   "type": "object"

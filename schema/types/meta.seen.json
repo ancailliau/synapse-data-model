@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/meta.seen.json",
+  "title": "seen",
+  "description": "Annotates that the data in a node was obtained from or observed by a given source.",
+  "type": "object"
+}

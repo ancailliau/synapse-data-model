@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.naics.json",
+  "title": "naics",
+  "description": "The five or six digit North American Industry Classification System code.",
+  "type": "string"
+}

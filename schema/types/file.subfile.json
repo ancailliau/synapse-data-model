@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/file.subfile.json",
+  "title": "subfile",
+  "description": "A parent file that fully contains the specified child file.",
+  "type": "object"
+}

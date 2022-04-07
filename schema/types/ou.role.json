@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.role.json",
+  "title": "role",
+  "description": "A named role when participating in an event.",
+  "type": "string"
+}

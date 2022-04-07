@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/pol.iso3.json",
+  "title": "iso3",
+  "description": "The 3 digit ISO country code.",
+  "type": "string"
+}

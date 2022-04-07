@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/inet.ssl.jarmhash.json",
+  "title": "jarmhash",
+  "description": "",
+  "properties": {
+    "ciphers": {
+      "description": "The encoded cipher and TLS version of the server.",
+      "type": "string"
+    },
+    "extensions": {
+      "description": "The truncated SHA256 of the TLS server extensions.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

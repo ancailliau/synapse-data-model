@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.contest.json",
+  "title": "contest",
+  "description": "A competitive event resulting in a ranked set of participants.",
+  "type": "string"
+}

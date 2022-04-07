@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.asnet6.json",
   "title": "asnet6",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "asn": {
       "description": "The Autonomous System Number (ASN) of the netblock.",
-      "$ref": "../forms/inet.asn.json"
+      "$ref": "../types/inet.asn.json"
     },
     "net6": {
       "description": "The IPv6 address range assigned to the ASN.",
-      "$ref": "../forms/inet.net6.json"
+      "$ref": "../types/inet.net6.json"
     },
     "net6:min": {
       "description": "The first IPv6 in the range assigned to the ASN.",

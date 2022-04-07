@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/syn.cmd.json",
+  "title": "cmd",
+  "description": "A Synapse storm command.",
+  "type": "string"
+}

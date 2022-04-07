@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.iface.json",
+  "title": "iface",
+  "description": "A network interface with a set of associated protocol addresses.",
+  "type": "string"
+}

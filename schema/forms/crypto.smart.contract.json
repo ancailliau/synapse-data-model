@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/crypto.smart.contract.json",
   "title": "contract",
-  "description": "A digital signature relationship between an X.509 certificate and a file.",
+  "description": "",
   "properties": {
     "transaction": {
       "description": "The transaction which created the contract.",
-      "$ref": "../forms/crypto.currency.transaction.json"
+      "$ref": "../types/crypto.currency.transaction.json"
     },
     "address": {
       "description": "The address of the contract.",
-      "$ref": "../forms/crypto.currency.address.json"
+      "$ref": "../types/crypto.currency.address.json"
     },
     "bytecode": {
       "description": "The bytecode which implements the contract.",

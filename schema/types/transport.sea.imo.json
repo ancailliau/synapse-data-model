@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/transport.sea.imo.json",
+  "title": "imo",
+  "description": "An International Maritime Organization registration number.",
+  "type": "string"
+}

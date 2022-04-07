@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/edge.has.json",
+  "title": "has",
+  "description": "A digraph edge which records that N1 has N2.",
+  "type": "string"
+}

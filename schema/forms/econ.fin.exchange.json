@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/econ.fin.exchange.json",
   "title": "exchange",
-  "description": "A sample of the price of a security at a single moment in time",
+  "description": "",
   "properties": {
     "name": {
       "description": "A simple name for the exchange",
@@ -10,11 +10,11 @@
     },
     "org": {
       "description": "The organization that operates the exchange",
-      "$ref": "../forms/ou.org.json"
+      "$ref": "../types/ou.org.json"
     },
     "currency": {
       "description": "The currency used for all transactions in the exchange",
-      "$ref": "../forms/econ.currency.json"
+      "$ref": "../types/econ.currency.json"
     }
   },
   "type": "object"

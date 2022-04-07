@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.email.header.json",
+  "title": "header",
+  "description": "A unique email message header.",
+  "type": "object"
+}

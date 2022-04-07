@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.ipv4.json",
   "title": "ipv4",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "asn": {
       "description": "The ASN to which the IPv4 address is currently assigned.",
-      "$ref": "../forms/inet.asn.json"
+      "$ref": "../types/inet.asn.json"
     },
     "latlong": {
       "description": "The best known latitude/longitude for the node.",
@@ -18,7 +18,7 @@
     },
     "place": {
       "description": "The geo:place associated with the latlong property.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     },
     "type": {
       "description": "The type of IP address (e.g., private, multicast, etc.).",

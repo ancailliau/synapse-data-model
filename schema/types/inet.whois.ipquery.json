@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.whois.ipquery.json",
+  "title": "ipquery",
+  "description": "Query details used to retrieve an IP record.",
+  "type": "string"
+}

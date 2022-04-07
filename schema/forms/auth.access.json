@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/auth.access.json",
   "title": "access",
-  "description": "An instance of using creds to access a resource.",
+  "description": "",
   "properties": {
     "creds": {
       "description": "The credentials used to attempt access.",
-      "$ref": "../forms/auth.creds.json"
+      "$ref": "../types/auth.creds.json"
     },
     "time": {
       "description": "The time of the access attempt.",
@@ -18,7 +18,7 @@
     },
     "person": {
       "description": "The person who attempted access.",
-      "$ref": "../forms/ps.person.json"
+      "$ref": "../types/ps.person.json"
     }
   },
   "type": "object"

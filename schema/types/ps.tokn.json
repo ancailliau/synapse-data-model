@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ps.tokn.json",
+  "title": "tokn",
+  "description": "A single name element (potentially given or sur).",
+  "type": "string"
+}

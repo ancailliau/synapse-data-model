@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.wifi.ssid.json",
+  "title": "ssid",
+  "description": "A WiFi service set identifier (SSID) name.",
+  "type": "string"
+}

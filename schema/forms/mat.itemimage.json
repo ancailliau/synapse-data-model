@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/mat.itemimage.json",
   "title": "itemimage",
-  "description": null,
+  "description": "",
   "properties": {
     "item": {
       "description": "The item contained within the image file.",
-      "$ref": "../forms/mat.item.json"
+      "$ref": "../types/mat.item.json"
     },
     "file": {
       "description": "The file containing an image of the item.",

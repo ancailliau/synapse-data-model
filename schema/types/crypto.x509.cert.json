@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/crypto.x509.cert.json",
+  "title": "cert",
+  "description": "A unique X.509 certificate.",
+  "type": "string"
+}

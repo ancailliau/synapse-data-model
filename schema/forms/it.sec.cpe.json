@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.sec.cpe.json",
   "title": "cpe",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "v2_2": {
       "description": "The CPE 2.2 string which is equivalent to the primary property.",
@@ -14,7 +14,7 @@
     },
     "vendor": {
       "description": "The \"vendor\" field from the CPE 2.3 string.",
-      "$ref": "../forms/ou.name.json"
+      "$ref": "../types/ou.name.json"
     },
     "product": {
       "description": "The \"product\" field from the CPE 2.3 string.",

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/syn.tag.json",
   "title": "tag",
-  "description": "A Synapse role GUID.",
+  "description": "",
   "properties": {
     "up": {
       "description": "The parent tag for the tag.",

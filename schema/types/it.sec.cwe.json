@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.sec.cwe.json",
+  "title": "cwe",
+  "description": "NIST NVD Common Weaknesses Enumeration Specification",
+  "type": "string"
+}

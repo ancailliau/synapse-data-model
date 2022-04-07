@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/meta.ruleset.json",
+  "title": "ruleset",
+  "description": "",
+  "properties": {
+    "name": {
+      "description": "A name for the ruleset.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A description of the ruleset.",
+      "type": "string"
+    },
+    "author": {
+      "description": "The contact information of the ruleset author.",
+      "$ref": "../types/ps.contact.json"
+    },
+    "created": {
+      "description": "The time the ruleset was initially created.",
+      "type": "string"
+    },
+    "updated": {
+      "description": "The time the ruleset was most recently modified.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

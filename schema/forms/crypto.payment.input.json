@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/crypto.payment.input.json",
+  "title": "input",
+  "description": "",
+  "properties": {
+    "transaction": {
+      "description": "The transaction the payment was input to.",
+      "$ref": "../types/crypto.currency.transaction.json"
+    },
+    "address": {
+      "description": "The address which paid into the transaction.",
+      "$ref": "../types/crypto.currency.address.json"
+    },
+    "value": {
+      "description": "The value of the currency paid into the transaction.",
+      "$ref": "../types/econ.price.json"
+    }
+  },
+  "type": "object"
+}

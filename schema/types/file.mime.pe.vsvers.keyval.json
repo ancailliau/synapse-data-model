@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/file.mime.pe.vsvers.keyval.json",
+  "title": "keyval",
+  "description": "A key value pair found in a PE vsversion info structure.",
+  "type": "object"
+}

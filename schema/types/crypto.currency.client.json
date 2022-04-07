@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/crypto.currency.client.json",
+  "title": "client",
+  "description": "A fused node representing a crypto currency address used by an Internet client.",
+  "type": "object"
+}

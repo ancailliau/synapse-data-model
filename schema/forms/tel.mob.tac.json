@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/tel.mob.tac.json",
   "title": "tac",
-  "description": "A mobile cell site which a phone may connect to.",
+  "description": "",
   "properties": {
     "org": {
       "description": "The org guid for the manufacturer.",
-      "$ref": "../forms/ou.org.json"
+      "$ref": "../types/ou.org.json"
     },
     "manu": {
       "description": "The TAC manufacturer name.",

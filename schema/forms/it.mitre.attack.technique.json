@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.mitre.attack.technique.json",
   "title": "technique",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "name": {
       "description": "The primary name for the ATT&CK technique.",
@@ -10,11 +10,11 @@
     },
     "status": {
       "description": "The status of this ATT&CK technique.",
-      "$ref": "../forms/it.mitre.attack.status.json"
+      "$ref": "../types/it.mitre.attack.status.json"
     },
     "isnow": {
       "description": "If deprecated, this field may contain the current value for the technique.",
-      "$ref": "../forms/it.mitre.attack.technique.json"
+      "$ref": "../types/it.mitre.attack.technique.json"
     },
     "desc": {
       "description": "A description of the ATT&CK technique.",
@@ -38,7 +38,7 @@
     },
     "parent": {
       "description": "The parent ATT&CK technique on this sub-technique.",
-      "$ref": "../forms/it.mitre.attack.technique.json"
+      "$ref": "../types/it.mitre.attack.technique.json"
     },
     "tactics": {
       "description": "An array of ATT&CK tactics that include this technique.",

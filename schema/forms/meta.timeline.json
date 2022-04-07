@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/meta.timeline.json",
+  "title": "timeline",
+  "description": "",
+  "properties": {
+    "title": {
+      "description": "A title for the timeline.",
+      "type": "string"
+    },
+    "summary": {
+      "description": "A prose summary of the timeline.",
+      "type": "string"
+    },
+    "type": {
+      "description": "The type of timeline.",
+      "$ref": "../types/meta.timeline.taxonomy.json"
+    }
+  },
+  "type": "object"
+}

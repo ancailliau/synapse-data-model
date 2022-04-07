@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/econ.fin.bar.json",
   "title": "bar",
-  "description": "A sample of the price of a security at a single moment in time",
+  "description": "",
   "properties": {
     "security": {
       "description": "The security measured by the bar",
-      "$ref": "../forms/econ.fin.security.json"
+      "$ref": "../types/econ.fin.security.json"
     },
     "ival": {
       "description": "The interval of measurement",
@@ -14,19 +14,19 @@
     },
     "price:open": {
       "description": "The opening price of the security",
-      "$ref": "../forms/econ.price.json"
+      "$ref": "../types/econ.price.json"
     },
     "price:close": {
       "description": "The closing price of the security",
-      "$ref": "../forms/econ.price.json"
+      "$ref": "../types/econ.price.json"
     },
     "price:low": {
       "description": "The low price of the security",
-      "$ref": "../forms/econ.price.json"
+      "$ref": "../types/econ.price.json"
     },
     "price:high": {
       "description": "The high price of the security",
-      "$ref": "../forms/econ.price.json"
+      "$ref": "../types/econ.price.json"
     }
   },
   "type": "object"

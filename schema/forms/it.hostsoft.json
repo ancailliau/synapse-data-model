@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.hostsoft.json",
   "title": "hostsoft",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "host": {
       "description": "Host with the software.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "softver": {
       "description": "Software on the host.",
-      "$ref": "../forms/it.prod.softver.json"
+      "$ref": "../types/it.prod.softver.json"
     }
   },
   "type": "object"

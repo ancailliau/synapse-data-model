@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.campaign.json",
+  "title": "campaign",
+  "description": "Represents an orgs activity in pursuit of a goal.",
+  "type": "string"
+}

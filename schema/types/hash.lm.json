@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/hash.lm.json",
+  "title": "lm",
+  "description": "A hex encoded Microsoft Windows LM password hash.",
+  "type": "string"
+}

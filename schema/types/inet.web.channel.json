@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.web.channel.json",
+  "title": "channel",
+  "description": "A channel within a web service or instance such as slack or discord.",
+  "type": "string"
+}

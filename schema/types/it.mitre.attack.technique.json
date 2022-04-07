@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.mitre.attack.technique.json",
+  "title": "technique",
+  "description": "A Mitre ATT&CK Technique ID.",
+  "type": "string"
+}

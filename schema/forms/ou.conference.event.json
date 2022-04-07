@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ou.conference.event.json",
   "title": "event",
-  "description": "A title for a position within an org.",
+  "description": "",
   "properties": {
     "conference": {
       "description": "The conference to which the event is associated.",
-      "$ref": "../forms/ou.conference.json"
+      "$ref": "../types/ou.conference.json"
     },
     "organizer": {
       "description": "Contact information for the primary organizer of the event.",
-      "$ref": "../forms/ps.contact.json"
+      "$ref": "../types/ps.contact.json"
     },
     "sponsors": {
       "description": "An array of contacts which sponsored the event.",
@@ -22,7 +22,7 @@
     },
     "place": {
       "description": "The geo:place where the event occurred.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     },
     "name": {
       "description": "The name of the conference event.",
@@ -38,7 +38,7 @@
     },
     "contact": {
       "description": "Contact info for the event.",
-      "$ref": "../forms/ps.contact.json"
+      "$ref": "../types/ps.contact.json"
     },
     "start": {
       "description": "The event start date / time.",

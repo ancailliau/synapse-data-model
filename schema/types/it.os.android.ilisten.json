@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.os.android.ilisten.json",
+  "title": "ilisten",
+  "description": "The given software listens for an android intent.",
+  "type": "object"
+}

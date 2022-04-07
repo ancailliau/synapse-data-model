@@ -2,26 +2,26 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/graph.timeedge.json",
   "title": "timeedge",
-  "description": "A generic digraph time edge to show relationships outside the model.",
+  "description": "",
   "properties": {
     "time": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "n1": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "n1:form": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "n2": {
-      "description": null,
+      "description": "",
       "type": "string"
     },
     "n2:form": {
-      "description": null,
+      "description": "",
       "type": "string"
     }
   },

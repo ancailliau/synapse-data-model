@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/econ.acquired.json",
+  "title": "acquired",
+  "description": "A relationship between a purchase event and a purchased item.",
+  "type": "object"
+}

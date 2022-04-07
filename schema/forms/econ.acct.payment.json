@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/econ.acct.payment.json",
   "title": "payment",
-  "description": "A sample of the price of a security at a single moment in time",
+  "description": "",
   "properties": {
     "txnid": {
       "description": "A payment processor specific transaction id.",
@@ -10,35 +10,35 @@
     },
     "fee": {
       "description": "The transaction fee paid by the recipient to the payment processor.",
-      "$ref": "../forms/econ.price.json"
+      "$ref": "../types/econ.price.json"
     },
     "from:pay:card": {
       "description": "The payment card making the payment.",
-      "$ref": "../forms/econ.pay.card.json"
+      "$ref": "../types/econ.pay.card.json"
     },
     "from:contract": {
       "description": "A contract used as an aggregate payment source.",
-      "$ref": "../forms/ou.contract.json"
+      "$ref": "../types/ou.contract.json"
     },
     "from:coinaddr": {
       "description": "The crypto currency address making the payment.",
-      "$ref": "../forms/crypto.currency.address.json"
+      "$ref": "../types/crypto.currency.address.json"
     },
     "from:contact": {
       "description": "Contact information for the person/org being paid.",
-      "$ref": "../forms/ps.contact.json"
+      "$ref": "../types/ps.contact.json"
     },
     "to:coinaddr": {
       "description": "The crypto currency address receiving the payment.",
-      "$ref": "../forms/crypto.currency.address.json"
+      "$ref": "../types/crypto.currency.address.json"
     },
     "to:contact": {
       "description": "Contact information for the person/org being paid.",
-      "$ref": "../forms/ps.contact.json"
+      "$ref": "../types/ps.contact.json"
     },
     "to:contract": {
       "description": "A contract used as an aggregate payment destination.",
-      "$ref": "../forms/ou.contract.json"
+      "$ref": "../types/ou.contract.json"
     },
     "time": {
       "description": "The time the payment was processed.",
@@ -46,15 +46,15 @@
     },
     "purchase": {
       "description": "The purchase which the payment was paying for.",
-      "$ref": "../forms/econ.purchase.json"
+      "$ref": "../types/econ.purchase.json"
     },
     "amount": {
       "description": "The amount of money transferred in the payment",
-      "$ref": "../forms/econ.price.json"
+      "$ref": "../types/econ.price.json"
     },
     "currency": {
       "description": "The currency of the payment",
-      "$ref": "../forms/econ.currency.json"
+      "$ref": "../types/econ.currency.json"
     },
     "memo": {
       "description": "A small note specified by the payer common in financial transactions.",
@@ -62,7 +62,7 @@
     },
     "crypto:transaction": {
       "description": "A crypto currency transaction that initiated the payment.",
-      "$ref": "../forms/crypto.currency.transaction.json"
+      "$ref": "../types/crypto.currency.transaction.json"
     }
   },
   "type": "object"

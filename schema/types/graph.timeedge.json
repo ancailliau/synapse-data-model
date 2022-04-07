@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/graph.timeedge.json",
+  "title": "timeedge",
+  "description": "A generic digraph time edge to show relationships outside the model.",
+  "type": "string"
+}

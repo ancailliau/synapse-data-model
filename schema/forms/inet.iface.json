@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.iface.json",
   "title": "iface",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "host": {
       "description": "The guid of the host the interface is associated with.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "network": {
       "description": "The guid of the it:network the interface connected to.",
-      "$ref": "../forms/it.network.json"
+      "$ref": "../types/it.network.json"
     },
     "type": {
       "description": "The free-form interface type.",
@@ -18,7 +18,7 @@
     },
     "mac": {
       "description": "The ethernet (MAC) address of the interface.",
-      "$ref": "../forms/inet.mac.json"
+      "$ref": "../types/inet.mac.json"
     },
     "ipv4": {
       "description": "The IPv4 address of the interface.",
@@ -34,15 +34,15 @@
     },
     "wifi:ssid": {
       "description": "The wifi SSID of the interface.",
-      "$ref": "../forms/inet.wifi.ssid.json"
+      "$ref": "../types/inet.wifi.ssid.json"
     },
     "wifi:bssid": {
       "description": "The wifi BSSID of the interface.",
-      "$ref": "../forms/inet.mac.json"
+      "$ref": "../types/inet.mac.json"
     },
     "adid": {
       "description": "An advertising ID associated with the interface.",
-      "$ref": "../forms/it.adid.json"
+      "$ref": "../types/it.adid.json"
     },
     "mob:imei": {
       "description": "The IMEI of the interface.",

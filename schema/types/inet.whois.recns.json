@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.whois.recns.json",
+  "title": "recns",
+  "description": "A nameserver associated with a domain whois record.",
+  "type": "object"
+}

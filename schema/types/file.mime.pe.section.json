@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/file.mime.pe.section.json",
+  "title": "section",
+  "description": "The fused knowledge a file:bytes node containing a pe section.",
+  "type": "object"
+}

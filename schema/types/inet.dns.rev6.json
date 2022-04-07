@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.dns.rev6.json",
+  "title": "rev6",
+  "description": "The transformed result of a DNS PTR record for an IPv6 address.",
+  "type": "object"
+}

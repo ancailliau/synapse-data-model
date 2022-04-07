@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/syn.type.json",
+  "title": "type",
+  "description": "A Synapse type used for normalizing nodes and properties.",
+  "type": "string"
+}

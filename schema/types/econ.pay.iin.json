@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/econ.pay.iin.json",
+  "title": "iin",
+  "description": "An Issuer Id Number (IIN).",
+  "type": "integer"
+}

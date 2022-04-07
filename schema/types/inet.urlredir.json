@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.urlredir.json",
+  "title": "urlredir",
+  "description": "A URL that redirects to another URL, such as via a URL shortening service or an HTTP 302 response.",
+  "type": "object"
+}

@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.web.follows.json",
   "title": "follows",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "follower": {
       "description": "The account following an account.",
-      "$ref": "../forms/inet.web.acct.json"
+      "$ref": "../types/inet.web.acct.json"
     },
     "followee": {
       "description": "The account followed by an account.",
-      "$ref": "../forms/inet.web.acct.json"
+      "$ref": "../types/inet.web.acct.json"
     }
   },
   "type": "object"

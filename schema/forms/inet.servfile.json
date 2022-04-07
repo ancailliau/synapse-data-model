@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/inet.servfile.json",
   "title": "servfile",
-  "description": "A JARM hash sample taken from a server.",
+  "description": "",
   "properties": {
     "file": {
       "description": "The file hosted by the server.",
@@ -10,7 +10,7 @@
     },
     "server": {
       "description": "The inet:addr of the server.",
-      "$ref": "../forms/inet.server.json"
+      "$ref": "../types/inet.server.json"
     },
     "server:proto": {
       "description": "The network protocol of the server.",
@@ -26,11 +26,11 @@
     },
     "server:host": {
       "description": "The it:host node for the server.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "server:port": {
       "description": "The server tcp/udp port.",
-      "$ref": "../forms/inet.port.json"
+      "$ref": "../types/inet.port.json"
     }
   },
   "type": "object"

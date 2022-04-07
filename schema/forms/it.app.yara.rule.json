@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.app.yara.rule.json",
   "title": "rule",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "text": {
       "description": "The YARA rule text.",
@@ -14,7 +14,7 @@
     },
     "author": {
       "description": "Contact info for the author of the YARA rule.",
-      "$ref": "../forms/ps.contact.json"
+      "$ref": "../types/ps.contact.json"
     },
     "version": {
       "description": "The current version of the rule.",

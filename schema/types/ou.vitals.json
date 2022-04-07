@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.vitals.json",
+  "title": "vitals",
+  "description": "Vital statistics about an org for a given time period.",
+  "type": "string"
+}

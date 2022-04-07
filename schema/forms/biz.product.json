@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/biz.product.json",
   "title": "product",
-  "description": "A product type taxonomy.",
+  "description": "",
   "properties": {
     "name": {
       "description": "The name of the product.",
@@ -10,7 +10,7 @@
     },
     "type": {
       "description": "The type of product.",
-      "$ref": "../forms/biz.prodtype.json"
+      "$ref": "../types/biz.prodtype.json"
     },
     "summary": {
       "description": "A brief summary of the product.",
@@ -18,11 +18,11 @@
     },
     "madeby:org": {
       "description": "The product manufacturer.",
-      "$ref": "../forms/ou.org.json"
+      "$ref": "../types/ou.org.json"
     },
     "madeby:orgname": {
       "description": "The reported ou:name of the product manufacturer.",
-      "$ref": "../forms/ou.name.json"
+      "$ref": "../types/ou.name.json"
     },
     "madeby:orgfqdn": {
       "description": "The reported inet:fqdn of the product manufacturer.",
@@ -30,11 +30,11 @@
     },
     "price:retail": {
       "description": "The MSRP price of the product.",
-      "$ref": "../forms/econ.price.json"
+      "$ref": "../types/econ.price.json"
     },
     "price:bottom": {
       "description": "The minimum offered or observed price of the product.",
-      "$ref": "../forms/econ.price.json"
+      "$ref": "../types/econ.price.json"
     },
     "bundles": {
       "description": "An array of bundles included with the product.",

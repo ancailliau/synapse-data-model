@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.member.json",
+  "title": "member",
+  "description": "Deprecated. Please use ou:position.",
+  "type": "object"
+}

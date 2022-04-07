@@ -2,15 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ps.achievement.json",
   "title": "achievement",
-  "description": "A GUID representing entry in a contact's work history.",
+  "description": "",
   "properties": {
     "awardee": {
       "description": "The recipient of the award.",
-      "$ref": "../forms/ps.contact.json"
+      "$ref": "../types/ps.contact.json"
     },
     "award": {
       "description": "The award bestowed on the awardee.",
-      "$ref": "../forms/ou.award.json"
+      "$ref": "../types/ou.award.json"
     },
     "awarded": {
       "description": "The date the award was granted to the awardee.",

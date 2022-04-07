@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/ou.jobtype.json",
+  "title": "jobtype",
+  "description": "A title for a position within an org.",
+  "type": "string"
+}

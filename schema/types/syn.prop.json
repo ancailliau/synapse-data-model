@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/syn.prop.json",
+  "title": "prop",
+  "description": "A Synapse property.",
+  "type": "string"
+}

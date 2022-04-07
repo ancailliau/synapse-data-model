@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.web.chprofile.json",
+  "title": "chprofile",
+  "description": "A change to a web account. Used to capture historical properties associated with  an account, as opposed to current data in the inet:web:acct node.",
+  "type": "string"
+}

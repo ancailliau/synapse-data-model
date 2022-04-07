@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/syn.splice.json",
   "title": "splice",
-  "description": "A Synapse role GUID.",
+  "description": "",
   "properties": {
     "type": {
       "description": "Type of splice.",
@@ -14,11 +14,11 @@
     },
     "form": {
       "description": "The form involved in the splice.",
-      "$ref": "../forms/syn.form.json"
+      "$ref": "../types/syn.form.json"
     },
     "prop": {
       "description": "Property modified in the splice.",
-      "$ref": "../forms/syn.prop.json"
+      "$ref": "../types/syn.prop.json"
     },
     "tag": {
       "description": "Tag modified in the splice.",

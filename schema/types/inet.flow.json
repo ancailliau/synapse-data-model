@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.flow.json",
+  "title": "flow",
+  "description": "An individual network connection between a given source and destination.",
+  "type": "string"
+}

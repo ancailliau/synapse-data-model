@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/ps.contactlist.json",
   "title": "contactlist",
-  "description": "A GUID representing entry in a contact's work history.",
+  "description": "",
   "properties": {
     "contacts": {
       "description": "The array of contacts contained in the list.",
@@ -14,7 +14,7 @@
     },
     "source:host": {
       "description": "The host from which the contact list was extracted.",
-      "$ref": "../forms/it.host.json"
+      "$ref": "../types/it.host.json"
     },
     "source:file": {
       "description": "The file from which the contact list was extracted.",
@@ -22,7 +22,7 @@
     },
     "source:acct": {
       "description": "The web account from which the contact list was extracted.",
-      "$ref": "../forms/inet.web.acct.json"
+      "$ref": "../types/inet.web.acct.json"
     }
   },
   "type": "object"

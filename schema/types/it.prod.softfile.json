@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/it.prod.softfile.json",
+  "title": "softfile",
+  "description": "A file is distributed by a specific software version.",
+  "type": "object"
+}

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/it.sec.cwe.json",
   "title": "cwe",
-  "description": "A function from an imported library.",
+  "description": "",
   "properties": {
     "name": {
       "description": "The CWE description field.",
@@ -20,7 +20,7 @@
       "description": "An array of ChildOf CWE Relationships.",
       "type": "array",
       "items": {
-        "$ref": "../forms/it.sec.cwe.json"
+        "$ref": "#"
       },
       "uniqueItems": true
     }

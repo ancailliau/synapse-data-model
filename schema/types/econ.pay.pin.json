@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/econ.pay.pin.json",
+  "title": "pin",
+  "description": "A Personal Identification Number.",
+  "type": "string"
+}

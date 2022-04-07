@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../forms/meta.rule.json",
+  "title": "rule",
+  "description": "",
+  "properties": {
+    "name": {
+      "description": "A name for the rule.",
+      "type": "string"
+    },
+    "desc": {
+      "description": "A description of the rule.",
+      "type": "string"
+    },
+    "text": {
+      "description": "The text of the rule logic.",
+      "type": "string"
+    },
+    "author": {
+      "description": "The contact information of the rule author.",
+      "$ref": "../types/ps.contact.json"
+    },
+    "created": {
+      "description": "The time the rule was initially created.",
+      "type": "string"
+    },
+    "updated": {
+      "description": "The time the rule was most recently modified.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

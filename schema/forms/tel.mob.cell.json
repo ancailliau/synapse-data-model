@@ -2,19 +2,19 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "../forms/tel.mob.cell.json",
   "title": "cell",
-  "description": "A mobile cell site which a phone may connect to.",
+  "description": "",
   "properties": {
     "carrier": {
       "description": "Mobile carrier.",
-      "$ref": "../forms/tel.mob.carrier.json"
+      "$ref": "../types/tel.mob.carrier.json"
     },
     "carrier:mcc": {
       "description": "Mobile Country Code.",
-      "$ref": "../forms/tel.mob.mcc.json"
+      "$ref": "../types/tel.mob.mcc.json"
     },
     "carrier:mnc": {
       "description": "Mobile Network Code.",
-      "$ref": "../forms/tel.mob.mnc.json"
+      "$ref": "../types/tel.mob.mnc.json"
     },
     "lac": {
       "description": "Location Area Code. LTE networks may call this a TAC.",
@@ -38,7 +38,7 @@
     },
     "place": {
       "description": "The place associated with the latlong property.",
-      "$ref": "../forms/geo.place.json"
+      "$ref": "../types/geo.place.json"
     }
   },
   "type": "object"

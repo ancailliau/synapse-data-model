@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../types/inet.whois.rec.json",
+  "title": "rec",
+  "description": "A domain whois record.",
+  "type": "object"
+}
